@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 硬件集成监控</title>
+    <title>OpenClaw Hardware Integration Monitor</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -123,113 +123,130 @@
 </head>
 <body>
     <div class="container">
-        <h1>🦞 OpenClaw 硬件集成监控</h1>
+        <h1>🦞 OpenClaw Hardware Integration Monitor</h1>
         
         <div class="filters">
             <select id="categoryFilter">
-                <option value="">所有应用分类</option>
-                <option value="robotics">机器人控制</option>
-                <option value="iot">物联网(IoT)</option>
-                <option value="embedded">嵌入式开发</option>
-                <option value="maker">创客项目</option>
+                <option value="">All Application Categories</option>
+                <option value="robotics">Robotics Control</option>
+                <option value="iot">IoT (Internet of Things)</option>
+                <option value="embedded">Embedded Development</option>
+                <option value="maker">Maker Projects</option>
             </select>
             
             <select id="platformFilter">
-                <option value="">所有技术平台</option>
+                <option value="">All Technology Platforms</option>
                 <option value="esp32">ESP32</option>
                 <option value="arduino">Arduino</option>
                 <option value="raspberry">Raspberry Pi</option>
-                <option value="seeed">Seeed Studio</option>
                 <option value="jetson">NVIDIA Jetson</option>
             </select>
             
-            <input type="text" id="searchInput" placeholder="搜索项目名称或描述...">
+            <input type="text" id="searchInput" placeholder="Search project name or description...">
         </div>
         
         <div id="projectsContainer">
-            <!-- 项目卡片将通过JavaScript动态生成 -->
+            <!-- Project cards will be generated dynamically by JavaScript -->
         </div>
     </div>
 
     <script>
         const projects = [
-            // 机器人控制
+            // Robotics Control
             {
-                name: "官方OpenClaw仓库",
+                name: "Official OpenClaw Repository",
                 description: "Your own personal AI assistant. Any OS. Any Platform. The lobster way.",
                 githubUrl: "https://github.com/openclaw/openclaw",
                 stars: 251095,
                 category: "robotics",
                 platforms: ["any"],
+                tags: [],
                 productLinks: [],
                 lastUpdated: "2026-03-03T08:39:19Z"
             },
             {
                 name: "clawd-reachy-mini",
-                description: "Reachy Mini机器人集成项目",
+                description: "Reachy Mini robotics integration project for OpenClaw",
                 githubUrl: "https://github.com/ArturSkowronski/clawd-reachy-mini",
                 stars: 26,
                 category: "robotics", 
                 platforms: ["robotics", "python"],
-                productLinks: [],
+                tags: [],
+                productLinks: [
+                    "https://www.pollenrobotics.com/reachy"
+                ],
                 lastUpdated: "2026-03-03T05:56:21Z"
             },
             {
                 name: "clawbody",
-                description: "机器人集成控制栈",
+                description: "Robotics integration control stack for OpenClaw",
                 githubUrl: "https://github.com/tomrikert/clawbody",
                 stars: 8,
                 category: "robotics",
                 platforms: ["robotics"],
+                tags: [],
                 productLinks: [],
                 lastUpdated: "2026-03-01T21:59:07Z"
             },
             
-            // 物联网(IoT)
+            // IoT (Internet of Things)
             {
                 name: "WireClaw",
-                description: "ESP32 AI代理，具有持久内存和离线规则引擎",
+                description: "ESP32 AI agent with persistent memory and offline rule engine - chat to configure, run locally 24/7",
                 githubUrl: "https://github.com/M64GitHub/WireClaw",
                 stars: 30,
                 category: "iot",
                 platforms: ["esp32", "arduino", "iot"],
-                productLinks: [],
+                tags: [],
+                productLinks: [
+                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html",
+                    "https://wireclaw.io"
+                ],
                 lastUpdated: "2026-03-03T04:58:57Z"
             },
             {
                 name: "IOnode",
-                description: "ESP32 Fleet管理，支持NATS协议，OpenClaw-ready",
+                description: "ESP32 Fleet management with NATS protocol support - OpenClaw-ready",
                 githubUrl: "https://github.com/M64GitHub/IOnode",
                 stars: 2,
                 category: "iot",
                 platforms: ["esp32", "arduino", "iot", "nats"],
-                productLinks: [],
+                tags: [],
+                productLinks: [
+                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
+                ],
                 lastUpdated: "2026-02-25T23:03:04Z"
             },
             
-            // Seeed Studio集成
+            // Seeed Studio Integration
             {
                 name: "openclaw-esp32c3-xiao-node",
-                description: "Seeed XIAO ESP32-C3 + 扩展板的OpenClaw节点固件 (~$13 IoT外设)",
+                description: "OpenClaw node firmware for Seeed XIAO ESP32-C3 + Expansion Board (~$13 IoT peripheral)",
                 githubUrl: "https://github.com/chilu18/openclaw-esp32c3-xiao-node",
                 stars: 4,
                 category: "embedded",
-                platforms: ["esp32", "seeed", "xiao"],
+                platforms: ["esp32", "xiao"],
+                tags: ["seeed-studio"],
                 productLinks: [
-                    "https://www.seeedstudio.com/XIAO-ESP32C3-p-5440.html"
+                    "https://www.seeedstudio.com/XIAO-ESP32C3-p-5440.html",
+                    "https://www.seeedstudio.com/XIAO-ESP32C3-Expansion-board-p-5610.html"
                 ],
                 lastUpdated: "2026-02-26T17:58:59Z"
             },
             
-            // 创客项目
+            // Maker Projects
             {
-                name: "Arduino Maker技能",
-                description: "OpenClaw技能，用于指导Arduino/ESP32项目 - 代码生成、接线帮助、故障排除",
+                name: "Arduino Maker Skill",
+                description: "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help, troubleshooting",
                 githubUrl: "https://github.com/DmitrySolana/arduino-maker",
                 stars: 3,
                 category: "maker",
                 platforms: ["arduino", "esp32", "maker"],
-                productLinks: [],
+                tags: [],
+                productLinks: [
+                    "https://store.arduino.cc/products/arduino-uno-rev3",
+                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
+                ],
                 lastUpdated: "2026-02-20T04:44:22Z"
             }
         ];
@@ -246,18 +263,23 @@
                 `<span class="platform-tag">${platform}</span>`
             ).join('');
             
+            const tagTags = project.tags.map(tag => 
+                `<span class="platform-tag" style="background: #667eea; color: white;">${tag}</span>`
+            ).join('');
+            
             const productLinks = project.productLinks.map(link => 
-                `<div class="project-info"><strong>产品链接:</strong> <a href="${link}" class="product-link" target="_blank">${link}</a></div>`
+                `<div class="project-info"><strong>Product Link:</strong> <a href="${link}" class="product-link" target="_blank">${link}</a></div>`
             ).join('');
             
             return `
-                <div class="project-card" data-category="${project.category}" data-platforms="${project.platforms.join(' ')}">
+                <div class="project-card" data-category="${project.category}" data-platforms="${project.platforms.join(' ')}" data-tags="${project.tags.join(' ')}">
                     <div class="project-title">${project.name}</div>
                     <div class="project-info">${project.description}</div>
                     <div class="project-info"><strong>GitHub:</strong> <a href="${project.githubUrl}" class="product-link" target="_blank">${project.githubUrl}</a></div>
                     ${productLinks}
-                    <div class="project-info"><strong>最后更新:</strong> ${new Date(project.lastUpdated).toLocaleString('zh-CN')}</div>
-                    <div class="project-info"><strong>技术平台:</strong> ${platformTags}</div>
+                    <div class="project-info"><strong>Last Updated:</strong> ${new Date(project.lastUpdated).toLocaleString('en-US')}</div>
+                    <div class="project-info"><strong>Platforms:</strong> ${platformTags}</div>
+                    ${tagTags ? `<div class="project-info"><strong>Tags:</strong> ${tagTags}</div>` : ''}
                     <div class="stars-badge ${badgeClass}">
                         ⭐ Stars: ${project.stars.toLocaleString()}
                     </div>
@@ -271,19 +293,19 @@
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
 
             return projects.filter(project => {
-                // 应用分类过滤
+                // Application category filter
                 if (categoryFilter && project.category !== categoryFilter) {
                     return false;
                 }
                 
-                // 技术平台过滤
+                // Technology platform filter
                 if (platformFilter) {
                     if (!project.platforms.includes(platformFilter)) {
                         return false;
                     }
                 }
                 
-                // 搜索过滤
+                // Search filter
                 if (searchInput) {
                     const searchText = `${project.name} ${project.description}`.toLowerCase();
                     if (!searchText.includes(searchInput)) {
@@ -300,22 +322,22 @@
             const filteredProjects = filterProjects();
             
             if (filteredProjects.length === 0) {
-                projectsContainer.innerHTML = '<div style="text-align: center; padding: 40px; color: #666;">未找到匹配的项目</div>';
+                projectsContainer.innerHTML = '<div style="text-align: center; padding: 40px; color: #666;">No matching projects found</div>';
                 return;
             }
             
-            // 按Star数量排序（降序）
+            // Sort by stars (descending)
             const sortedProjects = filteredProjects.sort((a, b) => b.stars - a.stars);
             
             projectsContainer.innerHTML = sortedProjects.map(createProjectCard).join('');
         }
 
-        // 绑定事件监听器
+        // Bind event listeners
         document.getElementById('categoryFilter').addEventListener('change', renderProjects);
         document.getElementById('platformFilter').addEventListener('change', renderProjects);
         document.getElementById('searchInput').addEventListener('input', renderProjects);
 
-        // 初始渲染
+        // Initial render
         renderProjects();
     </script>
 </body>
