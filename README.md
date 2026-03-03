@@ -1,62 +1,51 @@
 # OpenClaw Hardware Integration Monitor
 
-This repository tracks and monitors OpenClaw hardware integration projects across various platforms and ecosystems.
+This repository monitors and tracks OpenClaw hardware integration projects across the open-source ecosystem.
 
-## 📊 Monitoring Dashboard
+## 🦞 What is OpenClaw?
+OpenClaw is your personal AI assistant that works on any OS and any platform - "The lobster way".
 
-Visit the live monitoring dashboard: **[OpenClaw Hardware Integration Monitor](https://256ericpan.github.io/clawhardware/)**
+## 🔍 Monitoring Scope
+- **Robotics Control**: Robot integration projects (Reachy Mini, robotics stacks)
+- **IoT (Internet of Things)**: ESP32-based AI agents and device management
+- **Embedded Development**: Seeed Studio XIAO and other embedded platforms  
+- **Maker Projects**: Arduino/ESP32 development tools and skills
 
-The dashboard provides real-time insights into:
-- Application categories (Robotics, IoT, Embedded, Maker)
-- GitHub project statistics (stars, last updated)
-- Technology platforms (ESP32, Arduino, Raspberry Pi, NVIDIA Jetson)
-- Product links and hardware specifications
-- Seeed Studio integration tags
+## 📊 Current Projects Tracked
+- **Official OpenClaw Repository**: 251,095+ stars, actively maintained
+- **WireClaw**: ESP32 AI agent with offline rule engine (30+ stars)
+- **Seeed XIAO Integration**: ~$13 IoT peripheral solution (4+ stars)
+- **Arduino Maker Skills**: Multiple implementations for code generation and troubleshooting
+- **Robotics Projects**: Reachy Mini and general robotics control stacks
 
-## 🔍 Key Discoveries
+## 🎯 Key Hardware Platforms
+- **ESP32/XIAO**: Ultra-low-cost IoT solutions (~$13)
+- **Raspberry Pi**: Touchscreen human-computer interaction (reTerminal)
+- **NVIDIA Jetson**: Powerful edge AI computing (Orin NX/AGX)
 
-### 🚀 Major Integrations
-- **Seeed XIAO ESP32-C3**: Ready-to-use OpenClaw node firmware (~$13 IoT peripheral)
-- **WireClaw**: ESP32 AI agent with persistent memory and offline rule engine
-- **Reachy Mini**: Robotics integration for OpenClaw control stack
-- **Official Repository**: 251,095+ stars with active development
+## 🔗 Live Dashboard
+View real-time monitoring data at: https://256ericpan.github.io/clawhardware/
 
-### 🏷️ Tag System
-- **seeed-studio**: Projects specifically integrating with Seeed Studio hardware
-- Platform-specific tags for easy filtering and discovery
+## 📈 Data Collection
+- GitHub API integration for star counts and updates
+- Daily automated monitoring and reporting
+- Cross-platform compatibility tracking
 
-## 🔄 Automatic Updates
-
-This repository is automatically updated through OpenClaw's hardware integration monitoring system, which:
-- Scans GitHub for new OpenClaw-related projects
-- Tracks star count changes and activity metrics
-- Monitors product availability and pricing
-- Updates the monitoring dashboard in real-time
-
-## 🎯 Use Cases
-
-- **Hardware Selection**: Compare different hardware platforms for OpenClaw integration
-- **Community Activity**: Track which projects are most active and popular
-- **Product Discovery**: Find compatible hardware and accessories
-- **Integration Planning**: Identify existing solutions before starting new projects
-
-## 📈 Data Sources
-
-- GitHub API for project metadata and statistics
-- Official product pages for hardware specifications
-- Community repositories for integration examples
-- Real-time monitoring through OpenClaw's automated systems
+## 📱 Social Media Integration
+- Daily Xiaohongshu posts generated automatically
+- Visual ecosystem mapping with OpenClaw at center
+- Hardware carrier and project relationship visualization
 
 ## 🤝 Contributing
-
 If you have an OpenClaw hardware integration project, please:
-1. Add appropriate platform tags to your repository
-2. Include product links in your README
-3. Use descriptive project names and descriptions
-4. Consider adding the `openclaw` topic to your repository
+1. Ensure your repository has "openclaw" in the description or topics
+2. Add relevant hardware platform tags
+3. Include product links and documentation
 
-Your project will automatically appear in the monitoring dashboard!
+## 📅 Update Schedule
+- **Daily**: Automated monitoring and social media posts (8:00 AM CST)
+- **Real-time**: GitHub Pages dashboard updates immediately
+- **Weekly**: Comprehensive ecosystem analysis
 
 ---
-
-*Powered by OpenClaw - Your personal AI assistant for hardware integration monitoring*
+*Built with ❤️ for the OpenClaw community*
