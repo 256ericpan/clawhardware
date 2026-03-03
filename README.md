@@ -1,51 +1,50 @@
 # OpenClaw Hardware Integration Monitor
 
-This repository monitors and tracks OpenClaw hardware integration projects across the open-source ecosystem.
+![OpenClaw Hardware Ecosystem](https://raw.githubusercontent.com/256ericpan/clawhardware/main/ecosystem-diagram.png)
 
-## 🦞 What is OpenClaw?
-OpenClaw is your personal AI assistant that works on any OS and any platform - "The lobster way".
+## 🦞 Overview
+Real-time monitoring dashboard for OpenClaw hardware integration projects across multiple platforms.
 
-## 🔍 Monitoring Scope
-- **Robotics Control**: Robot integration projects (Reachy Mini, robotics stacks)
-- **IoT (Internet of Things)**: ESP32-based AI agents and device management
-- **Embedded Development**: Seeed Studio XIAO and other embedded platforms  
-- **Maker Projects**: Arduino/ESP32 development tools and skills
+## 🔧 Hardware Ecosystem Structure
 
-## 📊 Current Projects Tracked
-- **Official OpenClaw Repository**: 251,095+ stars, actively maintained
-- **WireClaw**: ESP32 AI agent with offline rule engine (30+ stars)
-- **Seeed XIAO Integration**: ~$13 IoT peripheral solution (4+ stars)
-- **Arduino Maker Skills**: Multiple implementations for code generation and troubleshooting
-- **Robotics Projects**: Reachy Mini and general robotics control stacks
+### Core
+- **OpenClaw**: Your personal AI assistant for any OS, any platform
 
-## 🎯 Key Hardware Platforms
+### Inner Circle - Hardware Carriers
 - **ESP32/XIAO**: Ultra-low-cost IoT solutions (~$13)
 - **Raspberry Pi**: Touchscreen human-computer interaction (reTerminal)
-- **NVIDIA Jetson**: Powerful edge AI computing (Orin NX/AGX)
+- **NVIDIA Jetson**: Powerful edge AI computing
+
+### Outer Circle - Interactive Projects
+- **ESP32 Ecosystem**: WireClaw, IOnode
+- **Maker Ecosystem**: Arduino Maker skills, clawbody
+- **Robotics Ecosystem**: clawd-reachy-mini, robotics integration
+
+## 📊 Features
+- Real-time GitHub project monitoring
+- Star count tracking and updates
+- Platform-based filtering
+- Product link integration
+- Seeed Studio tagging
 
 ## 🔗 Live Dashboard
-View real-time monitoring data at: https://256ericpan.github.io/clawhardware/
+[View Live Dashboard](https://256ericpan.github.io/clawhardware/)
 
-## 📈 Data Collection
-- GitHub API integration for star counts and updates
-- Daily automated monitoring and reporting
-- Cross-platform compatibility tracking
+## 📅 Daily Updates
+This repository is automatically updated daily with new OpenClaw hardware integration projects and generates Xiaohongshu posts for community sharing.
 
-## 📱 Social Media Integration
-- Daily Xiaohongshu posts generated automatically
-- Visual ecosystem mapping with OpenClaw at center
-- Hardware carrier and project relationship visualization
+## 🚀 Getting Started
+1. Visit the [live dashboard](https://256ericpan.github.io/clawhardware/)
+2. Filter by application category or technology platform
+3. Explore product links and GitHub repositories
+4. Check back daily for new integrations!
+
+## 📱 Social Media
+Daily Xiaohongshu posts are automatically generated and published in private mode for review.
 
 ## 🤝 Contributing
-If you have an OpenClaw hardware integration project, please:
-1. Ensure your repository has "openclaw" in the description or topics
-2. Add relevant hardware platform tags
-3. Include product links and documentation
-
-## 📅 Update Schedule
-- **Daily**: Automated monitoring and social media posts (8:00 AM CST)
-- **Real-time**: GitHub Pages dashboard updates immediately
-- **Weekly**: Comprehensive ecosystem analysis
+If you have OpenClaw hardware integration projects, please share them with the community!
 
 ---
-*Built with ❤️ for the OpenClaw community*
+
+**Tags**: #OpenClaw #HardwareEcosystem #ESP32 #Arduino #RaspberryPi #Jetson #SeeedStudio #XIAO #IoT #Robotics
