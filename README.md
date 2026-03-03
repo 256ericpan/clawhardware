@@ -1,71 +1,62 @@
-# OpenClaw Hardware Integration Monitoring
+# OpenClaw Hardware Integration Monitor
 
-This repository provides a comprehensive dashboard for monitoring OpenClaw hardware integration projects across the open-source ecosystem.
+This repository tracks and monitors OpenClaw hardware integration projects across various platforms and ecosystems.
 
-## 🦞 What is OpenClaw?
+## 📊 Monitoring Dashboard
 
-OpenClaw is your personal AI assistant that runs on any OS and any platform. It's designed to be hardware-agnostic and can integrate with various embedded systems, IoT devices, and robotics platforms.
+Visit the live monitoring dashboard: **[OpenClaw Hardware Integration Monitor](https://256ericpan.github.io/clawhardware/)**
 
-## 📊 Dashboard Features
+The dashboard provides real-time insights into:
+- Application categories (Robotics, IoT, Embedded, Maker)
+- GitHub project statistics (stars, last updated)
+- Technology platforms (ESP32, Arduino, Raspberry Pi, NVIDIA Jetson)
+- Product links and hardware specifications
+- Seeed Studio integration tags
 
-The interactive dashboard (`index.html`) provides:
+## 🔍 Key Discoveries
 
-- **Application Categories**: Robotics, IoT, Embedded Development, Maker Projects
-- **Open Source Projects**: Real-time monitoring of GitHub repositories
-- **Product Links**: Direct links to hardware products used in each project
-- **Star Counts & Activity**: GitHub stars and last update timestamps
-- **Technology Platforms**: ESP32, Arduino, Raspberry Pi, NVIDIA Jetson, etc.
-- **Tags**: Including Seeed Studio, PlatformIO, NATS, and more
-
-## 🔍 How to Use
-
-1. **View Live Dashboard**: Visit [https://256ericpan.github.io/clawhardware/](https://256ericpan.github.io/clawhardware/)
-2. **Filter by Category**: Select application categories (Robotics, IoT, etc.)
-3. **Filter by Platform**: Choose specific technology platforms
-4. **Search**: Find projects by name or description
-5. **Sort**: Projects are automatically sorted by GitHub stars (highest first)
-
-## 🚀 Key Discoveries
-
-### Seeed Studio Integration
-- **XIAO ESP32-C3 Node**: Ready-to-use OpenClaw firmware for Seeed XIAO ESP32-C3 + Expansion Board (~$13 IoT peripheral)
-- **Repository**: [chilu18/openclaw-esp32c3-xiao-node](https://github.com/chilu18/openclaw-esp32c3-xiao-node)
-- **Product Link**: [Seeed XIAO ESP32-C3](https://www.seeedstudio.com/XIAO-ESP32C3-p-5440.html)
-
-### Robotics Integration
-- **Reachy Mini**: Active integration with Reachy Mini robotic platform
-- **Repository**: [ArturSkowronski/clawd-reachy-mini](https://github.com/ArturSkowronski/clawd-reachy-mini)
-- **Robotics Stack**: [tomrikert/clawbody](https://github.com/tomrikert/clawbody)
-
-### IoT & Edge AI
+### 🚀 Major Integrations
+- **Seeed XIAO ESP32-C3**: Ready-to-use OpenClaw node firmware (~$13 IoT peripheral)
 - **WireClaw**: ESP32 AI agent with persistent memory and offline rule engine
-- **Repository**: [M64GitHub/WireClaw](https://github.com/M64GitHub/WireClaw)
-- **IOnode**: ESP32 Fleet management with NATS protocol support
-- **Repository**: [M64GitHub/IOnode](https://github.com/M64GitHub/IOnode)
+- **Reachy Mini**: Robotics integration for OpenClaw control stack
+- **Official Repository**: 251,095+ stars with active development
 
-## 📈 Monitoring Strategy
+### 🏷️ Tag System
+- **seeed-studio**: Projects specifically integrating with Seeed Studio hardware
+- Platform-specific tags for easy filtering and discovery
 
-This dashboard is updated through automated monitoring that:
+## 🔄 Automatic Updates
 
-1. **Scans GitHub** for OpenClaw-related repositories
-2. **Categorizes projects** by application type and technology stack
-3. **Extracts product links** and hardware specifications
-4. **Tracks star counts** and activity metrics
-5. **Updates the dashboard** with new discoveries
+This repository is automatically updated through OpenClaw's hardware integration monitoring system, which:
+- Scans GitHub for new OpenClaw-related projects
+- Tracks star count changes and activity metrics
+- Monitors product availability and pricing
+- Updates the monitoring dashboard in real-time
+
+## 🎯 Use Cases
+
+- **Hardware Selection**: Compare different hardware platforms for OpenClaw integration
+- **Community Activity**: Track which projects are most active and popular
+- **Product Discovery**: Find compatible hardware and accessories
+- **Integration Planning**: Identify existing solutions before starting new projects
+
+## 📈 Data Sources
+
+- GitHub API for project metadata and statistics
+- Official product pages for hardware specifications
+- Community repositories for integration examples
+- Real-time monitoring through OpenClaw's automated systems
 
 ## 🤝 Contributing
 
-If you have OpenClaw hardware integration projects or discover new ones, please:
+If you have an OpenClaw hardware integration project, please:
+1. Add appropriate platform tags to your repository
+2. Include product links in your README
+3. Use descriptive project names and descriptions
+4. Consider adding the `openclaw` topic to your repository
 
-1. **Star relevant repositories** to help with discovery
-2. **Add product links** in your project descriptions
-3. **Use consistent tags** like `openclaw`, `seeed-studio`, `esp32`, etc.
-4. **Report discoveries** through GitHub issues
-
-## 📄 License
-
-This monitoring dashboard is provided as-is for informational purposes. Individual projects maintain their own licenses.
+Your project will automatically appear in the monitoring dashboard!
 
 ---
 
-*Built with ❤️ for the OpenClaw community*
+*Powered by OpenClaw - Your personal AI assistant for hardware integration monitoring*
