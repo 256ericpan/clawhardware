@@ -1,50 +1,51 @@
 # OpenClaw Hardware Integration Monitor
 
-![OpenClaw Hardware Ecosystem](https://raw.githubusercontent.com/256ericpan/clawhardware/main/ecosystem-diagram.png)
-
-## 🦞 Overview
+## Overview
 Real-time monitoring dashboard for OpenClaw hardware integration projects across multiple platforms.
 
-## 🔧 Hardware Ecosystem Structure
+## Project Categories
 
-### Core
-- **OpenClaw**: Your personal AI assistant for any OS, any platform
+### Robotics Control
+- **Official OpenClaw Repository** - Core AI assistant (251,095+ stars)
+- **clawd-reachy-mini** - Reachy Mini robotics integration (26 stars)
+- **clawbody** - Robotics integration control stack (8 stars)
 
-### Inner Circle - Hardware Carriers
-- **ESP32/XIAO**: Ultra-low-cost IoT solutions (~$13)
-- **Raspberry Pi**: Touchscreen human-computer interaction (reTerminal)
-- **NVIDIA Jetson**: Powerful edge AI computing
+### IoT & Embedded Systems
+- **WireClaw** - ESP32 AI agent with persistent memory (30 stars)
+- **IOnode** - ESP32 Fleet management with NATS protocol (2 stars)
+- **openclaw-esp32c3-xiao-node** - Seeed XIAO ESP32-C3 firmware (~$13 solution, 4 stars)
+- **openclaw-xiaozhi** - ESP32-S3 voice interface (10 stars)
+- **Kongnitive-EdgeMCP** - ESP32 MCP base layer (7 stars)
+- **HeyClawy** - Voice-first ESP32 companion (2 stars)
+- **monagotchi** - ESP32 Tamagotchi + memecoin integration (15 stars)
 
-### Outer Circle - Interactive Projects
-- **ESP32 Ecosystem**: WireClaw, IOnode
-- **Maker Ecosystem**: Arduino Maker skills, clawbody
-- **Robotics Ecosystem**: clawd-reachy-mini, robotics integration
+### Raspberry Pi Ecosystem
+- **mimiclaw** - Run OpenClaw on $5 chip, no OS required (3,700+ stars) ⭐
+- **openclaw-pi-installation** - Secure Raspberry Pi 4 installation (21 stars)
+- **openclaw-raspberry-installer** - Raspberry Pi 5 + Hailo 10H AI accelerator (9 stars)
+- **openclawgotchi** - AI Tamagotchi with E-Ink display (15 stars)
+- **neko** - Lightweight AI agent for Raspberry Pi Zero 2W (13 stars)
 
-## 📊 Features
-- Real-time GitHub project monitoring
-- Star count tracking and updates
-- Platform-based filtering
-- Product link integration
-- Seeed Studio tagging
+### NVIDIA Jetson Integration
+- **jetson-openclaw** - Jetson Orin Nano Personal AI Assistant (1 star)
+- **openclaw-jetson** - Secure Ollama devcontainer for Jetson Orin Nano Super (1 star)
+- **NvidiaJetsonOpenClaw** - Jetson Orin Nano Super Developer Kit setup (1 star)
 
-## 🔗 Live Dashboard
-[View Live Dashboard](https://256ericpan.github.io/clawhardware/)
+### Maker & Development Tools
+- **Arduino Maker Skills** - Multiple versions for Arduino/ESP32 guidance
+  - DmitrySolana/arduinomaker (3 stars)
+  - DmitrySolana/Arduino-maker (3 stars)
+  - sergiopesch/Arduino-maker (0 stars)
 
-## 📅 Daily Updates
-This repository is automatically updated daily with new OpenClaw hardware integration projects and generates Xiaohongshu posts for community sharing.
+## Features
+- Real-time project monitoring
+- Interactive filtering by category and platform
+- Star count tracking and sorting
+- Product links and technical specifications
+- Ecosystem visualization layout
 
-## 🚀 Getting Started
-1. Visit the [live dashboard](https://256ericpan.github.io/clawhardware/)
-2. Filter by application category or technology platform
-3. Explore product links and GitHub repositories
-4. Check back daily for new integrations!
+## Access
+Live dashboard: https://256ericpan.github.io/clawhardware/
 
-## 📱 Social Media
-Daily Xiaohongshu posts are automatically generated and published in private mode for review.
-
-## 🤝 Contributing
-If you have OpenClaw hardware integration projects, please share them with the community!
-
----
-
-**Tags**: #OpenClaw #HardwareEcosystem #ESP32 #Arduino #RaspberryPi #Jetson #SeeedStudio #XIAO #IoT #Robotics
+## Updates
+This repository is automatically updated with new OpenClaw hardware integration projects as they are discovered.
