@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeed Studio Linux产品动态展示</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        select, input {
+            padding: 10px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            min-width: 150px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        .product-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            background: #f8fafc;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+        .product-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        .product-info {
+            margin: 8px 0;
+        }
+        .product-info strong {
+            color: #4a5568;
+        }
+        .github-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .high-activity {
+            background: linear-gradient(45deg, #48bb78, #38a169);
+        }
+        .medium-activity {
+            background: linear-gradient(45deg, #ed8936, #dd6b20);
+        }
+        .low-activity {
+            background: linear-gradient(45deg, #e53e3e, #c53030);
+        }
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .filters {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Seeed Studio Linux产品动态展示</h1>
+        
+        <div class="filters">
+            <select id="categoryFilter">
+                <option value="">所有类别</option>
+                <option value="jetson">NVIDIA Jetson系列</option>
+                <option value="raspberry">Raspberry Pi系列</option>
+                <option value="other">其他Linux SBC</option>
+            </select>
+            
+            <select id="githubFilter">
+                <option value="">所有GitHub活跃度</option>
+                <option value="high">高活跃度 (≥10项目)</option>
+                <option value="medium">中等活跃度 (1-9项目)</option>
+                <option value="low">低活跃度 (0项目)</option>
+            </select>
+            
+            <input type="text" id="searchInput" placeholder="搜索产品名称或SKU...">
+        </div>
+        
+        <div class="product-grid" id="productGrid">
+            <!-- 产品卡片将通过JavaScript动态生成 -->
+        </div>
+    </div>
+
+    <script>
+        const products = [
+            // NVIDIA Jetson系列
+            {
+                name: "reComputer Robotics J5012 with GMSL",
+                sku: "100032662",
+                price: "$2,749.00",
+                module: "NVIDIA Jetson AGX Orin 64GB",
+                storage: "M.2 Key M SSD + M.2 Key E + M.2 Key B",
+                category: "jetson",
+                githubProjects: 0,
+                series: "J5012"
+            },
+            {
+                name: "reComputer Mini J501 Carrier Board (without GMSL)",
+                sku: "100094378", 
+                price: "$279.00",
+                module: "NVIDIA Jetson AGX Orin 32GB/64GB",
+                storage: "CAN, USB, Ethernet, RS-485, I2S",
+                category: "jetson",
+                githubProjects: 0,
+                series: "J5011"
+            },
+            {
+                name: "reComputer Super J4012",
+                sku: "114110314",
+                price: "$950.00", 
+                module: "NVIDIA Jetson Orin NX 16GB (157 TOPS)",
+                storage: "Wi-Fi/BT/LTE + 双RJ45以太网",
+                category: "jetson",
+                githubProjects: 0,
+                series: "J4012"
+            },
+            {
+                name: "reComputer J4011",
+                sku: "100064062",
+                price: "~$599",
+                module: "NVIDIA Jetson Orin NX 16GB",
+                storage: "16GB eMMC + M.2 NVMe插槽",
+                category: "jetson", 
+                githubProjects: 1,
+                series: "J4011"
+            },
+            {
+                name: "reComputer Super J3011",
+                sku: "114110312",
+                price: "$599.00",
+                module: "NVIDIA Jetson Orin Nano 8GB (67 TOPS)",
+                storage: "Wi-Fi/BT/LTE + Ethernet",
+                category: "jetson",
+                githubProjects: 0,
+                series: "J3011"
+            },
+            {
+                name: "reComputer J3010",
+                sku: "110110146",
+                price: "$499.00",
+                module: "NVIDIA Jetson Orin Nano 4GB (20 TOPS)",
+                storage: "128GB SSD, 4x USB 3.2, HDMI, GbE",
+                category: "jetson",
+                githubProjects: 0,
+                series: "J3010"
+            },
+            {
+                name: "reComputer J1010",
+                sku: "100064059",
+                price: "~$299",
+                module: "NVIDIA Jetson Nano 4GB",
+                storage: "microSD卡槽",
+                category: "jetson",
+                githubProjects: 2,
+                series: "J1010"
+            },
+            
+            // Raspberry Pi系列
+            {
+                name: "reTerminal",
+                sku: "5712",
+                price: "~$279",
+                module: "Raspberry Pi CM4",
+                storage: "5-inch IPS触摸屏，支持eMMC/microSD",
+                category: "raspberry",
+                githubProjects: 25,
+                series: "reTerminal"
+            },
+            {
+                name: "reTerminal DM",
+                sku: "5616", 
+                price: "~$279",
+                module: "Raspberry Pi CM4",
+                storage: "10.1\"工业级触摸屏，IP65防护等级",
+                category: "raspberry",
+                githubProjects: 25,
+                series: "reTerminal"
+            },
+            {
+                name: "reComputer R1035-10",
+                sku: "113991314",
+                price: "$279.00",
+                module: "Raspberry Pi CM4, 8GB RAM",
+                storage: "32GB eMMC, 3x RS485, dual-ethernets",
+                category: "raspberry",
+                githubProjects: 1,
+                series: "R10xx"
+            },
+            {
+                name: "reComputer R1125-10",
+                sku: "113991334",
+                price: "$244.00",
+                module: "Raspberry Pi CM4, 4GB RAM", 
+                storage: "32GB eMMC, 2x Ethernet, 2x USB, 2x RS485",
+                category: "raspberry",
+                githubProjects: 1,
+                series: "R11xx"
+            },
+            
+            // 其他Linux SBC
+            {
+                name: "BeagleBone AI-64",
+                sku: "100064200",
+                price: "~$199",
+                module: "TI AM62A7 (ARM Cortex-A53)",
+                storage: "16GB eMMC + microSD卡槽",
+                category: "other",
+                githubProjects: 0,
+                series: "BeagleBone"
+            },
+            {
+                name: "ODYSSEY - X86J41x5",
+                sku: "100064300",
+                price: "~$149",
+                module: "Intel Celeron J4125",
+                storage: "M.2 SSD插槽 + microSD卡槽",
+                category: "other", 
+                githubProjects: 0,
+                series: "ODYSSEY"
+            }
+        ];
+
+        function getGithubBadgeClass(githubProjects) {
+            if (githubProjects >= 10) return 'high-activity';
+            if (githubProjects > 0) return 'medium-activity';
+            return 'low-activity';
+        }
+
+        function createProductCard(product) {
+            const badgeClass = getGithubBadgeClass(product.githubProjects);
+            return `
+                <div class="product-card" data-category="${product.category}" data-github="${product.githubProjects}">
+                    <div class="product-title">${product.name}</div>
+                    <div class="product-info"><strong>SKU:</strong> ${product.sku}</div>
+                    <div class="product-info"><strong>价格:</strong> ${product.price}</div>
+                    <div class="product-info"><strong>核心模组:</strong> ${product.module}</div>
+                    <div class="product-info"><strong>存储配置:</strong> ${product.storage}</div>
+                    <div class="github-badge ${badgeClass}">
+                        GitHub项目: ${product.githubProjects}
+                    </div>
+                </div>
+            `;
+        }
+
+        function filterProducts() {
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const githubFilter = document.getElementById('githubFilter').value;
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+            return products.filter(product => {
+                // 类别过滤
+                if (categoryFilter && product.category !== categoryFilter) {
+                    return false;
+                }
+                
+                // GitHub活跃度过滤
+                if (githubFilter) {
+                    if (githubFilter === 'high' && product.githubProjects < 10) return false;
+                    if (githubFilter === 'medium' && (product.githubProjects < 1 || product.githubProjects >= 10)) return false;
+                    if (githubFilter === 'low' && product.githubProjects > 0) return false;
+                }
+                
+                // 搜索过滤
+                if (searchInput) {
+                    const searchText = `${product.name} ${product.sku}`.toLowerCase();
+                    if (!searchText.includes(searchInput)) return false;
+                }
+                
+                return true;
+            });
+        }
+
+        function renderProducts() {
+            const productGrid = document.getElementById('productGrid');
+            const filteredProducts = filterProducts();
+            
+            productGrid.innerHTML = filteredProducts.map(createProductCard).join('');
+        }
+
+        // 绑定事件监听器
+        document.getElementById('categoryFilter').addEventListener('change', renderProducts);
+        document.getElementById('githubFilter').addEventListener('change', renderProducts);
+        document.getElementById('searchInput').addEventListener('input', renderProducts);
+
+        // 初始渲染
+        renderProducts();
+    </script>
+</body>
+</html>
