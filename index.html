@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seeed Studio Linux产品动态展示</title>
+    <title>OpenClaw 硬件集成监控</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +26,13 @@
             margin-bottom: 30px;
             font-size: 2.5em;
         }
+        h2 {
+            color: #2d3748;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
         .filters {
             display: flex;
             gap: 15px;
@@ -39,55 +46,73 @@
             font-size: 16px;
             min-width: 150px;
         }
-        .product-grid {
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 25px;
         }
-        .product-card {
+        .project-card {
             border: 2px solid #e2e8f0;
             border-radius: 12px;
             padding: 20px;
             transition: all 0.3s ease;
             background: #f8fafc;
         }
-        .product-card:hover {
+        .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             border-color: #667eea;
         }
-        .product-title {
+        .project-title {
             font-size: 1.3em;
             font-weight: bold;
             color: #2d3748;
             margin-bottom: 10px;
         }
-        .product-info {
+        .project-info {
             margin: 8px 0;
         }
-        .product-info strong {
+        .project-info strong {
             color: #4a5568;
         }
-        .github-badge {
+        .stars-badge {
             display: inline-block;
-            background: #667eea;
+            background: linear-gradient(45deg, #f6ad55, #ed8936);
             color: white;
             padding: 4px 8px;
             border-radius: 12px;
             font-size: 0.9em;
             margin-top: 10px;
         }
-        .high-activity {
+        .high-stars {
             background: linear-gradient(45deg, #48bb78, #38a169);
         }
-        .medium-activity {
+        .medium-stars {
             background: linear-gradient(45deg, #ed8936, #dd6b20);
         }
-        .low-activity {
+        .low-stars {
             background: linear-gradient(45deg, #e53e3e, #c53030);
         }
+        .platform-tag {
+            display: inline-block;
+            background: #cbd5e0;
+            color: #2d3748;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        .product-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .product-link:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
-            .product-grid {
+            .project-grid {
                 grid-template-columns: 1fr;
             }
             .filters {
@@ -98,234 +123,200 @@
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Seeed Studio Linux产品动态展示</h1>
+        <h1>🦞 OpenClaw 硬件集成监控</h1>
         
         <div class="filters">
             <select id="categoryFilter">
-                <option value="">所有类别</option>
-                <option value="jetson">NVIDIA Jetson系列</option>
-                <option value="raspberry">Raspberry Pi系列</option>
-                <option value="other">其他Linux SBC</option>
+                <option value="">所有应用分类</option>
+                <option value="robotics">机器人控制</option>
+                <option value="iot">物联网(IoT)</option>
+                <option value="embedded">嵌入式开发</option>
+                <option value="maker">创客项目</option>
             </select>
             
-            <select id="githubFilter">
-                <option value="">所有GitHub活跃度</option>
-                <option value="high">高活跃度 (≥10项目)</option>
-                <option value="medium">中等活跃度 (1-9项目)</option>
-                <option value="low">低活跃度 (0项目)</option>
+            <select id="platformFilter">
+                <option value="">所有技术平台</option>
+                <option value="esp32">ESP32</option>
+                <option value="arduino">Arduino</option>
+                <option value="raspberry">Raspberry Pi</option>
+                <option value="seeed">Seeed Studio</option>
+                <option value="jetson">NVIDIA Jetson</option>
             </select>
             
-            <input type="text" id="searchInput" placeholder="搜索产品名称或SKU...">
+            <input type="text" id="searchInput" placeholder="搜索项目名称或描述...">
         </div>
         
-        <div class="product-grid" id="productGrid">
-            <!-- 产品卡片将通过JavaScript动态生成 -->
+        <div id="projectsContainer">
+            <!-- 项目卡片将通过JavaScript动态生成 -->
         </div>
     </div>
 
     <script>
-        const products = [
-            // NVIDIA Jetson系列
+        const projects = [
+            // 机器人控制
             {
-                name: "reComputer Robotics J5012 with GMSL",
-                sku: "100032662",
-                price: "$2,749.00",
-                module: "NVIDIA Jetson AGX Orin 64GB",
-                storage: "M.2 Key M SSD + M.2 Key E + M.2 Key B",
-                category: "jetson",
-                githubProjects: 0,
-                series: "J5012"
+                name: "官方OpenClaw仓库",
+                description: "Your own personal AI assistant. Any OS. Any Platform. The lobster way.",
+                githubUrl: "https://github.com/openclaw/openclaw",
+                stars: 251095,
+                category: "robotics",
+                platforms: ["any"],
+                productLinks: [],
+                lastUpdated: "2026-03-03T08:39:19Z"
             },
             {
-                name: "reComputer Mini J501 Carrier Board (without GMSL)",
-                sku: "100094378", 
-                price: "$279.00",
-                module: "NVIDIA Jetson AGX Orin 32GB/64GB",
-                storage: "CAN, USB, Ethernet, RS-485, I2S",
-                category: "jetson",
-                githubProjects: 0,
-                series: "J5011"
+                name: "clawd-reachy-mini",
+                description: "Reachy Mini机器人集成项目",
+                githubUrl: "https://github.com/ArturSkowronski/clawd-reachy-mini",
+                stars: 26,
+                category: "robotics", 
+                platforms: ["robotics", "python"],
+                productLinks: [],
+                lastUpdated: "2026-03-03T05:56:21Z"
             },
             {
-                name: "reComputer Super J4012",
-                sku: "114110314",
-                price: "$950.00", 
-                module: "NVIDIA Jetson Orin NX 16GB (157 TOPS)",
-                storage: "Wi-Fi/BT/LTE + 双RJ45以太网",
-                category: "jetson",
-                githubProjects: 0,
-                series: "J4012"
-            },
-            {
-                name: "reComputer J4011",
-                sku: "100064062",
-                price: "~$599",
-                module: "NVIDIA Jetson Orin NX 16GB",
-                storage: "16GB eMMC + M.2 NVMe插槽",
-                category: "jetson", 
-                githubProjects: 1,
-                series: "J4011"
-            },
-            {
-                name: "reComputer Super J3011",
-                sku: "114110312",
-                price: "$599.00",
-                module: "NVIDIA Jetson Orin Nano 8GB (67 TOPS)",
-                storage: "Wi-Fi/BT/LTE + Ethernet",
-                category: "jetson",
-                githubProjects: 0,
-                series: "J3011"
-            },
-            {
-                name: "reComputer J3010",
-                sku: "110110146",
-                price: "$499.00",
-                module: "NVIDIA Jetson Orin Nano 4GB (20 TOPS)",
-                storage: "128GB SSD, 4x USB 3.2, HDMI, GbE",
-                category: "jetson",
-                githubProjects: 0,
-                series: "J3010"
-            },
-            {
-                name: "reComputer J1010",
-                sku: "100064059",
-                price: "~$299",
-                module: "NVIDIA Jetson Nano 4GB",
-                storage: "microSD卡槽",
-                category: "jetson",
-                githubProjects: 2,
-                series: "J1010"
+                name: "clawbody",
+                description: "机器人集成控制栈",
+                githubUrl: "https://github.com/tomrikert/clawbody",
+                stars: 8,
+                category: "robotics",
+                platforms: ["robotics"],
+                productLinks: [],
+                lastUpdated: "2026-03-01T21:59:07Z"
             },
             
-            // Raspberry Pi系列
+            // 物联网(IoT)
             {
-                name: "reTerminal",
-                sku: "5712",
-                price: "~$279",
-                module: "Raspberry Pi CM4",
-                storage: "5-inch IPS触摸屏，支持eMMC/microSD",
-                category: "raspberry",
-                githubProjects: 25,
-                series: "reTerminal"
+                name: "WireClaw",
+                description: "ESP32 AI代理，具有持久内存和离线规则引擎",
+                githubUrl: "https://github.com/M64GitHub/WireClaw",
+                stars: 30,
+                category: "iot",
+                platforms: ["esp32", "arduino", "iot"],
+                productLinks: [],
+                lastUpdated: "2026-03-03T04:58:57Z"
             },
             {
-                name: "reTerminal DM",
-                sku: "5616", 
-                price: "~$279",
-                module: "Raspberry Pi CM4",
-                storage: "10.1\"工业级触摸屏，IP65防护等级",
-                category: "raspberry",
-                githubProjects: 25,
-                series: "reTerminal"
-            },
-            {
-                name: "reComputer R1035-10",
-                sku: "113991314",
-                price: "$279.00",
-                module: "Raspberry Pi CM4, 8GB RAM",
-                storage: "32GB eMMC, 3x RS485, dual-ethernets",
-                category: "raspberry",
-                githubProjects: 1,
-                series: "R10xx"
-            },
-            {
-                name: "reComputer R1125-10",
-                sku: "113991334",
-                price: "$244.00",
-                module: "Raspberry Pi CM4, 4GB RAM", 
-                storage: "32GB eMMC, 2x Ethernet, 2x USB, 2x RS485",
-                category: "raspberry",
-                githubProjects: 1,
-                series: "R11xx"
+                name: "IOnode",
+                description: "ESP32 Fleet管理，支持NATS协议，OpenClaw-ready",
+                githubUrl: "https://github.com/M64GitHub/IOnode",
+                stars: 2,
+                category: "iot",
+                platforms: ["esp32", "arduino", "iot", "nats"],
+                productLinks: [],
+                lastUpdated: "2026-02-25T23:03:04Z"
             },
             
-            // 其他Linux SBC
+            // Seeed Studio集成
             {
-                name: "BeagleBone AI-64",
-                sku: "100064200",
-                price: "~$199",
-                module: "TI AM62A7 (ARM Cortex-A53)",
-                storage: "16GB eMMC + microSD卡槽",
-                category: "other",
-                githubProjects: 0,
-                series: "BeagleBone"
+                name: "openclaw-esp32c3-xiao-node",
+                description: "Seeed XIAO ESP32-C3 + 扩展板的OpenClaw节点固件 (~$13 IoT外设)",
+                githubUrl: "https://github.com/chilu18/openclaw-esp32c3-xiao-node",
+                stars: 4,
+                category: "embedded",
+                platforms: ["esp32", "seeed", "xiao"],
+                productLinks: [
+                    "https://www.seeedstudio.com/XIAO-ESP32C3-p-5440.html"
+                ],
+                lastUpdated: "2026-02-26T17:58:59Z"
             },
+            
+            // 创客项目
             {
-                name: "ODYSSEY - X86J41x5",
-                sku: "100064300",
-                price: "~$149",
-                module: "Intel Celeron J4125",
-                storage: "M.2 SSD插槽 + microSD卡槽",
-                category: "other", 
-                githubProjects: 0,
-                series: "ODYSSEY"
+                name: "Arduino Maker技能",
+                description: "OpenClaw技能，用于指导Arduino/ESP32项目 - 代码生成、接线帮助、故障排除",
+                githubUrl: "https://github.com/DmitrySolana/arduino-maker",
+                stars: 3,
+                category: "maker",
+                platforms: ["arduino", "esp32", "maker"],
+                productLinks: [],
+                lastUpdated: "2026-02-20T04:44:22Z"
             }
         ];
 
-        function getGithubBadgeClass(githubProjects) {
-            if (githubProjects >= 10) return 'high-activity';
-            if (githubProjects > 0) return 'medium-activity';
-            return 'low-activity';
+        function getStarsBadgeClass(stars) {
+            if (stars >= 100) return 'high-stars';
+            if (stars >= 10) return 'medium-stars';
+            return 'low-stars';
         }
 
-        function createProductCard(product) {
-            const badgeClass = getGithubBadgeClass(product.githubProjects);
+        function createProjectCard(project) {
+            const badgeClass = getStarsBadgeClass(project.stars);
+            const platformTags = project.platforms.map(platform => 
+                `<span class="platform-tag">${platform}</span>`
+            ).join('');
+            
+            const productLinks = project.productLinks.map(link => 
+                `<div class="project-info"><strong>产品链接:</strong> <a href="${link}" class="product-link" target="_blank">${link}</a></div>`
+            ).join('');
+            
             return `
-                <div class="product-card" data-category="${product.category}" data-github="${product.githubProjects}">
-                    <div class="product-title">${product.name}</div>
-                    <div class="product-info"><strong>SKU:</strong> ${product.sku}</div>
-                    <div class="product-info"><strong>价格:</strong> ${product.price}</div>
-                    <div class="product-info"><strong>核心模组:</strong> ${product.module}</div>
-                    <div class="product-info"><strong>存储配置:</strong> ${product.storage}</div>
-                    <div class="github-badge ${badgeClass}">
-                        GitHub项目: ${product.githubProjects}
+                <div class="project-card" data-category="${project.category}" data-platforms="${project.platforms.join(' ')}">
+                    <div class="project-title">${project.name}</div>
+                    <div class="project-info">${project.description}</div>
+                    <div class="project-info"><strong>GitHub:</strong> <a href="${project.githubUrl}" class="product-link" target="_blank">${project.githubUrl}</a></div>
+                    ${productLinks}
+                    <div class="project-info"><strong>最后更新:</strong> ${new Date(project.lastUpdated).toLocaleString('zh-CN')}</div>
+                    <div class="project-info"><strong>技术平台:</strong> ${platformTags}</div>
+                    <div class="stars-badge ${badgeClass}">
+                        ⭐ Stars: ${project.stars.toLocaleString()}
                     </div>
                 </div>
             `;
         }
 
-        function filterProducts() {
+        function filterProjects() {
             const categoryFilter = document.getElementById('categoryFilter').value;
-            const githubFilter = document.getElementById('githubFilter').value;
+            const platformFilter = document.getElementById('platformFilter').value;
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
 
-            return products.filter(product => {
-                // 类别过滤
-                if (categoryFilter && product.category !== categoryFilter) {
+            return projects.filter(project => {
+                // 应用分类过滤
+                if (categoryFilter && project.category !== categoryFilter) {
                     return false;
                 }
                 
-                // GitHub活跃度过滤
-                if (githubFilter) {
-                    if (githubFilter === 'high' && product.githubProjects < 10) return false;
-                    if (githubFilter === 'medium' && (product.githubProjects < 1 || product.githubProjects >= 10)) return false;
-                    if (githubFilter === 'low' && product.githubProjects > 0) return false;
+                // 技术平台过滤
+                if (platformFilter) {
+                    if (!project.platforms.includes(platformFilter)) {
+                        return false;
+                    }
                 }
                 
                 // 搜索过滤
                 if (searchInput) {
-                    const searchText = `${product.name} ${product.sku}`.toLowerCase();
-                    if (!searchText.includes(searchInput)) return false;
+                    const searchText = `${project.name} ${project.description}`.toLowerCase();
+                    if (!searchText.includes(searchInput)) {
+                        return false;
+                    }
                 }
                 
                 return true;
             });
         }
 
-        function renderProducts() {
-            const productGrid = document.getElementById('productGrid');
-            const filteredProducts = filterProducts();
+        function renderProjects() {
+            const projectsContainer = document.getElementById('projectsContainer');
+            const filteredProjects = filterProjects();
             
-            productGrid.innerHTML = filteredProducts.map(createProductCard).join('');
+            if (filteredProjects.length === 0) {
+                projectsContainer.innerHTML = '<div style="text-align: center; padding: 40px; color: #666;">未找到匹配的项目</div>';
+                return;
+            }
+            
+            // 按Star数量排序（降序）
+            const sortedProjects = filteredProjects.sort((a, b) => b.stars - a.stars);
+            
+            projectsContainer.innerHTML = sortedProjects.map(createProjectCard).join('');
         }
 
         // 绑定事件监听器
-        document.getElementById('categoryFilter').addEventListener('change', renderProducts);
-        document.getElementById('githubFilter').addEventListener('change', renderProducts);
-        document.getElementById('searchInput').addEventListener('input', renderProducts);
+        document.getElementById('categoryFilter').addEventListener('change', renderProjects);
+        document.getElementById('platformFilter').addEventListener('change', renderProjects);
+        document.getElementById('searchInput').addEventListener('input', renderProjects);
 
         // 初始渲染
-        renderProducts();
+        renderProjects();
     </script>
 </body>
 </html>
