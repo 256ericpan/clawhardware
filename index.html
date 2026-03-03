@@ -133,14 +133,16 @@
                 <option value="embedded">Embedded Development</option>
                 <option value="maker">Maker Projects</option>
                 <option value="ai-compute">AI Compute Platforms</option>
+                <option value="alternative">Alternative Frameworks</option>
             </select>
             
             <select id="platformFilter">
                 <option value="">All Technology Platforms</option>
                 <option value="esp32">ESP32</option>
-                <option value="arduino">Arduino</option>
+                <option value="Arduino">Arduino</option>
                 <option value="raspberry">Raspberry Pi</option>
                 <option value="jetson">NVIDIA Jetson</option>
+                <option value="picoclaw">PicoClaw</option>
                 <option value="other">Other Platforms</option>
             </select>
             
@@ -167,6 +169,65 @@
                 lastUpdated: "2026-03-03T08:39:19Z"
             },
             
+            // PicoClaw Ecosystem (NEW!)
+            {
+                name: "Sipeed PicoClaw",
+                description: "Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativity",
+                githubUrl: "https://github.com/sipeed/picoclaw",
+                stars: 21800,
+                category: "alternative",
+                platforms: ["picoclaw", "sipeed"],
+                tags: ["picoclaw", "sipeed", "ultra-lightweight"],
+                productLinks: [
+                    "https://www.sipeed.com/"
+                ],
+                lastUpdated: "2026-03-03T11:00:00Z"
+            },
+            {
+                name: "GoClaw",
+                description: "An open-source AI assistant framework like openclaw",
+                githubUrl: "https://github.com/smallnest/goclaw",
+                stars: 302,
+                category: "alternative",
+                platforms: ["goclaw", "go"],
+                tags: ["alternative-framework", "go-language"],
+                productLinks: [],
+                lastUpdated: "2026-03-03T10:00:00Z"
+            },
+            {
+                name: "PicoLM",
+                description: "Run a 1-billion parameter LLM on a $10 board with 256MB RAM",
+                githubUrl: "https://github.com/RightNow-AI/picolm",
+                stars: 1200,
+                category: "ai-compute",
+                platforms: ["picoclaw", "ultra-low-cost"],
+                tags: ["picoclaw", "ultra-lightweight", "llm"],
+                productLinks: [],
+                lastUpdated: "2026-02-24T00:00:00Z"
+            },
+            {
+                name: "PicoOracleClaw",
+                description: "PicoClaw that works with Oracle AI Database",
+                githubUrl: "https://github.com/jasperan/picooraclaw",
+                stars: 79,
+                category: "alternative",
+                platforms: ["picoclaw", "oracle"],
+                tags: ["picoclaw", "oracle-database", "enterprise"],
+                productLinks: [],
+                lastUpdated: "2026-03-01T00:00:00Z"
+            },
+            {
+                name: "PicoClaw Labs",
+                description: "PicoClaw (formerly Moltbot, formerly Clawdbot) - Tiny, Fast, and Deployable anywhere",
+                githubUrl: "https://github.com/picoclaw-labs/picoclaw",
+                stars: 6,
+                category: "alternative",
+                platforms: ["picoclaw"],
+                tags: ["picoclaw", "labs", "experimental"],
+                productLinks: [],
+                lastUpdated: "2026-02-19T00:00:00Z"
+            },
+            
             // Raspberry Pi Ecosystem
             {
                 name: "MimiClaw",
@@ -175,7 +236,7 @@
                 stars: 3700,
                 category: "embedded",
                 platforms: ["raspberry", "ultra-low-cost"],
-                tags: ["raspberry-pi"],
+                tags: ["raspberry-pi", "ultra-low-cost"],
                 productLinks: [],
                 lastUpdated: "2026-03-01T00:00:00Z"
             },
@@ -186,7 +247,7 @@
                 stars: 21,
                 category: "embedded",
                 platforms: ["raspberry"],
-                tags: ["raspberry-pi"],
+                tags: ["raspberry-pi", "security"],
                 productLinks: [
                     "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/"
                 ],
@@ -199,7 +260,7 @@
                 stars: 9,
                 category: "ai-compute",
                 platforms: ["raspberry", "hailo"],
-                tags: ["raspberry-pi", "ai-accelerator"],
+                tags: ["raspberry-pi", "ai-accelerator", "hailo"],
                 productLinks: [
                     "https://www.raspberrypi.com/products/raspberry-pi-5/",
                     "https://hailo.ai/products/hailo-10h/"
@@ -213,7 +274,7 @@
                 stars: 15,
                 category: "iot",
                 platforms: ["raspberry", "e-ink"],
-                tags: ["raspberry-pi", "fun-project"],
+                tags: ["raspberry-pi", "fun-project", "e-ink"],
                 productLinks: [
                     "https://www.waveshare.com/product/displays/e-paper.htm"
                 ],
@@ -226,7 +287,7 @@
                 stars: 13,
                 category: "embedded",
                 platforms: ["raspberry", "low-end"],
-                tags: ["raspberry-pi", "lightweight"],
+                tags: ["raspberry-pi", "lightweight", "telegram"],
                 productLinks: [
                     "https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/"
                 ],
@@ -241,7 +302,7 @@
                 stars: 1,
                 category: "ai-compute",
                 platforms: ["jetson"],
-                tags: ["nvidia-jetson", "orin-nano"],
+                tags: ["nvidia-jetson", "orin-nano", "personal-ai"],
                 productLinks: [
                     "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
                 ],
@@ -254,7 +315,7 @@
                 stars: 1,
                 category: "ai-compute",
                 platforms: ["jetson", "ollama"],
-                tags: ["nvidia-jetson", "security", "containers"],
+                tags: ["nvidia-jetson", "security", "containers", "ollama"],
                 productLinks: [
                     "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
                 ],
@@ -267,7 +328,7 @@
                 stars: 1,
                 category: "ai-compute",
                 platforms: ["jetson"],
-                tags: ["nvidia-jetson", "setup-guide"],
+                tags: ["nvidia-jetson", "setup-guide", "documentation"],
                 productLinks: [
                     "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
                 ],
@@ -282,7 +343,7 @@
                 stars: 31,
                 category: "iot",
                 platforms: ["esp32"],
-                tags: ["esp32", "ai-agent"],
+                tags: ["esp32", "ai-agent", "offline-capable"],
                 productLinks: [
                     "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
                 ],
@@ -295,7 +356,7 @@
                 stars: 10,
                 category: "iot",
                 platforms: ["esp32", "voice"],
-                tags: ["esp32", "voice-interface"],
+                tags: ["esp32", "voice-interface", "xiaozhi"],
                 productLinks: [
                     "https://www.espressif.com/en/products/devkits/esp32-s3-devkitc-1"
                 ],
@@ -308,7 +369,7 @@
                 stars: 7,
                 category: "embedded",
                 platforms: ["esp32", "mcp"],
-                tags: ["esp32", "hardware-control"],
+                tags: ["esp32", "hardware-control", "mcp"],
                 productLinks: [
                     "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
                 ],
@@ -321,7 +382,7 @@
                 stars: 4,
                 category: "embedded",
                 platforms: ["esp32", "xiao"],
-                tags: ["seeed-studio", "xiao"],
+                tags: ["seeed-studio", "xiao", "low-cost"],
                 productLinks: [
                     "https://www.seeedstudio.com/XIAO-ESP32C3-p-5440.html",
                     "https://www.seeedstudio.com/XIAO-ESP32C3-Expansion-board-p-5610.html"
@@ -335,7 +396,7 @@
                 stars: 2,
                 category: "iot",
                 platforms: ["esp32", "voice"],
-                tags: ["esp32", "voice-assistant"],
+                tags: ["esp32", "voice-assistant", "companion"],
                 productLinks: [
                     "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
                 ],
@@ -348,7 +409,7 @@
                 stars: 2,
                 category: "iot",
                 platforms: ["esp32", "nats"],
-                tags: ["esp32", "fleet-management"],
+                tags: ["esp32", "fleet-management", "nats"],
                 productLinks: [
                     "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
                 ],
@@ -361,7 +422,7 @@
                 stars: 2,
                 category: "embedded",
                 platforms: ["esp32", "nodejs", "voice"],
-                tags: ["esp32", "voice-processing"],
+                tags: ["esp32", "voice-processing", "nodejs"],
                 productLinks: [],
                 lastUpdated: "2026-02-24T00:00:00Z"
             },
@@ -372,7 +433,7 @@
                 stars: 15,
                 category: "iot",
                 platforms: ["esp32", "memecoin"],
-                tags: ["esp32", "crypto", "fun-project"],
+                tags: ["esp32", "crypto", "fun-project", "memecoin"],
                 productLinks: [
                     "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
                 ],
@@ -386,10 +447,10 @@
                 githubUrl: "https://github.com/DmitrySolana/Arduino-maker",
                 stars: 3,
                 category: "maker",
-                platforms: ["arduino", "esp32"],
-                tags: ["arduino", "code-generation"],
+                platforms: ["Arduino", "esp32"],
+                tags: ["Arduino", "code-generation", "maker"],
                 productLinks: [
-                    "https://store.arduino.cc/products/arduino-uno-rev3"
+                    "https://store.Arduino.cc/products/Arduino-uno-rev3"
                 ],
                 lastUpdated: "2026-02-20T04:44:22Z"
             },
@@ -399,10 +460,10 @@
                 githubUrl: "https://github.com/sergiopesch/Arduino-maker",
                 stars: 0,
                 category: "maker",
-                platforms: ["arduino", "esp32"],
-                tags: ["arduino", "code-generation"],
+                platforms: ["Arduino", "esp32"],
+                tags: ["Arduino", "code-generation", "maker"],
                 productLinks: [
-                    "https://store.arduino.cc/products/arduino-uno-rev3"
+                    "https://store.Arduino.cc/products/Arduino-uno-rev3"
                 ],
                 lastUpdated: "2026-02-01T04:29:02Z"
             },
@@ -415,7 +476,7 @@
                 stars: 26,
                 category: "robotics", 
                 platforms: ["robotics", "python"],
-                tags: ["robotics", "reachy"],
+                tags: ["robotics", "reachy", "integration"],
                 productLinks: [
                     "https://www.pollenrobotics.com/reachy"
                 ],
@@ -428,7 +489,7 @@
                 stars: 8,
                 category: "robotics",
                 platforms: ["robotics"],
-                tags: ["robotics", "control-stack"],
+                tags: ["robotics", "control-stack", "integration"],
                 productLinks: [],
                 lastUpdated: "2026-03-01T21:59:07Z"
             }
