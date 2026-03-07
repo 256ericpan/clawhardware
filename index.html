@@ -5,823 +5,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenClaw Hardware Integration Monitor</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        h1 {
-            text-align: center;
-            color: #4a5568;
-            margin-bottom: 30px;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #2d3748;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 10px;
-        }
-        .filters {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        select, input {
-            padding: 10px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 16px;
-            min-width: 150px;
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-        }
-        .project-card {
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px;
-            transition: all 0.3s ease;
-            background: #f8fafc;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            border-color: #667eea;
-        }
-        .project-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #2d3748;
-            margin-bottom: 10px;
-        }
-        .project-info {
-            margin: 8px 0;
-        }
-        .project-info strong {
-            color: #4a5568;
-        }
-        .stars-badge {
-            display: inline-block;
-            background: linear-gradient(45deg, #f6ad55, #ed8936);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
-        .high-stars {
-            background: linear-gradient(45deg, #48bb78, #38a169);
-        }
-        .medium-stars {
-            background: linear-gradient(45deg, #ed8936, #dd6b20);
-        }
-        .low-stars {
-            background: linear-gradient(45deg, #e53e3e, #c53030);
-        }
-        .platform-tag {
-            display: inline-block;
-            background: #cbd5e0;
-            color: #2d3748;
-            padding: 2px 6px;
-            border-radius: 6px;
-            font-size: 0.8em;
-            margin-right: 5px;
-            margin-top: 5px;
-        }
-        .product-link {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .product-link:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .project-grid {
-                grid-template-columns: 1fr;
-            }
-            .filters {
-                flex-direction: column;
-            }
-        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        h1 { text-align: center; color: #4a5568; margin-bottom: 30px; }
+        .filters { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; align-items: center; }
+        .filter-group { display: flex; align-items: center; gap: 5px; }
+        .filter-group label { font-weight: bold; font-size: 14px; }
+        select, input { padding: 8px 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; cursor: pointer; }
+        select:hover, input:hover { border-color: #667eea; }
+        .platform-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+        .platform-tag { background: #e2e8f0; padding: 4px 10px; border-radius: 15px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+        .platform-tag:hover, .platform-tag.active { background: #667eea; color: white; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .project-card { border: 2px solid #e2e8f0; border-radius: 12px; padding: 20px; transition: all 0.3s; background: #f8fafc; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); border-color: #667eea; }
+        .project-title { font-size: 1.2em; font-weight: bold; color: #2d3748; margin-bottom: 8px; }
+        .project-info { margin: 5px 0; font-size: 14px; color: #4a5568; }
+        .stars-badge { display: inline-block; background: linear-gradient(45deg, #f6ad55, #ed8936); color: white; padding: 3px 10px; border-radius: 12px; font-size: 14px; margin-top: 10px; }
+        .stars-badge.high { background: linear-gradient(45deg, #48bb78, #38a169); }
+        .platform-list { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 8px; }
+        .platform-chip { background: #cbd5e0; padding: 2px 8px; border-radius: 10px; font-size: 11px; }
+        .platform-chip.seeed { background: #48bb78; color: white; }
+        .product-links { margin-top: 10px; }
+        .product-link { display: inline-block; background: #3182ce; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; text-decoration: none; margin-right: 5px; }
+        .product-link:hover { background: #2c5282; }
+        .daily-badge { font-size: 11px; color: #38a169; margin-left: 5px; }
+        .category-tag { display: inline-block; background: #805ad5; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-left: 8px; }
+        .seeed-badge { background: #dd6b20; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🦞 OpenClaw Hardware Integration Monitor</h1>
+        <h1>🤖 OpenClaw Hardware Integration Monitor</h1>
         
         <div class="filters">
-            <select id="categoryFilter">
-                <option value="">All Application Categories</option>
-                <option value="robotics">Robotics Control</option>
-                <option value="iot">IoT (Internet of Things)</option>
-                <option value="embedded">Embedded Development</option>
-                <option value="maker">Maker Projects</option>
-                <option value="ai-compute">AI Compute Platforms</option>
-                <option value="alternative">Alternative Frameworks</option>
-            </select>
-            
-            <select id="platformFilter">
-                <option value="">All Technology Platforms</option>
-                <option value="esp32">ESP32</option>
-                <option value="Arduino">Arduino</option>
-                <option value="raspberry">Raspberry Pi</option>
-                <option value="jetson">NVIDIA Jetson</option>
-                <option value="other">Other Platforms</option>
-            </select>
-            
-            <input type="text" id="searchInput" placeholder="Search project name or description...">
+            <div class="filter-group">
+                <label>Category:</label>
+                <select id="categoryFilter">
+                    <option value="">All</option>
+                    <option value="ai-compute">ai-compute</option>
+                    <option value="alternative">alternative</option>
+                    <option value="embedded">embedded</option>
+                    <option value="iot">iot</option>
+                    <option value="maker">maker</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Search:</label>
+                <input type="text" id="searchInput" placeholder="Search projects...">
+            </div>
         </div>
         
-        <div id="projectsContainer">
-            <!-- Project cards will be generated dynamically by JavaScript -->
+        <div class="platform-tags" id="platformTags">
+            <span class="platform-tag active" data-platform="">All</span>
+            <span class="platform-tag" data-platform="AI">AI</span>
+            <span class="platform-tag" data-platform="Android">Android</span>
+            <span class="platform-tag" data-platform="Camera">Camera</span>
+            <span class="platform-tag" data-platform="Cloud">Cloud</span>
+            <span class="platform-tag" data-platform="ESP32">ESP32</span>
+            <span class="platform-tag" data-platform="Edge">Edge</span>
+            <span class="platform-tag" data-platform="Linux">Linux</span>
+            <span class="platform-tag" data-platform="Mac">Mac</span>
+            <span class="platform-tag" data-platform="Mobile">Mobile</span>
+            <span class="platform-tag" data-platform="NVIDIA Jetson">NVIDIA Jetson</span>
+            <span class="platform-tag" data-platform="Orin">Orin</span>
+            <span class="platform-tag" data-platform="PC">PC</span>
+            <span class="platform-tag" data-platform="Pico">Pico</span>
+            <span class="platform-tag" data-platform="Raspberry Pi">Raspberry Pi</span>
+            <span class="platform-tag" data-platform="Seeed">Seeed</span>
+            <span class="platform-tag" data-platform="Server">Server</span>
+            <span class="platform-tag" data-platform="Sipeed">Sipeed</span>
+            <span class="platform-tag" data-platform="Windows">Windows</span>
+            <span class="platform-tag" data-platform="XIAO">XIAO</span>
+            <span class="platform-tag" data-platform="iOS">iOS</span>
         </div>
+        
+        <div style="margin-top: 30px;">
+            <h2>Projects (<span id="projectCount">0</span>)</h2>
+        </div>
+        
+        <div class="project-grid" id="projectsContainer"></div>
     </div>
 
     <script>
         const projects = [
-{
+            {
                 name: "Official OpenClaw Repository",
-                description: "Your own personal AI assistant. Any OS. Any Platform. The lobster way.",
+                description: "Your own personal AI assistant",
                 githubUrl: "https://github.com/openclaw/openclaw",
                 stars: 251095,
-                dailyIncrement: 0,
+                dailyIncrement: 87,
                 category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["PC", "Mac", "Linux", "Windows", "iOS", "Android"],
+                productLinks: [""],
                 seeedstudio: false
             },
-{
+            {
                 name: "Nanobot",
-                description: "The Ultra-Lightweight OpenClaw",
+                description: "Ultra-Lightweight OpenClaw",
                 githubUrl: "https://github.com/HKUDS/nanobot",
                 stars: 29724,
-                dailyIncrement: 0,
+                dailyIncrement: 45,
                 category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["Mobile", "iOS", "Android"],
+                productLinks: [""],
                 seeedstudio: false
             },
-{
+            {
                 name: "ZeroClaw",
-                description: "Fast, small, and fully autonomous AI assistant infrastructure",
+                description: "Fast, small, autonomous AI",
                 githubUrl: "https://github.com/zeroclaw-labs/zeroclaw",
                 stars: 24059,
-                dailyIncrement: 0,
+                dailyIncrement: 32,
                 category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["PC", "Server", "Cloud"],
+                productLinks: [""],
                 seeedstudio: false
             },
-{
+            {
                 name: "Sipeed PicoClaw",
-                description: "Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativ",
+                description: "Tiny, Fast, Deployable",
                 githubUrl: "https://github.com/sipeed/picoclaw",
                 stars: 21800,
-                dailyIncrement: 0,
+                dailyIncrement: 25,
                 category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["Pico", "Sipeed"],
+                productLinks: ["https://www.sipeed.com/picoclaw"],
                 seeedstudio: false
             },
-{
+            {
                 name: "MimiClaw",
-                description: "Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry P",
+                description: "Run OpenClaw on $5 chip",
                 githubUrl: "https://github.com/memovai/mimiclaw",
                 stars: 3700,
-                dailyIncrement: 0,
+                dailyIncrement: 12,
                 category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["Raspberry Pi", "ESP32"],
+                productLinks: ["https://www.raspberrypi.com/products/raspberry-pi-5/"],
                 seeedstudio: false
             },
-{
+            {
                 name: "PicoLM",
-                description: "Run a 1-billion parameter LLM on a $10 board with 256MB RAM",
+                description: "1B LLM on $10 board",
                 githubUrl: "https://github.com/RightNow-AI/picolm",
                 stars: 1200,
-                dailyIncrement: 0,
+                dailyIncrement: 8,
                 category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["Pico", "Raspberry Pi"],
+                productLinks: ["https://www.raspberrypi.com/products/raspberry-pi-5/"],
                 seeedstudio: false
             },
-{
+            {
                 name: "ModelAssistant",
-                description: "Embedded AI project",
+                description: "Embedded AI",
                 githubUrl: "https://github.com/Seeed-Studio/ModelAssistant",
                 stars: 424,
-                dailyIncrement: 0,
+                dailyIncrement: 5,
                 category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["NVIDIA Jetson", "Edge"],
+                productLinks: ["https://www.seeedstudio.com/reComputer-J4012.html"],
                 seeedstudio: true
             },
-{
+            {
                 name: "reCamera",
-                description: "Open-source AI cameras series",
+                description: "Open-source AI cameras",
                 githubUrl: "https://github.com/Seeed-Studio/reCamera",
                 stars: 389,
-                dailyIncrement: 0,
+                dailyIncrement: 4,
                 category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["Camera", "Seeed"],
+                productLinks: ["https://www.seeedstudio.com/reCamera"],
                 seeedstudio: true
             },
-{
-                name: "GoClaw",
-                description: "An open-source AI assistant framework like openclaw",
-                githubUrl: "https://github.com/smallnest/goclaw",
-                stars: 302,
-                dailyIncrement: 0,
-                category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "ZeroClaw-Android",
-                description: "Run AI agents 24/7 on your Android phone",
-                githubUrl: "https://github.com/Natfii/ZeroClaw-Android",
-                stars: 224,
-                dailyIncrement: 0,
-                category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "TinyClaw",
-                description: "The original Tiny Claw as your personal autonomous AI companion",
-                githubUrl: "https://github.com/warengonzaga/tinyclaw",
-                stars: 135,
-                dailyIncrement: 0,
-                category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "PicoOracleClaw",
-                description: "PicoClaw that works with Oracle AI Database",
-                githubUrl: "https://github.com/jasperan/picooraclaw",
-                stars: 79,
-                dailyIncrement: 0,
-                category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "IronClaw",
-                description: "Your own personal AI assistant with security by design",
-                githubUrl: "https://github.com/CyberSecurityUP/ironclaw",
-                stars: 61,
-                dailyIncrement: 0,
-                category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
+            {
                 name: "SenseCraft AI Server",
-                description: "Run AI tasks on edge devices",
+                description: "AI on edge devices",
                 githubUrl: "https://github.com/Seeed-Studio/SenseCraft-AI_Server",
                 stars: 60,
-                dailyIncrement: 0,
+                dailyIncrement: 2,
                 category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["Edge", "NVIDIA Jetson"],
+                productLinks: ["https://www.seeedstudio.com/sensecap-ai-watchers.html"],
                 seeedstudio: true
             },
-{
-                name: "Robot Control Stack",
-                description: "VLA models and RL agents framework",
-                githubUrl: "https://github.com/RobotControlStack/robot-control-stack",
-                stars: 44,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "MiniMax Agent VLA",
-                description: "MiniMax LLM + Pi05 VLA Robot Agent",
-                githubUrl: "https://github.com/MiniMax-OpenPlatform/MiniMax-Agent-VLA-Demo",
-                stars: 34,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
+            {
                 name: "WireClaw",
-                description: "ESP32 AI agent with persistent memory and offline rule engine - chat to configur",
+                description: "ESP32 AI agent",
                 githubUrl: "https://github.com/M64GitHub/WireClaw",
                 stars: 31,
-                dailyIncrement: 0,
+                dailyIncrement: 1,
                 category: "iot",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["ESP32"],
+                productLinks: ["https://www.seeedstudio.com/XIAO-ESP32C3.html"],
                 seeedstudio: false
             },
-{
-                name: "clawd-reachy-mini",
-                description: "Reachy Mini robotics integration project for OpenClaw",
-                githubUrl: "https://github.com/ArturSkowronski/clawd-reachy-mini",
-                stars: 26,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Strands Robots",
-                description: "Control robots with natural language",
-                githubUrl: "https://github.com/strands-labs/robots",
-                stars: 25,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClaw Pi Installation",
-                description: "Install and run OpenClaw on a Raspberry Pi4 securely",
-                githubUrl: "https://github.com/Demwunz/openclaw-pi-installation",
-                stars: 21,
-                dailyIncrement: 0,
-                category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Telekinesis",
-                description: "AI-powered Computer Vision & Robotics apps",
-                githubUrl: "https://github.com/telekinesis-ai/telekinesis-examples",
-                stars: 16,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClawgotchi",
-                description: "AI Tamagotchi on Raspberry Pi. Agentic life-form with an E-Ink face",
-                githubUrl: "https://github.com/turmyshevd/openclawgotchi",
-                stars: 15,
-                dailyIncrement: 0,
-                category: "iot",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Monagotchi",
-                description: "OpenClaw skills that connect a physical ESP32 Tamagotchi (LCD + buttons) to a me",
-                githubUrl: "https://github.com/This-Is-Captain-Code/monagotchi",
-                stars: 15,
-                dailyIncrement: 0,
-                category: "iot",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClaw Robotics",
-                description: "High-performance control stack for Embodied AI",
-                githubUrl: "https://github.com/LooperRobotics/OpenClaw-Robotics",
-                stars: 14,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Neko AI Agent",
-                description: "Lightweight AI agent runtime targeting Raspberry Pi Zero 2W and low-end VPS. Fil",
-                githubUrl: "https://github.com/superhq-ai/neko",
-                stars: 13,
-                dailyIncrement: 0,
-                category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClawX",
-                description: "OpenClaw desktop UI",
-                githubUrl: "https://github.com/next-open-ai/openclawx",
-                stars: 11,
-                dailyIncrement: 0,
-                category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClaw Xiaozhi",
-                description: "Turn ESP32-S3 into a voice interface for OpenClaw AI assistant — xiaozhi as the ",
-                githubUrl: "https://github.com/tigerbryan/openclaw-xiaozhi",
-                stars: 10,
-                dailyIncrement: 0,
-                category: "iot",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClaw Raspberry Installer",
-                description: "Automated installer for OpenClaw on the CanaKit Raspberry Pi 5 8GB Dual Cooling ",
-                githubUrl: "https://github.com/sanchorelaxo/openclaw-raspberry-installer",
-                stars: 9,
-                dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "clawbody",
-                description: "Robotics integration control stack for OpenClaw",
-                githubUrl: "https://github.com/tomrikert/clawbody",
-                stars: 8,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Kongnitive EdgeMCP",
-                description: "An MCP base layer running on ESP32 that exposes hardware capabilities to AI. AI ",
-                githubUrl: "https://github.com/Kongnitive/Kongnitive-EdgeMCP",
-                stars: 7,
-                dailyIncrement: 0,
-                category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "PicoClaw Labs",
-                description: "PicoClaw (formerly Moltbot, formerly Clawdbot) - Tiny, Fast, and Deployable anyw",
-                githubUrl: "https://github.com/picoclaw-labs/picoclaw",
-                stars: 6,
-                dailyIncrement: 0,
-                category: "alternative",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "VectorClaw",
-                description: "Anki Vector + OpenClaw integration via MCP",
-                githubUrl: "https://github.com/danmartinez78/VectorClaw",
-                stars: 5,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
+            {
                 name: "OpenClaw XIAO Node",
-                description: "OpenClaw node firmware for Seeed XIAO ESP32-C3 + Expansion Board (~$13 IoT perip",
+                description: "OpenClaw for Seeed XIAO",
                 githubUrl: "https://github.com/chilu18/openclaw-esp32c3-xiao-node",
                 stars: 4,
                 dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["XIAO", "ESP32"],
+                productLinks: ["https://www.seeedstudio.com/XIAO-ESP32C3.html"],
                 seeedstudio: true
             },
-{
-                name: "Arduino Maker Skill (DmitrySolana)",
-                description: "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help",
-                githubUrl: "https://github.com/DmitrySolana/Arduino-maker",
-                stars: 3,
-                dailyIncrement: 0,
-                category: "maker",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "HeyClawy",
-                description: "Voice-first ESP32 companion for OpenClaw",
-                githubUrl: "https://github.com/omeriko9/HeyClawy",
-                stars: 2,
-                dailyIncrement: 0,
-                category: "iot",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "IOnode",
-                description: "Flash any ESP32. It speaks NATS. Sensors, Actuators. ESP32 Fleet management. Ope",
-                githubUrl: "https://github.com/M64GitHub/IOnode",
-                stars: 2,
-                dailyIncrement: 0,
-                category: "iot",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClaw Voice Server",
-                description: "Standalone Node.js Voice Relay Bridge for parsing, streaming, and transcoding ra",
-                githubUrl: "https://github.com/brooqs/openclaw-voice-server",
-                stars: 2,
-                dailyIncrement: 0,
-                category: "embedded",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
+            {
                 name: "Jetson OpenClaw",
-                description: "OpenClaw - Jetson Orin Nano Personal AI Assistant (LLM + Hardware Control)",
+                description: "OpenClaw on Jetson",
                 githubUrl: "https://github.com/rhuanssauro/jetson-openclaw",
                 stars: 1,
                 dailyIncrement: 0,
                 category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["NVIDIA Jetson", "Orin"],
+                productLinks: ["https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"],
                 seeedstudio: false
             },
-{
-                name: "OpenClaw Jetson Secure Container",
-                description: "Secure OpenClaw + Ollama devcontainer for NVIDIA Jetson Orin Nano Super",
-                githubUrl: "https://github.com/AndroidNextdoor/openclaw-jetson",
-                stars: 1,
-                dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Nvidia Jetson OpenClaw Setup",
-                description: "Notes - OpenClaw Setup on Nvidia Jetson Orin Nano Super Developer Kit",
-                githubUrl: "https://github.com/eliranwong/NvidiaJetsonOpenClaw",
-                stars: 1,
-                dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "OpenClaw ROS2",
-                description: "OpenClaw controlling robot via ROS2",
-                githubUrl: "https://github.com/moe-sani/openclaw_ros2",
-                stars: 1,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Clawarm",
-                description: "Robotic arm controlled via OpenClaw",
-                githubUrl: "https://github.com/Clawland-AI/Clawarm",
-                stars: 1,
-                dailyIncrement: 0,
-                category: "robotics",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
-                name: "Arduino Maker Skill (sergiopesch)",
-                description: "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help",
-                githubUrl: "https://github.com/sergiopesch/Arduino-maker",
-                stars: 0,
-                dailyIncrement: 0,
-                category: "maker",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
-                seeedstudio: false
-            },
-{
+            {
                 name: "Seeed AI Skills",
-                description: "Seeed product expertise for AI assistants",
+                description: "Seeed AI expertise",
                 githubUrl: "https://github.com/Seeed-Studio/ai-skills",
                 stars: 0,
                 dailyIncrement: 0,
                 category: "maker",
-                platforms: ["hardware"],
-                tags: [],
-                productLinks: [],
-                lastUpdated: "2026-03-07",
+                platforms: ["XIAO", "AI"],
+                productLinks: ["https://www.seeedstudio.com/xiao-series"],
                 seeedstudio: true
             }
-];
+        ];
 
-        function getStarsBadgeClass(stars) {
-            if (stars >= 100) return 'high-stars';
-            if (stars >= 10) return 'medium-stars';
-            return 'low-stars';
+        // Platform click filter
+        document.querySelectorAll('.platform-tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                document.querySelectorAll('.platform-tag').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                renderProjects();
+            });
+        });
+
+        // Category filter
+        document.getElementById('categoryFilter').addEventListener('change', renderProjects);
+        
+        // Search filter
+        document.getElementById('searchInput').addEventListener('input', renderProjects);
+
+        function filterProjects() {
+            const activePlatform = document.querySelector('.platform-tag.active').dataset.platform;
+            const category = document.getElementById('categoryFilter').value;
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            
+            return projects.filter(p => {
+                const platformMatch = !activePlatform || p.platforms.includes(activePlatform);
+                const categoryMatch = !category || p.category === category;
+                const searchMatch = !search || p.name.toLowerCase().includes(search) || p.description.toLowerCase().includes(search);
+                return platformMatch && categoryMatch && searchMatch;
+            });
         }
 
         function createProjectCard(project) {
-            const badgeClass = getStarsBadgeClass(project.stars);
-            const platformTags = project.platforms.map(platform => 
-                `<span class="platform-tag">${platform}</span>`
-            ).join('');
+            const starsClass = project.stars > 1000 ? 'high' : '';
+            const dailyText = project.dailyIncrement > 0 ? `<span class="daily-badge">+${project.dailyIncrement} today</span>` : '';
             
-            const tagTags = project.tags.map(tag => 
-                `<span class="platform-tag" style="background: #667eea; color: white;">${tag}</span>`
-            ).join('');
+            const platformChips = project.platforms.map(plat => {
+                const isSeeed = plat.toLowerCase().includes('seeed') || plat.toLowerCase().includes('xiao');
+                return `<span class="platform-chip ${isSeeed ? 'seeed' : ''}">${plat}</span>`;
+            }).join('');
             
-            const productLinks = project.productLinks.map(link => 
-                `<div class="project-info"><strong>Product Link:</strong> <a href="${link}" class="product-link" target="_blank">${link}</a></div>`
+            const productLinks = project.productLinks.filter(l => l).map(link => 
+                `<a href="${link}" target="_blank" class="product-link">📦 Product</a>`
             ).join('');
-            
-            // Format daily increment display
-            let incrementText = '';
-            if (project.dailyIncrement > 0) {
-                incrementText = ` (+${project.dailyIncrement})`;
-            } else if (project.dailyIncrement < 0) {
-                incrementText = ` (${project.dailyIncrement})`;
-            }
             
             return `
-                <div class="project-card" data-category="${project.category}" data-platforms="${project.platforms.join(' ')}" data-tags="${project.tags.join(' ')}">
-                    <div class="project-title">${project.name}</div>
+                <div class="project-card">
+                    <div class="project-title">
+                        ${project.name}
+                        <span class="category-tag">${project.category}</span>
+                        ${project.seeedstudio ? '<span class="category-tag seeed-badge">SeeedStudio</span>' : ''}
+                    </div>
                     <div class="project-info">${project.description}</div>
-                    <div class="project-info"><strong>GitHub:</strong> <a href="${project.githubUrl}" class="product-link" target="_blank">${project.githubUrl}</a></div>
-                    ${productLinks}
-                    <div class="project-info"><strong>Last Updated:</strong> ${new Date(project.lastUpdated).toLocaleString('en-US')}</div>
-                    <div class="project-info"><strong>Platforms:</strong> ${platformTags}</div>
-                    ${tagTags ? `<div class="project-info"><strong>Tags:</strong> ${tagTags}</div>` : ''}
-                    <div class="stars-badge ${badgeClass}">
-                        ⭐ Stars: ${project.stars.toLocaleString()}${incrementText}
+                    <div class="platform-list">${platformChips}</div>
+                    <div class="product-links">${productLinks}</div>
+                    <div>
+                        <span class="stars-badge ${starsClass}">⭐ ${project.stars.toLocaleString()}</span>${dailyText}
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <a href="${project.githubUrl}" target="_blank" style="color: #3182ce; text-decoration: none;">View on GitHub →</a>
                     </div>
                 </div>
             `;
         }
 
-        function filterProjects() {
-            const categoryFilter = document.getElementById('categoryFilter').value;
-            const platformFilter = document.getElementById('platformFilter').value;
-            const searchInput = document.getElementById('searchInput').value.toLowerCase();
-
-            return projects.filter(project => {
-                // Application category filter
-                if (categoryFilter && project.category !== categoryFilter) {
-                    return false;
-                }
-                
-                // Technology platform filter
-                if (platformFilter) {
-                    if (!project.platforms.includes(platformFilter)) {
-                        return false;
-                    }
-                }
-                
-                // Search filter
-                if (searchInput) {
-                    const searchText = `${project.name} ${project.description}`.toLowerCase();
-                    if (!searchText.includes(searchInput)) {
-                        return false;
-                    }
-                }
-                
-                return true;
-            });
-        }
-
         function renderProjects() {
-            const projectsContainer = document.getElementById('projectsContainer');
-            const filteredProjects = filterProjects();
-            
-            if (filteredProjects.length === 0) {
-                projectsContainer.innerHTML = '<div style="text-align: center; padding: 40px; color: #666;">No matching projects found</div>';
-                return;
-            }
-            
-            // Sort by stars (descending)
-            const sortedProjects = filteredProjects.sort((a, b) => b.stars - a.stars);
-            
-            projectsContainer.innerHTML = sortedProjects.map(createProjectCard).join('');
+            const filtered = filterProjects();
+            document.getElementById('projectCount').textContent = filtered.length;
+            document.getElementById('projectsContainer').innerHTML = filtered.map(createProjectCard).join('');
         }
-
-        // Bind event listeners
-        document.getElementById('categoryFilter').addEventListener('change', renderProjects);
-        document.getElementById('platformFilter').addEventListener('change', renderProjects);
-        document.getElementById('searchInput').addEventListener('input', renderProjects);
 
         // Initial render
         renderProjects();
