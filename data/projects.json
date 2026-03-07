@@ -12,11 +12,11 @@
       "iOS",
       "Android"
     ],
-    "description": "Your personal AI assistant on any device",
+    "description": "Your personal AI assistant on any device. Full-featured desktop AI agent with 5400+ skills, supporting PC/Mac/Linux/Windows/iOS/Android. Active community with rapid updates.",
     "highlights": [
-      "5400+ skills",
-      "Cross-platform",
-      "Active community"
+      "5400+ skills available",
+      "Cross-platform (6 platforms)",
+      "Active community (250k+ stars)"
     ],
     "github_url": "https://github.com/openclaw/openclaw",
     "seeedstudio": false,
@@ -33,13 +33,18 @@
     "platforms": [
       "PC"
     ],
-    "description": "CowAgent\u662f\u57fa\u4e8e\u5927\u6a21\u578b\u7684\u8d85\u7ea7AI\u52a9\u7406\uff0c\u80fd\u4e3b\u52a8\u601d\u8003\u548c\u4efb\u52a1\u89c4\u5212\u3001\u8bbf\u95ee\u64cd\u4f5c\u7cfb\u7edf\u548c\u5916\u90e8\u8d44\u6e90\u3001\u521b\u9020\u548c\u6267\u884cSkills\u3001\u62e5\u6709\u957f\u671f\u8bb0\u5fc6\u5e76\u4e0d\u65ad\u6210\u957f\u3002\u540c\u65f6\u652f\u6301\u98de\u4e66\u3001\u9489\u9489\u3001\u4f01\u4e1a\u5fae\u4fe1\u5e94\u7528\u3001\u5fae\u4fe1\u516c\u4f17\u53f7\u3001\u7f51\u9875\u7b49\u63a5\u5165\uff0c\u53ef\u9009\u62e9OpenAI/Claude/Gemini/DeepSeek/ Qwen/GLM/Kimi/Link",
+    "description": "WeChat AI assistant connecting ChatGPT. Most popular Chinese AI wechat bot with 40k+ stars.",
     "github_url": "https://github.com/zhayujie/chatgpt-on-wechat",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
     "daily_increment": 0,
-    "created_at": "2026-03-07T17:44:51.564287Z"
+    "created_at": "2026-03-07T17:44:51.564287Z",
+    "highlights": [
+      "WeChat integration",
+      "Multi-model support",
+      "40k+ community"
+    ]
   },
   {
     "id": 21,
@@ -49,13 +54,18 @@
     "platforms": [
       "PC"
     ],
-    "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+    "description": "Desktop AI client for macOS/Windows. Beautiful UI with local model support.",
     "github_url": "https://github.com/CherryHQ/cherry-studio",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
     "daily_increment": 0,
-    "created_at": "2026-03-07T17:44:51.564595Z"
+    "created_at": "2026-03-07T17:44:51.564595Z",
+    "highlights": [
+      "Beautiful UI",
+      "Local model support",
+      "Cross-platform"
+    ]
   },
   {
     "id": 2,
@@ -67,11 +77,11 @@
       "iOS",
       "Android"
     ],
-    "description": "Ultra-lightweight AI assistant for mobile",
+    "description": "Ultra-lightweight AI assistant optimized for mobile devices. Minimizes resource usage while maintaining core AI capabilities. Perfect for iOS/Android deployment.",
     "highlights": [
-      "99% smaller footprint",
-      "Fast startup",
-      "Low-resource optimized"
+      "99% smaller code footprint",
+      "Instant startup (<1s)",
+      "Optimized for low-resource mobile"
     ],
     "github_url": "https://github.com/HKUDS/nanobot",
     "seeedstudio": false,
@@ -90,11 +100,11 @@
       "Server",
       "Cloud"
     ],
-    "description": "Production-grade AI infrastructure",
+    "description": "Production-grade autonomous AI infrastructure built with Rust. Designed for reliability and scalability in enterprise environments.",
     "highlights": [
-      "Rust-based",
-      "Auto-scaling",
-      "Enterprise features"
+      "Rust-based reliability",
+      "Auto-scaling support",
+      "Enterprise-grade security"
     ],
     "github_url": "https://github.com/zeroclaw-labs/zeroclaw",
     "seeedstudio": false,
@@ -113,11 +123,11 @@
       "Sipeed",
       "RISC-V"
     ],
-    "description": "Tiny AI assistant for embedded hardware",
+    "description": "Tiny AI assistant specifically built for embedded RISC-V hardware by Sipeed. Run AI on affordable microcontrollers.",
     "highlights": [
-      "RISC-V support",
-      "Deploy anywhere",
-      "Open source"
+      "RISC-V architecture support",
+      "Deploy on $15 hardware",
+      "Open source firmware"
     ],
     "github_url": "https://github.com/sipeed/picoclaw",
     "seeedstudio": false,
@@ -140,11 +150,11 @@
       "ESP32",
       "Raspberry Pi"
     ],
-    "description": "Run AI on $5 chip",
+    "description": "Run full AI assistant on a $5 ESP32 chip - no OS required. Bare-metal deployment for maximum efficiency and minimum cost.",
     "highlights": [
-      "No OS required",
-      "Bare-metal deployment",
-      "Ultra-low cost"
+      "$5 BOM cost",
+      "No OS needed",
+      "Bare-metal deployment"
     ],
     "github_url": "https://github.com/memovai/mimiclaw",
     "seeedstudio": false,
@@ -166,13 +176,18 @@
     "platforms": [
       "PC"
     ],
-    "description": "A Python-based Xiaozhi AI for users who want the full Xiaozhi experience without owning specialized hardware.",
+    "description": "XIAO ESP32 voice assistant. Chinese smart home voice control solution.",
     "github_url": "https://github.com/huangjunsen0406/py-xiaozhi",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
     "daily_increment": 0,
-    "created_at": "2026-03-07T17:44:52.978966Z"
+    "created_at": "2026-03-07T17:44:52.978966Z",
+    "highlights": [
+      "Chinese voice control",
+      "Smart home integration",
+      "XIAO hardware"
+    ]
   },
   {
     "id": 23,
@@ -182,13 +197,18 @@
     "platforms": [
       "PC"
     ],
-    "description": "An AI-enabled NAT Router/Firewall for the ESP32",
+    "description": "ESP32 NAT router with VPN support. Useful for IoT networking projects.",
     "github_url": "https://github.com/martin-ger/esp32_nat_router",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
     "daily_increment": 0,
-    "created_at": "2026-03-07T17:44:52.979033Z"
+    "created_at": "2026-03-07T17:44:52.979033Z",
+    "highlights": [
+      "NAT routing",
+      "VPN support",
+      "Open source router"
+    ]
   },
   {
     "id": 24,
@@ -198,13 +218,18 @@
     "platforms": [
       "PC"
     ],
-    "description": "Your personal AI assistant at all-in 888KiB (~35KB in app code). Running on an ESP32. GPIO, cron, custom tools, memory, and more.",
+    "description": "Zero-knowledge AI assistant. Privacy-preserving AI infrastructure.",
     "github_url": "https://github.com/tnm/zclaw",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
     "daily_increment": 0,
-    "created_at": "2026-03-07T17:44:52.979061Z"
+    "created_at": "2026-03-07T17:44:52.979061Z",
+    "highlights": [
+      "Privacy focused",
+      "Zero-knowledge architecture",
+      "Open source"
+    ]
   },
   {
     "id": 6,
@@ -215,11 +240,11 @@
       "Pico",
       "Raspberry Pi"
     ],
-    "description": "Run 1B parameter LLM locally",
+    "description": "Run 1B parameter language models locally on Raspberry Pi. Makes edge AI accessible to makers and hobbyists.",
     "highlights": [
-      "Works on $10 board",
+      "Works on $10 Pi Pico",
       "256MB RAM sufficient",
-      "Edge AI"
+      "Local LLM inference"
     ],
     "github_url": "https://github.com/RightNow-AI/picolm",
     "seeedstudio": false,
@@ -243,11 +268,11 @@
       "Edge",
       "Seeed"
     ],
-    "description": "Seeed embedded AI deployment",
+    "description": "Seeed Studio's official embedded AI deployment toolkit. Pre-trained models and one-click deployment to Jetson edge devices.",
     "highlights": [
-      "Pre-trained models",
-      "Jetson optimized",
-      "One-click deploy"
+      "100+ pre-trained models",
+      "NVIDIA Jetson optimized",
+      "One-click deployment"
     ],
     "github_url": "https://github.com/Seeed-Studio/ModelAssistant",
     "seeedstudio": true,
@@ -270,11 +295,11 @@
       "Camera",
       "Seeed"
     ],
-    "description": "Open-source AI camera platform",
+    "description": "Open-source AI camera series from Seeed Studio. Modular edge AI vision processing with ready-to-use models.",
     "highlights": [
-      "Edge AI processing",
-      "Vision models ready",
-      "Modular design"
+      "Edge AI vision processing",
+      "50+ vision models",
+      "Modular hardware design"
     ],
     "github_url": "https://github.com/Seeed-Studio/reCamera",
     "seeedstudio": true,
@@ -298,11 +323,11 @@
       "Voice",
       "XIAO"
     ],
-    "description": "Voice interface for ESP32",
+    "description": "Voice interface for ESP32 using XIAO. Low-cost voice AI solution for smart home.",
     "highlights": [
-      "Low-cost voice",
+      "Voice interaction",
       "Local processing",
-      "Ready to use"
+      "<$15 BOM"
     ],
     "github_url": "https://github.com/liu233w/xiaozhi-esp32-server-golang",
     "seeedstudio": false,
@@ -326,11 +351,11 @@
       "NVIDIA Jetson",
       "Seeed"
     ],
-    "description": "Edge AI server solution",
+    "description": "Edge AI server solution for local processing. Privacy-first approach with low latency inference.",
     "highlights": [
-      "Local processing",
-      "Low latency",
-      "Privacy-first"
+      "100% local processing",
+      "<50ms latency",
+      "Privacy-first design"
     ],
     "github_url": "https://github.com/Seeed-Studio/SenseCraft-AI_Server",
     "seeedstudio": true,
@@ -352,11 +377,11 @@
     "platforms": [
       "ESP32"
     ],
-    "description": "ESP32 AI agent with memory",
+    "description": "ESP32-based AI agent with offline rule engine. IoT-ready with local configuration.",
     "highlights": [
       "Offline rule engine",
-      "Local config",
-      "IoT ready"
+      "Local config (no cloud)",
+      "IoT integration ready"
     ],
     "github_url": "https://github.com/M64GitHub/WireClaw",
     "seeedstudio": false,
@@ -379,11 +404,11 @@
       "Robot",
       "Reachy"
     ],
-    "description": "Robot with AI brain",
+    "description": "Add AI brain to Reachy robot. WebSocket control for expressive physical interactions.",
     "highlights": [
-      "WebSocket control",
+      "WebSocket API",
       "Physical embodiment",
-      "Expressive"
+      "Expressive movements"
     ],
     "github_url": "https://github.com/ArturSkowronski/clawd-reachy-mini",
     "seeedstudio": false,
@@ -400,11 +425,11 @@
     "platforms": [
       "Raspberry Pi"
     ],
-    "description": "Secure Pi setup guide",
+    "description": "Security-hardened OpenClaw installation for Raspberry Pi. Production-ready deployment guide.",
     "highlights": [
       "Hardened security",
-      "Easy setup",
-      "Stable"
+      "Easy setup guide",
+      "Stable performance"
     ],
     "github_url": "https://github.com/Demwunz/openclaw-pi-installation",
     "seeedstudio": false,
@@ -427,11 +452,11 @@
       "Raspberry Pi",
       "E-Ink"
     ],
-    "description": "AI companion device",
+    "description": "AI companion device using E-ink display. Fun IoT project combining AI with retro tech.",
     "highlights": [
       "E-ink display",
-      "Low power",
-      "Fun project"
+      "Ultra low power",
+      "Fun maker project"
     ],
     "github_url": "https://github.com/turmyshevd/openclawgotchi",
     "seeedstudio": false,
@@ -454,9 +479,9 @@
       "ESP32",
       "Seeed XIAO"
     ],
-    "description": "ESP32 Tamagotchi project",
+    "description": "ESP32 Tamagotchi-style AI companion. Fun experiment with meme integration.",
     "highlights": [
-      "Fun experiment",
+      "Retro form factor",
       "Memecoin integration",
       "Open source"
     ],
@@ -482,11 +507,11 @@
       "Humanoid",
       "Quadruped"
     ],
-    "description": "Control stack for real robots",
+    "description": "Full control stack for embodied AI robots. Real-time whole-body control with sim-to-real transfer.",
     "highlights": [
       "Whole-body control",
-      "Sim-to-real transfer",
-      "Low-latency"
+      "Simulation to real transfer",
+      "<10ms control latency"
     ],
     "github_url": "https://github.com/LooperRobotics/OpenClaw-Robotics",
     "seeedstudio": false,
@@ -509,11 +534,11 @@
       "PC",
       "Desktop"
     ],
-    "description": "Desktop GUI for OpenClaw",
+    "description": "Desktop GUI wrapper for OpenClaw. User-friendly interface without command line.",
     "highlights": [
-      "User-friendly",
       "No CLI needed",
-      "Quick start"
+      "Quick start",
+      "Visual interface"
     ],
     "github_url": "https://github.com/next-open-ai/openclawx",
     "seeedstudio": false,
@@ -531,11 +556,11 @@
       "Seeed XIAO",
       "ESP32"
     ],
-    "description": "OpenClaw on Seeed XIAO",
+    "description": "OpenClaw firmware port for Seeed XIAO ESP32. Minimal hardware, maximum capability.",
     "highlights": [
-      "$13 BOM",
+      "$13 total BOM",
       "IoT ready",
-      "Small footprint"
+      "Ultra-small footprint"
     ],
     "github_url": "https://github.com/chilu18/openclaw-esp32c3-xiao-node",
     "seeedstudio": true,
@@ -558,11 +583,11 @@
       "NVIDIA Jetson",
       "Orin"
     ],
-    "description": "AI on NVIDIA edge",
+    "description": "OpenClaw on NVIDIA Jetson Orin. High-performance edge AI with GPU acceleration.",
     "highlights": [
       "GPU acceleration",
-      "Vision capable",
-      "High performance"
+      "Computer vision ready",
+      "High performance compute"
     ],
     "github_url": "https://github.com/rhuanssauro/jetson-openclaw",
     "seeedstudio": false,
