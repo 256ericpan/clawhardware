@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🤖 OpenClaw Hardware Projects</title>
 <style>
-:root { --primary: #6366f1; --card: #ffffff; --text: #1e293b; --text-light: #64748b; --seeed: #f97316; --success: #22c55e; }
+:root { --primary: #6366f1; --card: #ffffff; --text: #1e293b; --text-light: #64748b; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', system-ui, sans-serif; background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); min-height: 100vh; padding: 40px 20px; }
 .container { max-width: 1400px; margin: 0 auto; }
@@ -13,7 +13,7 @@ header { text-align: center; margin-bottom: 40px; }
 h1 { color: white; font-size: 2.5rem; font-weight: 800; margin-bottom: 10px; }
 .subtitle { color: rgba(255,255,255,0.7); font-size: 1.1rem; }
 .stats-bar { display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap; }
-.stat-item { background: rgba(255,255,255,0.1); padding: 12px 24px; border-radius: 50px; color: white; display: flex; align-items: center; gap: 8px; backdrop-filter: blur(10px); }
+.stat-item { background: rgba(255,255,255,0.1); padding: 12px 24px; border-radius: 50px; color: white; display: flex; align-items: center; gap: 8px; }
 .stat-num { font-weight: 700; color: #fbbf24; }
 .filters-card { background: var(--card); border-radius: 20px; padding: 24px; margin-bottom: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
 .filters-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
@@ -29,37 +29,27 @@ select, input { padding: 10px 16px; border: 2px solid #e2e8f0; border-radius: 12
 .project-card { background: var(--card); border-radius: 20px; padding: 24px; transition: all 0.3s; border: 2px solid transparent; position: relative; }
 .project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); border-color: var(--primary); }
 .project-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), #8b5cf6); }
-.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
 .project-name { font-size: 1.3rem; font-weight: 700; color: var(--text); }
 .project-name a { color: inherit; text-decoration: none; }
-.badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
 .badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
 .badge-category { background: #ede9fe; color: #7c3aed; }
 .badge-seeed { background: #ffedd5; color: #ea580c; }
 .badge-core { background: #dbeafe; color: #1d4ed8; }
 
-.hardware-section { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 2px solid #22c55e; border-radius: 14px; padding: 16px; margin-bottom: 14px; }
-.hardware-title { font-weight: 700; color: #166534; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
-.hardware-list { display: flex; gap: 8px; flex-wrap: wrap; }
-.hardware-chip { background: white; border: 2px solid #22c55e; color: #166534; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; }
-.hardware-chip.seeed { background: #fed7aa; border-color: #ea580c; color: #9a3412; }
-
-.purchase-section { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 2px solid #3b82f6; border-radius: 14px; padding: 16px; margin-bottom: 16px; }
-.purchase-title { font-weight: 700; color: #1e40af; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
-.purchase-links { display: flex; gap: 10px; flex-wrap: wrap; }
-.purchase-link { display: inline-flex; align-items: center; gap: 6px; background: #3b82f6; color: white; padding: 10px 16px; border-radius: 10px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
-.purchase-link:hover { background: #2563eb; transform: scale(1.02); }
-.purchase-link.seeed { background: #ea580c; }
-.purchase-link.seeed:hover { background: #c2410c; }
+.info-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; font-size: 14px; color: var(--text-light); }
+.info-row a { color: #3b82f6; text-decoration: none; }
+.info-row a:hover { text-decoration: underline; }
 
 .project-desc { color: var(--text-light); font-size: 15px; line-height: 1.7; margin-bottom: 16px; min-height: 50px; }
 
-.info-row { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #e2e8f0; }
+.info-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #e2e8f0; }
 .info-bom { font-size: 14px; color: var(--text-light); }
-.info-bom strong { color: var(--text); font-size: 16px; }
+.info-bom strong { color: var(--text); }
 .stars-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: white; padding: 10px 18px; border-radius: 20px; font-weight: 700; font-size: 16px; }
 .stars-badge.hot { background: linear-gradient(135deg, #22c55e, #16a34a); }
-.daily-badge { margin-left: 10px; color: var(--success); font-size: 14px; font-weight: 600; }
+.daily-badge { margin-left: 10px; color: #22c55e; font-size: 14px; font-weight: 600; }
 
 @media (max-width: 768px) { .project-grid { grid-template-columns: 1fr; } }
 </style>
@@ -130,34 +120,28 @@ let badge = '<span class="badge badge-category">' + p.category + '</span>';
 if (p.category === 'core') badge = '<span class="badge badge-core">⭐ Core</span>';
 if (p.seeedstudio) badge += '<span class="badge badge-seeed">SeeedStudio</span>';
 
-// Hardware chips
-const hardwareChips = p.platforms.map(plat => {
-const isSeeed = plat.toLowerCase().includes('seeed') || plat.toLowerCase().includes('xiao');
-return '<span class="hardware-chip ' + (isSeeed ? 'seeed' : '') + '">' + plat + '</span>';
-}).join('');
+// Hardware (simple text)
+const hardwareText = p.platforms.join(', ');
 
-// Purchase links
+// Purchase links (simple hyperlinks)
 let purchaseLinks = '';
 if (p.product_links && p.product_links.length > 0) {
-purchaseLinks = '<div class="purchase-section"><div class="purchase-title">🛒 采购链接</div><div class="purchase-links">';
-p.product_links.forEach(link => {
-const isSeeed = link.includes('seeed');
-purchaseLinks += '<a href="' + link + '" target="_blank" class="purchase-link ' + (isSeeed ? 'seeed' : '') + '">📦 Buy</a>';
+purchaseLinks = ' | Buy: ';
+p.product_links.forEach((link, i) => {
+if (i > 0) purchaseLinks += ', ';
+purchaseLinks += '<a href="' + link + '" target="_blank">' + (link.includes('seeed') ? 'SeeedStudio' : 'Link') + '</a>';
 });
-purchaseLinks += '</div></div>';
 }
 
 return '<div class="project-card">' +
 '<div class="card-header"><div class="project-name"><a href="' + p.github_url + '" target="_blank">' + p.name + '</a></div></div>' +
 '<div class="badges">' + badge + '</div>' +
 
-'<div class="hardware-section"><div class="hardware-title">💻 适配硬件</div><div class="hardware-list">' + hardwareChips + '</div></div>' +
-
-purchaseLinks +
+'<div class="info-row"><strong>Hardware:</strong> ' + hardwareText + purchaseLinks + '</div>' +
 
 '<div class="project-desc">' + p.description + '</div>' +
 
-'<div class="info-row"><div class="info-bom">BOM: <strong>' + p.bom_cost + '</strong></div>' +
+'<div class="info-bottom"><div class="info-bom">BOM: <strong>' + p.bom_cost + '</strong></div>' +
 '<div><span class="stars-badge ' + starsClass + '">⭐ ' + p.stars.toLocaleString() + '</span>' + dailyText + '</div></div></div>';
 }
 
