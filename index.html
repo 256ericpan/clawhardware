@@ -37,20 +37,17 @@ select, input { padding: 10px 16px; border: 2px solid #e2e8f0; border-radius: 12
 .badge-category { background: #ede9fe; color: #7c3aed; }
 .badge-seeed { background: #ffedd5; color: #ea580c; }
 .badge-core { background: #dbeafe; color: #1d4ed8; }
-
 .card-body { margin-bottom: 16px; font-size: 14px; color: var(--text-light); line-height: 1.6; }
 .card-body strong { color: var(--text); }
 .card-body a { color: #3b82f6; text-decoration: none; }
-.supply-btn { display: inline-block; background: #ea580c; color: white; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none; margin-left: 8px; }
+.supply-btn { display: inline-block; background: #ea580c; color: white; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none; margin-left: 8px; white-space: nowrap; }
 .supply-btn:hover { background: #c2410c; }
-
 .info-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #e2e8f0; }
 .info-bom { font-size: 14px; color: var(--text-light); }
 .info-bom strong { color: var(--text); }
 .stars-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: white; padding: 10px 18px; border-radius: 20px; font-weight: 700; font-size: 16px; }
 .stars-badge.hot { background: linear-gradient(135deg, #22c55e, #16a34a); }
 .daily-badge { margin-left: 10px; color: #22c55e; font-size: 14px; font-weight: 600; }
-
 @media (max-width: 768px) { .project-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
@@ -115,15 +112,12 @@ function createProjectCard(p) {
 const starsClass = p.stars > 1000 ? 'hot' : '';
 const dailyText = p.daily_increment > 0 ? '<span class="daily-badge">↑ ' + p.daily_increment + '</span>' : '';
 
-// Badge
 let badge = '<span class="badge badge-category">' + p.category + '</span>';
 if (p.category === 'core') badge = '<span class="badge badge-core">⭐ Core</span>';
 if (p.seeedstudio) badge += '<span class="badge badge-seeed">SeeedStudio</span>';
 
-// Hardware
 const hardwareText = p.platforms.join(', ');
 
-// Supply button
 let supplyBtn = '';
 if (p.product_links && p.product_links.length > 0) {
 p.product_links.forEach(link => {
@@ -134,10 +128,8 @@ supplyBtn += '<a href="' + link.url + '" target="_blank" class="supply-btn">Supp
 return '<div class="project-card">' +
 '<div class="card-header"><div class="project-name"><a href="' + p.github_url + '" target="_blank">' + p.name + '</a></div></div>' +
 '<div class="badges">' + badge + '</div>' +
-
 '<div class="card-body"><strong>Hardware:</strong> ' + hardwareText + ' ' + supplyBtn + '</div>' +
 '<div class="card-body">' + p.description + '</div>' +
-
 '<div class="info-bottom"><div class="info-bom"><strong>' + p.bom_cost + '</strong></div>' +
 '<div><span class="stars-badge ' + starsClass + '">⭐ ' + p.stars.toLocaleString() + '</span>' + dailyText + '</div></div></div>';
 }
