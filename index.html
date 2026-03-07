@@ -155,96 +155,252 @@
 
     <script>
         const projects = [
-            // Core Repository
             {
                 name: "Official OpenClaw Repository",
                 description: "Your own personal AI assistant. Any OS. Any Platform. The lobster way.",
                 githubUrl: "https://github.com/openclaw/openclaw",
                 stars: 251095,
-                dailyIncrement: 150,
+                dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["any"],
+                platforms: "any",
                 tags: [],
                 productLinks: [],
-                lastUpdated: "2026-03-03T08:39:19Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
-            
-            // Alternative Frameworks (PicoClaw projects are now categorized as alternative frameworks, not as a platform)
+            {
+                name: "Nanobot",
+                description: "The Ultra-Lightweight OpenClaw",
+                githubUrl: "https://github.com/HKUDS/nanobot",
+                stars: 29724,
+                dailyIncrement: 0,
+                category: "alternative",
+                platforms: ['nano', 'lightweight'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "ZeroClaw",
+                description: "Fast, small, and fully autonomous AI assistant infrastructure",
+                githubUrl: "https://github.com/zeroclaw-labs/zeroclaw",
+                stars: 24059,
+                dailyIncrement: 0,
+                category: "alternative",
+                platforms: ['rust', 'infrastructure'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
             {
                 name: "Sipeed PicoClaw",
                 description: "Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativity",
                 githubUrl: "https://github.com/sipeed/picoclaw",
                 stars: 21800,
-                dailyIncrement: 25,
+                dailyIncrement: 0,
                 category: "alternative",
-                platforms: ["sipeed"],
-                tags: ["picoclaw", "sipeed", "ultra-lightweight"],
-                productLinks: [
-                    "https://www.sipeed.com/"
-                ],
-                lastUpdated: "2026-03-03T11:00:00Z"
+                platforms: "sipeed",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
-                name: "GoClaw",
-                description: "An open-source AI assistant framework like openclaw",
-                githubUrl: "https://github.com/smallnest/goclaw",
-                stars: 302,
-                dailyIncrement: 2,
-                category: "alternative",
-                platforms: ["go"],
-                tags: ["alternative-framework", "go-language"],
+                name: "MimiClaw",
+                description: "Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware ",
+                githubUrl: "https://github.com/memovai/mimiclaw",
+                stars: 3700,
+                dailyIncrement: 0,
+                category: "embedded",
+                platforms: "raspberry", "ultra-low-cost",
+                tags: [],
                 productLinks: [],
-                lastUpdated: "2026-03-03T10:00:00Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "PicoLM",
                 description: "Run a 1-billion parameter LLM on a $10 board with 256MB RAM",
                 githubUrl: "https://github.com/RightNow-AI/picolm",
                 stars: 1200,
-                dailyIncrement: 8,
+                dailyIncrement: 0,
                 category: "ai-compute",
-                platforms: ["ultra-low-cost"],
-                tags: ["picoclaw", "ultra-lightweight", "llm"],
+                platforms: "ultra-low-cost",
+                tags: [],
                 productLinks: [],
-                lastUpdated: "2026-02-24T00:00:00Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "ModelAssistant",
+                description: "Embedded AI project",
+                githubUrl: "https://github.com/Seeed-Studio/ModelAssistant",
+                stars: 424,
+                dailyIncrement: 0,
+                category: "ai-compute",
+                platforms: ['embedded', 'ai'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: yes
+            },
+            {
+                name: "reCamera",
+                description: "Open-source AI cameras series",
+                githubUrl: "https://github.com/Seeed-Studio/reCamera",
+                stars: 389,
+                dailyIncrement: 0,
+                category: "ai-compute",
+                platforms: ['camera', 'ai'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: yes
+            },
+            {
+                name: "GoClaw",
+                description: "An open-source AI assistant framework like openclaw",
+                githubUrl: "https://github.com/smallnest/goclaw",
+                stars: 302,
+                dailyIncrement: 0,
+                category: "alternative",
+                platforms: "go",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "ZeroClaw-Android",
+                description: "Run AI agents 24/7 on your Android phone",
+                githubUrl: "https://github.com/Natfii/ZeroClaw-Android",
+                stars: 224,
+                dailyIncrement: 0,
+                category: "embedded",
+                platforms: ['android', 'rust'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "TinyClaw",
+                description: "The original Tiny Claw as your personal autonomous AI companion",
+                githubUrl: "https://github.com/warengonzaga/tinyclaw",
+                stars: 135,
+                dailyIncrement: 0,
+                category: "alternative",
+                platforms: ['tiny'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "PicoOracleClaw",
                 description: "PicoClaw that works with Oracle AI Database",
                 githubUrl: "https://github.com/jasperan/picooraclaw",
                 stars: 79,
-                dailyIncrement: 1,
-                category: "alternative",
-                platforms: ["oracle"],
-                tags: ["picoclaw", "oracle-database", "enterprise"],
-                productLinks: [],
-                lastUpdated: "2026-03-01T00:00:00Z"
-            },
-            {
-                name: "PicoClaw Labs",
-                description: "PicoClaw (formerly Moltbot, formerly Clawdbot) - Tiny, Fast, and Deployable anywhere",
-                githubUrl: "https://github.com/picoclaw-labs/picoclaw",
-                stars: 6,
                 dailyIncrement: 0,
                 category: "alternative",
-                platforms: [],
-                tags: ["picoclaw", "labs", "experimental"],
+                platforms: "oracle",
+                tags: [],
                 productLinks: [],
-                lastUpdated: "2026-02-19T00:00:00Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
-            
-            // Raspberry Pi Ecosystem
             {
-                name: "MimiClaw",
-                description: "Run OpenClaw on a $5 chip. No OS(Linux). No Node.js. No Mac mini. No Raspberry Pi. No VPS. Hardware agents OS.",
-                githubUrl: "https://github.com/memovai/mimiclaw",
-                stars: 3700,
-                dailyIncrement: 12,
-                category: "embedded",
-                platforms: ["raspberry", "ultra-low-cost"],
-                tags: ["raspberry-pi", "ultra-low-cost"],
+                name: "IronClaw",
+                description: "Your own personal AI assistant with security by design",
+                githubUrl: "https://github.com/CyberSecurityUP/ironclaw",
+                stars: 61,
+                dailyIncrement: 0,
+                category: "alternative",
+                platforms: ['security'],
+                tags: [],
                 productLinks: [],
-                lastUpdated: "2026-03-01T00:00:00Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "SenseCraft AI Server",
+                description: "Run AI tasks on edge devices",
+                githubUrl: "https://github.com/Seeed-Studio/SenseCraft-AI_Server",
+                stars: 60,
+                dailyIncrement: 0,
+                category: "ai-compute",
+                platforms: ['edge', 'ai'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: yes
+            },
+            {
+                name: "Robot Control Stack",
+                description: "VLA models and RL agents framework",
+                githubUrl: "https://github.com/RobotControlStack/robot-control-stack",
+                stars: 44,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['vla', 'franka', 'ur5e'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "MiniMax Agent VLA",
+                description: "MiniMax LLM + Pi05 VLA Robot Agent",
+                githubUrl: "https://github.com/MiniMax-OpenPlatform/MiniMax-Agent-VLA-Demo",
+                stars: 34,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['vla', 'robot'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "WireClaw",
+                description: "ESP32 AI agent with persistent memory and offline rule engine - chat to configure, run locally 24/7",
+                githubUrl: "https://github.com/M64GitHub/WireClaw",
+                stars: 31,
+                dailyIncrement: 0,
+                category: "iot",
+                platforms: "esp32",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "clawd-reachy-mini",
+                description: "Reachy Mini robotics integration project for OpenClaw",
+                githubUrl: "https://github.com/ArturSkowronski/clawd-reachy-mini",
+                stars: 26,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: "robotics", "python",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "Strands Robots",
+                description: "Control robots with natural language",
+                githubUrl: "https://github.com/strands-labs/robots",
+                stars: 25,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['vla', 'nla'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "OpenClaw Pi Installation",
@@ -253,27 +409,24 @@
                 stars: 21,
                 dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["raspberry"],
-                tags: ["raspberry-pi", "security"],
-                productLinks: [
-                    "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/"
-                ],
-                lastUpdated: "2026-01-31T00:00:00Z"
+                platforms: "raspberry",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
-                name: "OpenClaw Raspberry Installer",
-                description: "Automated installer for OpenClaw on the CanaKit Raspberry Pi 5 8GB Dual Cooling GenAI Kit with Hailo 10H AI accelerator",
-                githubUrl: "https://github.com/sanchorelaxo/openclaw-raspberry-installer",
-                stars: 9,
+                name: "Telekinesis",
+                description: "AI-powered Computer Vision & Robotics apps",
+                githubUrl: "https://github.com/telekinesis-ai/telekinesis-examples",
+                stars: 16,
                 dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["raspberry", "hailo"],
-                tags: ["raspberry-pi", "ai-accelerator", "hailo"],
-                productLinks: [
-                    "https://www.raspberrypi.com/products/raspberry-pi-5/",
-                    "https://hailo.ai/products/hailo-10h/"
-                ],
-                lastUpdated: "2026-03-02T00:00:00Z"
+                category: "robotics",
+                platforms: ['vla', 'computer-vision'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "OpenClawgotchi",
@@ -282,114 +435,141 @@
                 stars: 15,
                 dailyIncrement: 0,
                 category: "iot",
-                platforms: ["raspberry", "e-ink"],
-                tags: ["raspberry-pi", "fun-project", "e-ink"],
-                productLinks: [
-                    "https://www.waveshare.com/product/displays/e-paper.htm"
-                ],
-                lastUpdated: "2026-03-03T10:00:00Z"
+                platforms: "raspberry", "e-ink",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "Monagotchi",
+                description: "OpenClaw skills that connect a physical ESP32 Tamagotchi (LCD + buttons) to a memecoin on nad.fun (M",
+                githubUrl: "https://github.com/This-Is-Captain-Code/monagotchi",
+                stars: 15,
+                dailyIncrement: 0,
+                category: "iot",
+                platforms: "esp32", "memecoin",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "OpenClaw Robotics",
+                description: "High-performance control stack for Embodied AI",
+                githubUrl: "https://github.com/LooperRobotics/OpenClaw-Robotics",
+                stars: 14,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['humanoids', 'quadrupeds'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "Neko AI Agent",
-                description: "Lightweight AI agent runtime targeting Raspberry Pi Zero 2W and low-end VPS. File-based memory, MCP tool support, Telegram integration",
+                description: "Lightweight AI agent runtime targeting Raspberry Pi Zero 2W and low-end VPS. File-based memory, MCP ",
                 githubUrl: "https://github.com/superhq-ai/neko",
                 stars: 13,
                 dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["raspberry", "low-end"],
-                tags: ["raspberry-pi", "lightweight", "telegram"],
-                productLinks: [
-                    "https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/"
-                ],
-                lastUpdated: "2026-02-29T00:00:00Z"
+                platforms: "raspberry", "low-end",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
-            
-            // Jetson Ecosystem
             {
-                name: "Jetson OpenClaw",
-                description: "OpenClaw - Jetson Orin Nano Personal AI Assistant (LLM + Hardware Control)",
-                githubUrl: "https://github.com/rhuanssauro/jetson-openclaw",
-                stars: 1,
+                name: "OpenClawX",
+                description: "OpenClaw desktop UI",
+                githubUrl: "https://github.com/next-open-ai/openclawx",
+                stars: 11,
                 dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["jetson"],
-                tags: ["nvidia-jetson", "orin-nano", "personal-ai"],
-                productLinks: [
-                    "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
-                ],
-                lastUpdated: "2026-02-25T00:00:00Z"
-            },
-            {
-                name: "OpenClaw Jetson Secure Container",
-                description: "Secure OpenClaw + Ollama devcontainer for NVIDIA Jetson Orin Nano Super",
-                githubUrl: "https://github.com/AndroidNextdoor/openclaw-jetson",
-                stars: 1,
-                dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["jetson", "ollama"],
-                tags: ["nvidia-jetson", "security", "containers", "ollama"],
-                productLinks: [
-                    "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
-                ],
-                lastUpdated: "2026-02-10T00:00:00Z"
-            },
-            {
-                name: "Nvidia Jetson OpenClaw Setup",
-                description: "Notes - OpenClaw Setup on Nvidia Jetson Orin Nano Super Developer Kit",
-                githubUrl: "https://github.com/eliranwong/NvidiaJetsonOpenClaw",
-                stars: 1,
-                dailyIncrement: 0,
-                category: "ai-compute",
-                platforms: ["jetson"],
-                tags: ["nvidia-jetson", "setup-guide", "documentation"],
-                productLinks: [
-                    "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
-                ],
-                lastUpdated: "2026-03-03T11:00:00Z"
-            },
-            
-            // ESP32 Ecosystem
-            {
-                name: "WireClaw",
-                description: "ESP32 AI agent with persistent memory and offline rule engine - chat to configure, run locally 24/7",
-                githubUrl: "https://github.com/M64GitHub/WireClaw",
-                stars: 31,
-                dailyIncrement: 1,
-                category: "iot",
-                platforms: ["esp32"],
-                tags: ["esp32", "ai-agent", "offline-capable"],
-                productLinks: [
-                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
-                ],
-                lastUpdated: "2026-03-03T04:58:57Z"
+                category: "embedded",
+                platforms: ['desktop'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "OpenClaw Xiaozhi",
-                description: "Turn ESP32-S3 into a voice interface for OpenClaw AI assistant — xiaozhi as the body, OpenClaw as the soul",
+                description: "Turn ESP32-S3 into a voice interface for OpenClaw AI assistant — xiaozhi as the body, OpenClaw as th",
                 githubUrl: "https://github.com/tigerbryan/openclaw-xiaozhi",
                 stars: 10,
                 dailyIncrement: 0,
                 category: "iot",
-                platforms: ["esp32", "voice"],
-                tags: ["esp32", "voice-interface", "xiaozhi"],
-                productLinks: [
-                    "https://www.espressif.com/en/products/devkits/esp32-s3-devkitc-1"
-                ],
-                lastUpdated: "2026-02-10T00:00:00Z"
+                platforms: "esp32", "voice",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "OpenClaw Raspberry Installer",
+                description: "Automated installer for OpenClaw on the CanaKit Raspberry Pi 5 8GB Dual Cooling GenAI Kit with Hailo",
+                githubUrl: "https://github.com/sanchorelaxo/openclaw-raspberry-installer",
+                stars: 9,
+                dailyIncrement: 0,
+                category: "ai-compute",
+                platforms: "raspberry", "hailo",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "clawbody",
+                description: "Robotics integration control stack for OpenClaw",
+                githubUrl: "https://github.com/tomrikert/clawbody",
+                stars: 8,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: "robotics",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "Kongnitive EdgeMCP",
-                description: "An MCP base layer running on ESP32 that exposes hardware capabilities to AI. AI reads logs, pushes scripts, swaps drivers, and iterates",
+                description: "An MCP base layer running on ESP32 that exposes hardware capabilities to AI. AI reads logs, pushes s",
                 githubUrl: "https://github.com/Kongnitive/Kongnitive-EdgeMCP",
                 stars: 7,
                 dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["esp32", "mcp"],
-                tags: ["esp32", "hardware-control", "mcp"],
-                productLinks: [
-                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
-                ],
-                lastUpdated: "2026-02-19T00:00:00Z"
+                platforms: "esp32", "mcp",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "PicoClaw Labs",
+                description: "PicoClaw (formerly Moltbot, formerly Clawdbot) - Tiny, Fast, and Deployable anywhere",
+                githubUrl: "https://github.com/picoclaw-labs/picoclaw",
+                stars: 6,
+                dailyIncrement: 0,
+                category: "alternative",
+                platforms: ,
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "VectorClaw",
+                description: "Anki Vector + OpenClaw integration via MCP",
+                githubUrl: "https://github.com/danmartinez78/VectorClaw",
+                stars: 5,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['robotics', 'vector'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "OpenClaw XIAO Node",
@@ -398,13 +578,24 @@
                 stars: 4,
                 dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["esp32", "xiao"],
-                tags: ["seeed-studio", "xiao", "low-cost"],
-                productLinks: [
-                    "https://www.seeedstudio.com/XIAO-ESP32C3-p-5440.html",
-                    "https://www.seeedstudio.com/XIAO-ESP32C3-Expansion-board-p-5610.html"
-                ],
-                lastUpdated: "2026-02-26T17:58:59Z"
+                platforms: "esp32", "xiao",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: yes
+            },
+            {
+                name: "Arduino Maker Skill (DmitrySolana)",
+                description: "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help, troubleshooting",
+                githubUrl: "https://github.com/DmitrySolana/Arduino-maker",
+                stars: 3,
+                dailyIncrement: 0,
+                category: "maker",
+                platforms: "Arduino", "esp32",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "HeyClawy",
@@ -413,12 +604,11 @@
                 stars: 2,
                 dailyIncrement: 0,
                 category: "iot",
-                platforms: ["esp32", "voice"],
-                tags: ["esp32", "voice-assistant", "companion"],
-                productLinks: [
-                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
-                ],
-                lastUpdated: "2026-02-25T00:00:00Z"
+                platforms: "esp32", "voice",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "IOnode",
@@ -427,54 +617,89 @@
                 stars: 2,
                 dailyIncrement: 0,
                 category: "iot",
-                platforms: ["esp32", "nats"],
-                tags: ["esp32", "fleet-management", "nats"],
-                productLinks: [
-                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
-                ],
-                lastUpdated: "2026-02-25T23:03:04Z"
+                platforms: "esp32", "nats",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "OpenClaw Voice Server",
-                description: "Standalone Node.js Voice Relay Bridge for parsing, streaming, and transcoding raw ESP32 I2S microphone data",
+                description: "Standalone Node.js Voice Relay Bridge for parsing, streaming, and transcoding raw ESP32 I2S micropho",
                 githubUrl: "https://github.com/brooqs/openclaw-voice-server",
                 stars: 2,
                 dailyIncrement: 0,
                 category: "embedded",
-                platforms: ["esp32", "nodejs", "voice"],
-                tags: ["esp32", "voice-processing", "nodejs"],
+                platforms: "esp32", "nodejs", "voice",
+                tags: [],
                 productLinks: [],
-                lastUpdated: "2026-02-24T00:00:00Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
-                name: "Monagotchi",
-                description: "OpenClaw skills that connect a physical ESP32 Tamagotchi (LCD + buttons) to a memecoin on nad.fun (Monad). Buy $MONA → pet gets fed.",
-                githubUrl: "https://github.com/This-Is-Captain-Code/monagotchi",
-                stars: 15,
-                dailyIncrement: 1,
-                category: "iot",
-                platforms: ["esp32", "memecoin"],
-                tags: ["esp32", "crypto", "fun-project", "memecoin"],
-                productLinks: [
-                    "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html"
-                ],
-                lastUpdated: "2026-02-26T00:00:00Z"
-            },
-            
-            // Arduino Maker Skills
-            {
-                name: "Arduino Maker Skill (DmitrySolana)",
-                description: "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help, troubleshooting",
-                githubUrl: "https://github.com/DmitrySolana/Arduino-maker",
-                stars: 3,
+                name: "Jetson OpenClaw",
+                description: "OpenClaw - Jetson Orin Nano Personal AI Assistant (LLM + Hardware Control)",
+                githubUrl: "https://github.com/rhuanssauro/jetson-openclaw",
+                stars: 1,
                 dailyIncrement: 0,
-                category: "maker",
-                platforms: ["Arduino", "esp32"],
-                tags: ["Arduino", "code-generation", "maker"],
-                productLinks: [
-                    "https://store.Arduino.cc/products/Arduino-uno-rev3"
-                ],
-                lastUpdated: "2026-02-20T04:44:22Z"
+                category: "ai-compute",
+                platforms: "jetson",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "OpenClaw Jetson Secure Container",
+                description: "Secure OpenClaw + Ollama devcontainer for NVIDIA Jetson Orin Nano Super",
+                githubUrl: "https://github.com/AndroidNextdoor/openclaw-jetson",
+                stars: 1,
+                dailyIncrement: 0,
+                category: "ai-compute",
+                platforms: "jetson", "ollama",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "Nvidia Jetson OpenClaw Setup",
+                description: "Notes - OpenClaw Setup on Nvidia Jetson Orin Nano Super Developer Kit",
+                githubUrl: "https://github.com/eliranwong/NvidiaJetsonOpenClaw",
+                stars: 1,
+                dailyIncrement: 0,
+                category: "ai-compute",
+                platforms: "jetson",
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "OpenClaw ROS2",
+                description: "OpenClaw controlling robot via ROS2",
+                githubUrl: "https://github.com/moe-sani/openclaw_ros2",
+                stars: 1,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['ros2'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "Clawarm",
+                description: "Robotic arm controlled via OpenClaw",
+                githubUrl: "https://github.com/Clawland-AI/Clawarm",
+                stars: 1,
+                dailyIncrement: 0,
+                category: "robotics",
+                platforms: ['robotic-arm'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
             },
             {
                 name: "Arduino Maker Skill (sergiopesch)",
@@ -483,40 +708,24 @@
                 stars: 0,
                 dailyIncrement: 0,
                 category: "maker",
-                platforms: ["Arduino", "esp32"],
-                tags: ["Arduino", "code-generation", "maker"],
-                productLinks: [
-                    "https://store.Arduino.cc/products/Arduino-uno-rev3"
-                ],
-                lastUpdated: "2026-02-01T04:29:02Z"
-            },
-            
-            // Robotics
-            {
-                name: "clawd-reachy-mini",
-                description: "Reachy Mini robotics integration project for OpenClaw",
-                githubUrl: "https://github.com/ArturSkowronski/clawd-reachy-mini",
-                stars: 26,
-                dailyIncrement: 1,
-                category: "robotics", 
-                platforms: ["robotics", "python"],
-                tags: ["robotics", "reachy", "integration"],
-                productLinks: [
-                    "https://www.pollenrobotics.com/reachy"
-                ],
-                lastUpdated: "2026-03-03T05:56:21Z"
-            },
-            {
-                name: "clawbody",
-                description: "Robotics integration control stack for OpenClaw",
-                githubUrl: "https://github.com/tomrikert/clawbody",
-                stars: 8,
-                dailyIncrement: 1,
-                category: "robotics",
-                platforms: ["robotics"],
-                tags: ["robotics", "control-stack", "integration"],
+                platforms: "Arduino", "esp32",
+                tags: [],
                 productLinks: [],
-                lastUpdated: "2026-03-01T21:59:07Z"
+                lastUpdated: "2026-03-07",
+                seeedstudio: no
+            },
+            {
+                name: "Seeed AI Skills",
+                description: "Seeed product expertise for AI assistants",
+                githubUrl: "https://github.com/Seeed-Studio/ai-skills",
+                stars: 0,
+                dailyIncrement: 0,
+                category: "maker",
+                platforms: ['xiao', 'ai'],
+                tags: [],
+                productLinks: [],
+                lastUpdated: "2026-03-07",
+                seeedstudio: yes
             }
         ];
 
