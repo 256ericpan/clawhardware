@@ -38,11 +38,10 @@ select, input { padding: 10px 16px; border: 2px solid #e2e8f0; border-radius: 12
 .badge-seeed { background: #ffedd5; color: #ea580c; }
 .badge-core { background: #dbeafe; color: #1d4ed8; }
 
-.card-body { margin-bottom: 16px; }
-.card-body-label { font-weight: 600; color: var(--text); font-size: 14px; margin-bottom: 8px; }
-.card-body-text { color: var(--text-light); font-size: 15px; line-height: 1.7; }
-.card-body-text a { color: #3b82f6; text-decoration: none; }
-.card-body-text a:hover { text-decoration: underline; }
+.card-body { margin-bottom: 16px; font-size: 14px; color: var(--text-light); line-height: 1.6; }
+.card-body strong { color: var(--text); }
+.card-body a { color: #3b82f6; text-decoration: none; }
+.card-body a:hover { text-decoration: underline; }
 
 .info-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #e2e8f0; }
 .info-bom { font-size: 14px; color: var(--text-light); }
@@ -58,9 +57,9 @@ select, input { padding: 10px 16px; border: 2px solid #e2e8f0; border-radius: 12
 <div class="container">
 <header>
 <h1>🤖 OpenClaw Hardware Projects</h1>
-<p class="subtitle">OpenClaw 生态硬件项目监测 | 适配硬件与采购指南</p>
+<p class="subtitle">OpenClaw 生态硬件项目监测</p>
 <div class="stats-bar">
-<div class="stat-item">📦 <span class="stat-num">23</span> Verified Projects</div>
+<div class="stat-item">📦 <span class="stat-num">23</span> Projects</div>
 <div class="stat-item">🏷️ <span class="stat-num">33</span> Platforms</div>
 <div class="stat-item">⭐ <span class="stat-num">331,410</span> Stars</div>
 </div>
@@ -75,15 +74,15 @@ select, input { padding: 10px 16px; border: 2px solid #e2e8f0; border-radius: 12
 </select>
 </div>
 <div class="filter-group">
-<input type="text" id="searchInput" placeholder="Search projects..." style="min-width: 250px;">
+<input type="text" id="searchInput" placeholder="Search..." style="min-width: 250px;">
 </div>
 </div>
 <div class="platform-tags" id="platformTags">
-<span class="platform-tag active" data-platform="">All Hardware</span>
+<span class="platform-tag active" data-platform="">All</span>
 <span class="platform-tag" data-platform="Android">Android</span><span class="platform-tag" data-platform="Camera">Camera</span><span class="platform-tag" data-platform="Cloud">Cloud</span><span class="platform-tag" data-platform="Desktop">Desktop</span><span class="platform-tag" data-platform="E-Ink">E-Ink</span><span class="platform-tag" data-platform="ESP32">ESP32</span><span class="platform-tag" data-platform="Edge">Edge</span><span class="platform-tag" data-platform="Hailo">Hailo</span><span class="platform-tag" data-platform="Humanoid">Humanoid</span><span class="platform-tag" data-platform="Linux">Linux</span><span class="platform-tag" data-platform="Mac">Mac</span><span class="platform-tag" data-platform="Mobile">Mobile</span><span class="platform-tag" data-platform="NVIDIA Jetson">NVIDIA Jetson</span><span class="platform-tag" data-platform="Node.js">Node.js</span><span class="platform-tag" data-platform="Orin">Orin</span><span class="platform-tag" data-platform="PC">PC</span><span class="platform-tag" data-platform="Pico">Pico</span><span class="platform-tag" data-platform="Quadruped">Quadruped</span><span class="platform-tag" data-platform="RISC-V">RISC-V</span><span class="platform-tag" data-platform="ROS2">ROS2</span><span class="platform-tag" data-platform="Raspberry Pi">Raspberry Pi</span><span class="platform-tag" data-platform="Reachy">Reachy</span><span class="platform-tag" data-platform="Robot">Robot</span><span class="platform-tag" data-platform="Robot Arm">Robot Arm</span><span class="platform-tag" data-platform="Seeed">Seeed</span><span class="platform-tag" data-platform="Seeed XIAO">Seeed XIAO</span><span class="platform-tag" data-platform="Server">Server</span><span class="platform-tag" data-platform="Sipeed">Sipeed</span><span class="platform-tag" data-platform="Vector">Vector</span><span class="platform-tag" data-platform="Voice">Voice</span><span class="platform-tag" data-platform="Windows">Windows</span><span class="platform-tag" data-platform="XIAO">XIAO</span><span class="platform-tag" data-platform="iOS">iOS</span>
 </div>
 </div>
-<p class="results-info">Showing <span id="projectCount">0</span> OpenClaw hardware projects</p>
+<p class="results-info">Showing <span id="projectCount">0</span> projects</p>
 <div class="project-grid" id="projectsContainer"></div>
 </div>
 <script>
@@ -120,16 +119,16 @@ let badge = '<span class="badge badge-category">' + p.category + '</span>';
 if (p.category === 'core') badge = '<span class="badge badge-core">⭐ Core</span>';
 if (p.seeedstudio) badge += '<span class="badge badge-seeed">SeeedStudio</span>';
 
-// Hardware (as main body)
+// Hardware
 const hardwareText = p.platforms.join(', ');
 
-// Purchase links (as main body)
+// Purchase links with price
 let purchaseText = '';
 if (p.product_links && p.product_links.length > 0) {
 purchaseText = ' | Buy: ';
 p.product_links.forEach((link, i) => {
 if (i > 0) purchaseText += ', ';
-purchaseText += '<a href="' + link + '" target="_blank">' + (link.includes('seeed') ? 'SeeedStudio' : 'Link') + '</a>';
+purchaseText += '<a href="' + link + '" target="_blank">' + p.bom_cost + '</a>';
 });
 }
 
@@ -137,11 +136,10 @@ return '<div class="project-card">' +
 '<div class="card-header"><div class="project-name"><a href="' + p.github_url + '" target="_blank">' + p.name + '</a></div></div>' +
 '<div class="badges">' + badge + '</div>' +
 
-'<div class="card-body"><div class="card-body-label">💻 适配硬件</div><div class="card-body-text">' + hardwareText + purchaseText + '</div></div>' +
+'<div class="card-body"><strong>Hardware:</strong> ' + hardwareText + purchaseText + '</div>' +
+'<div class="card-body">' + p.description + '</div>' +
 
-'<div class="card-body"><div class="card-body-label">📖 简介</div><div class="card-body-text">' + p.description + '</div></div>' +
-
-'<div class="info-bottom"><div class="info-bom">BOM: <strong>' + p.bom_cost + '</strong></div>' +
+'<div class="info-bottom"><div class="info-bom"></div>' +
 '<div><span class="stars-badge ' + starsClass + '">⭐ ' + p.stars.toLocaleString() + '</span>' + dailyText + '</div></div></div>';
 }
 
