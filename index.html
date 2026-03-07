@@ -27,7 +27,7 @@ select:hover, input:hover { border-color: var(--primary); }
 .platform-tag.active { background: var(--primary); color: white; }
 .results-info { color: white; margin-bottom: 20px; font-size: 15px; }
 .results-info span { font-weight: 600; color: #fbbf24; }
-.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 24px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 24px; }
 .project-card { background: var(--card); border-radius: 20px; padding: 24px; transition: all 0.3s; border: 2px solid transparent; position: relative; }
 .project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); border-color: var(--primary); }
 .project-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), #8b5cf6); }
@@ -39,15 +39,25 @@ select:hover, input:hover { border-color: var(--primary); }
 .badge-category { background: #ede9fe; color: #7c3aed; }
 .badge-seeed { background: #ffedd5; color: #ea580c; }
 .project-desc { color: var(--text-light); font-size: 14px; line-height: 1.6; margin-bottom: 16px; }
+
+.hardware-section { background: #f0fdf4; border: 2px solid #22c55e; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.hardware-title { font-weight: 700; color: #166534; font-size: 13px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.hardware-list { display: flex; gap: 6px; flex-wrap: wrap; }
+.hardware-chip { background: white; border: 1px solid #22c55e; color: #166534; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+.hardware-chip.seeed { background: #fed7aa; border-color: #ea580c; color: #9a3412; }
+
+.purchase-section { background: #eff6ff; border: 2px solid #3b82f6; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.purchase-title { font-weight: 700; color: #1e40af; font-size: 13px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.purchase-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.purchase-link { display: inline-flex; align-items: center; gap: 6px; background: #3b82f6; color: white; padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+.purchase-link:hover { background: #2563eb; transform: scale(1.02); }
+.purchase-link.seeed { background: #ea580c; }
+.purchase-link.seeed:hover { background: #c2410c; }
+
 .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
 .info-item { background: #f8fafc; padding: 10px 14px; border-radius: 10px; }
 .info-label { font-size: 11px; color: var(--text-light); text-transform: uppercase; margin-bottom: 4px; }
 .info-value { font-size: 14px; font-weight: 600; }
-.platform-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
-.platform-chip { background: #e2e8f0; padding: 4px 10px; border-radius: 6px; font-size: 12px; }
-.platform-chip.seeed { background: #fed7aa; color: #ea580c; }
-.product-links { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-.product-link { display: inline-flex; align-items: center; gap: 4px; background: #dbeafe; color: #2563eb; padding: 6px 12px; border-radius: 8px; font-size: 12px; text-decoration: none; }
 .stars-row { display: flex; align-items: center; gap: 16px; }
 .stars-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 15px; }
 .stars-badge.hot { background: linear-gradient(135deg, #22c55e, #16a34a); }
@@ -90,8 +100,6 @@ select:hover, input:hover { border-color: var(--primary); }
 </div>
 <script>
 const projects = [{"name": "Official OpenClaw Repository", "stars": 251095, "category": "embedded", "platforms": ["PC", "Mac", "Linux", "Windows", "iOS", "Android"], "description": "Your own personal AI assistant", "github_url": "https://github.com/openclaw/openclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$0 (software)", "daily_increment": 87}, {"name": "Nanobot", "stars": 29724, "category": "alternative", "platforms": ["Mobile", "iOS", "Android"], "description": "Ultra-Lightweight OpenClaw", "github_url": "https://github.com/HKUDS/nanobot", "seeedstudio": false, "product_links": [], "bom_cost": "Free (app)", "daily_increment": 45}, {"name": "ZeroClaw", "stars": 24059, "category": "alternative", "platforms": ["PC", "Server", "Cloud"], "description": "Fast, small, autonomous AI", "github_url": "https://github.com/zeroclaw-labs/zeroclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$5-20/mo", "daily_increment": 32}, {"name": "Sipeed PicoClaw", "stars": 21800, "category": "alternative", "platforms": ["Pico", "Sipeed", "RISC-V"], "description": "Tiny, Fast, Deployable", "github_url": "https://github.com/sipeed/picoclaw", "seeedstudio": false, "product_links": ["https://www.sipeed.com/picoclaw"], "bom_cost": "$15-30", "daily_increment": 25}, {"name": "MimiClaw", "stars": 3700, "category": "embedded", "platforms": ["ESP32", "Raspberry Pi"], "description": "Run OpenClaw on $5 chip", "github_url": "https://github.com/memovai/mimiclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$5-15", "daily_increment": 12}, {"name": "PicoLM", "stars": 1200, "category": "ai-compute", "platforms": ["Pico", "Raspberry Pi"], "description": "1B LLM on $10 board", "github_url": "https://github.com/RightNow-AI/picolm", "seeedstudio": false, "product_links": [], "bom_cost": "$10-50", "daily_increment": 8}, {"name": "ModelAssistant", "stars": 424, "category": "ai-compute", "platforms": ["NVIDIA Jetson", "Edge", "Seeed"], "description": "Seeed Embedded AI", "github_url": "https://github.com/Seeed-Studio/ModelAssistant", "seeedstudio": true, "product_links": ["https://www.seeedstudio.com/reComputer-J4012.html"], "bom_cost": "$200-500", "daily_increment": 5}, {"name": "reCamera", "stars": 389, "category": "ai-compute", "platforms": ["Camera", "Seeed", "XIAO"], "description": "Open-source AI cameras", "github_url": "https://github.com/Seeed-Studio/reCamera", "seeedstudio": true, "product_links": ["https://www.seeedstudio.com/reCamera"], "bom_cost": "$50-150", "daily_increment": 4}, {"name": "GoClaw", "stars": 302, "category": "alternative", "platforms": ["Go", "Server"], "description": "Open-source AI framework in Go", "github_url": "https://github.com/smallnest/goclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$0 (software)", "daily_increment": 2}, {"name": "ZeroClaw-Android", "stars": 224, "category": "embedded", "platforms": ["Android", "Mobile"], "description": "AI agents on Android", "github_url": "https://github.com/Natfii/ZeroClaw-Android", "seeedstudio": false, "product_links": [], "bom_cost": "Free (app)", "daily_increment": 3}, {"name": "TinyClaw", "stars": 135, "category": "alternative", "platforms": ["PC"], "description": "Tiny personal AI companion", "github_url": "https://github.com/warengonzaga/tinyclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$0 (software)", "daily_increment": 1}, {"name": "PicoOracleClaw", "stars": 79, "category": "alternative", "platforms": ["Oracle", "Cloud"], "description": "PicoClaw with Oracle AI", "github_url": "https://github.com/jasperan/picooraclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$50+/mo", "daily_increment": 0}, {"name": "IronClaw", "stars": 61, "category": "alternative", "platforms": ["PC", "Security"], "description": "AI assistant with security", "github_url": "https://github.com/CyberSecurityUP/ironclaw", "seeedstudio": false, "product_links": [], "bom_cost": "$0 (software)", "daily_increment": 1}, {"name": "SenseCraft AI Server", "stars": 60, "category": "ai-compute", "platforms": ["Edge", "NVIDIA Jetson", "Seeed"], "description": "AI on edge devices", "github_url": "https://github.com/Seeed-Studio/SenseCraft-AI_Server", "seeedstudio": true, "product_links": ["https://www.seeedstudio.com/sensecap-ai-watchers.html"], "bom_cost": "$100-300", "daily_increment": 2}, {"name": "Robot Control Stack", "stars": 44, "category": "robotics", "platforms": ["Robot", "FRANKA", "UR5e"], "description": "VLA models and RL agents", "github_url": "https://github.com/RobotControlStack/robot-control-stack", "seeedstudio": false, "product_links": [], "bom_cost": "$5000-50000", "daily_increment": 2}, {"name": "MiniMax Agent VLA", "stars": 34, "category": "robotics", "platforms": ["Robot", "VLA"], "description": "VLA Robot Agent Demo", "github_url": "https://github.com/MiniMax-OpenPlatform/MiniMax-Agent-VLA-Demo", "seeedstudio": false, "product_links": [], "bom_cost": "$500-2000", "daily_increment": 1}, {"name": "WireClaw", "stars": 31, "category": "iot", "platforms": ["ESP32", "Seeed XIAO"], "description": "ESP32 AI agent with offline rule engine", "github_url": "https://github.com/M64GitHub/WireClaw", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32C3.html"], "bom_cost": "$10-20", "daily_increment": 1}, {"name": "clawd-reachy-mini", "stars": 26, "category": "robotics", "platforms": ["Robot", "Reachy"], "description": "Reachy Mini integration", "github_url": "https://github.com/ArturSkowronski/clawd-reachy-mini", "seeedstudio": false, "product_links": [], "bom_cost": "$2000-5000", "daily_increment": 0}, {"name": "Strands Robots", "stars": 25, "category": "robotics", "platforms": ["Robot"], "description": "Control robots with language", "github_url": "https://github.com/strands-labs/robots", "seeedstudio": false, "product_links": [], "bom_cost": "$500-5000", "daily_increment": 1}, {"name": "OpenClaw Pi Installation", "stars": 21, "category": "embedded", "platforms": ["Raspberry Pi"], "description": "OpenClaw on Raspberry Pi", "github_url": "https://github.com/Demwunz/openclaw-pi-installation", "seeedstudio": false, "product_links": [], "bom_cost": "$50-100", "daily_increment": 0}, {"name": "Telekinesis", "stars": 16, "category": "robotics", "platforms": ["Robot", "Vision"], "description": "AI-powered Robotics", "github_url": "https://github.com/telekinesis-ai/telekinesis-examples", "seeedstudio": false, "product_links": [], "bom_cost": "$100-1000", "daily_increment": 1}, {"name": "OpenClawgotchi", "stars": 15, "category": "iot", "platforms": ["Raspberry Pi", "E-Ink"], "description": "AI Tamagotchi", "github_url": "https://github.com/turmyshevd/openclawgotchi", "seeedstudio": false, "product_links": [], "bom_cost": "$30-50", "daily_increment": 0}, {"name": "Monagotchi", "stars": 15, "category": "iot", "platforms": ["ESP32", "Seeed XIAO"], "description": "ESP32 Tamagotchi", "github_url": "https://github.com/This-Is-Captain-Code/monagotchi", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32C3.html"], "bom_cost": "$15-30", "daily_increment": 0}, {"name": "OpenClaw Robotics", "stars": 14, "category": "robotics", "platforms": ["Robot", "Humanoid"], "description": "Control stack for Embodied AI", "github_url": "https://github.com/LooperRobotics/OpenClaw-Robotics", "seeedstudio": false, "product_links": [], "bom_cost": "$2000-20000", "daily_increment": 1}, {"name": "Neko AI Agent", "stars": 13, "category": "embedded", "platforms": ["Raspberry Pi", "VPS"], "description": "Lightweight AI agent", "github_url": "https://github.com/superhq-ai/neko", "seeedstudio": false, "product_links": [], "bom_cost": "$15-25", "daily_increment": 0}, {"name": "OpenClawX", "stars": 11, "category": "embedded", "platforms": ["PC", "Desktop"], "description": "Desktop UI", "github_url": "https://github.com/next-open-ai/openclawx", "seeedstudio": false, "product_links": [], "bom_cost": "$0 (software)", "daily_increment": 0}, {"name": "OpenClaw Xiaozhi", "stars": 10, "category": "iot", "platforms": ["ESP32", "Voice", "Seeed XIAO"], "description": "Voice interface", "github_url": "https://github.com/tigerbryan/openclaw-xiaozhi", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32S3-Sense.html"], "bom_cost": "$15-25", "daily_increment": 0}, {"name": "OpenClaw Raspberry Installer", "stars": 9, "category": "ai-compute", "platforms": ["Raspberry Pi", "Hailo"], "description": "With Hailo accelerator", "github_url": "https://github.com/sanchorelaxo/openclaw-raspberry-installer", "seeedstudio": false, "product_links": [], "bom_cost": "$150-250", "daily_increment": 0}, {"name": "clawbody", "stars": 8, "category": "robotics", "platforms": ["Robot", "Reachy"], "description": "Robotics control stack", "github_url": "https://github.com/tomrikert/clawbody", "seeedstudio": false, "product_links": [], "bom_cost": "$2000-5000", "daily_increment": 0}, {"name": "Kongnitive EdgeMCP", "stars": 7, "category": "embedded", "platforms": ["ESP32", "Seeed XIAO", "MCP"], "description": "MCP on ESP32", "github_url": "https://github.com/Kongnitive/Kongnitive-EdgeMCP", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32C3.html"], "bom_cost": "$10-20", "daily_increment": 0}, {"name": "PicoClaw Labs", "stars": 6, "category": "alternative", "platforms": ["Pico", "Sipeed"], "description": "PicoClaw official", "github_url": "https://github.com/picoclaw-labs/picoclaw", "seeedstudio": false, "product_links": ["https://www.sipeed.com/picoclaw"], "bom_cost": "$15-30", "daily_increment": 0}, {"name": "VectorClaw", "stars": 5, "category": "robotics", "platforms": ["Robot", "Vector"], "description": "Anki Vector integration", "github_url": "https://github.com/danmartinez78/VectorClaw", "seeedstudio": false, "product_links": [], "bom_cost": "$200-500", "daily_increment": 0}, {"name": "OpenClaw XIAO Node", "stars": 4, "category": "embedded", "platforms": ["Seeed XIAO", "ESP32"], "description": "OpenClaw for Seeed XIAO", "github_url": "https://github.com/chilu18/openclaw-esp32c3-xiao-node", "seeedstudio": true, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32C3.html"], "bom_cost": "$10-15", "daily_increment": 0}, {"name": "Arduino Maker Skill", "stars": 3, "category": "maker", "platforms": ["Arduino", "ESP32", "Seeed"], "description": "Arduino/ESP32 guide", "github_url": "https://github.com/DmitrySolana/Arduino-maker", "seeedstudio": false, "product_links": [], "bom_cost": "$10-50", "daily_increment": 0}, {"name": "HeyClawy", "stars": 2, "category": "iot", "platforms": ["ESP32", "Voice", "Seeed XIAO"], "description": "Voice companion", "github_url": "https://github.com/omeriko9/HeyClawy", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32S3-Sense.html"], "bom_cost": "$15-25", "daily_increment": 0}, {"name": "IOnode", "stars": 2, "category": "iot", "platforms": ["ESP32", "Seeed XIAO"], "description": "ESP32 with NATS", "github_url": "https://github.com/M64GitHub/IOnode", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32C3.html"], "bom_cost": "$10-20", "daily_increment": 0}, {"name": "OpenClaw Voice Server", "stars": 2, "category": "embedded", "platforms": ["ESP32", "Node.js", "Seeed XIAO"], "description": "Voice relay bridge", "github_url": "https://github.com/brooqs/openclaw-voice-server", "seeedstudio": false, "product_links": ["https://www.seeedstudio.com/XIAO-ESP32C3.html"], "bom_cost": "$10-20", "daily_increment": 0}, {"name": "Jetson OpenClaw", "stars": 1, "category": "ai-compute", "platforms": ["NVIDIA Jetson", "Orin"], "description": "OpenClaw on Jetson Orin", "github_url": "https://github.com/rhuanssauro/jetson-openclaw", "seeedstudio": false, "product_links": ["https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"], "bom_cost": "$500-1500", "daily_increment": 0}, {"name": "OpenClaw Jetson Container", "stars": 1, "category": "ai-compute", "platforms": ["NVIDIA Jetson", "Docker"], "description": "Jetson container", "github_url": "https://github.com/AndroidNextdoor/openclaw-jetson", "seeedstudio": false, "product_links": ["https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"], "bom_cost": "$500-1500", "daily_increment": 0}, {"name": "OpenClaw ROS2", "stars": 1, "category": "robotics", "platforms": ["ROS2", "Robot"], "description": "Via ROS2", "github_url": "https://github.com/moe-sani/openclaw_ros2", "seeedstudio": false, "product_links": [], "bom_cost": "$500-5000", "daily_increment": 0}, {"name": "Clawarm", "stars": 1, "category": "robotics", "platforms": ["Robot Arm", "Seeed"], "description": "Robotic arm", "github_url": "https://github.com/Clawland-AI/Clawarm", "seeedstudio": false, "product_links": [], "bom_cost": "$100-500", "daily_increment": 0}, {"name": "Seeed AI Skills", "stars": 0, "category": "maker", "platforms": ["Seeed XIAO", "AI"], "description": "Seeed AI expertise for OpenClaw", "github_url": "https://github.com/Seeed-Studio/ai-skills", "seeedstudio": true, "product_links": ["https://www.seeedstudio.com/xiao-series"], "bom_cost": "$10-50", "daily_increment": 0}];
-const allPlatforms = ["AI", "Android", "Arduino", "Camera", "Cloud", "Desktop", "Docker", "E-Ink", "ESP32", "Edge", "FRANKA", "Go", "Hailo", "Humanoid", "Linux", "MCP", "Mac", "Mobile", "NVIDIA Jetson", "Node.js", "Oracle", "Orin", "PC", "Pico", "RISC-V", "ROS2", "Raspberry Pi", "Reachy", "Robot", "Robot Arm", "Security", "Seeed", "Seeed XIAO", "Server", "Sipeed", "UR5e", "VLA", "VPS", "Vector", "Vision", "Voice", "Windows", "XIAO", "iOS"];
-const allCategories = ["ai-compute", "alternative", "embedded", "iot", "maker", "robotics"];
 
 document.querySelectorAll('.platform-tag').forEach(tag => {
 tag.addEventListener('click', function() {
@@ -118,22 +126,53 @@ return platformMatch && categoryMatch && searchMatch;
 function createProjectCard(p) {
 const starsClass = p.stars > 1000 ? 'hot' : '';
 const dailyText = p.daily_increment > 0 ? '<span class="daily-badge">↑ ' + p.daily_increment + ' today</span>' : '';
-const platformChips = p.platforms.map(plat => {
+
+// Hardware section
+const hardwareChips = p.platforms.map(plat => {
 const isSeeed = plat.toLowerCase().includes('seeed') || plat.toLowerCase().includes('xiao');
-return '<span class="platform-chip ' + (isSeeed ? 'seeed' : '') + '">' + plat + '</span>';
+return '<span class="hardware-chip ' + (isSeeed ? 'seeed' : '') + '">' + plat + '</span>';
 }).join('');
-const productLinks = p.product_links.map(link => 
-'<a href="' + link + '" target="_blank" class="product-link">📦 Product</a>'
-).join('');
+
+// Purchase links section
+let purchaseLinks = '';
+if (p.product_links && p.product_links.length > 0) {
+purchaseLinks = '<div class="purchase-section"><div class="purchase-title">🛒 采购链接 / Purchase</div><div class="purchase-links">';
+p.product_links.forEach(link => {
+const isSeeed = link.includes('seeed');
+purchaseLinks += '<a href="' + link + '" target="_blank" class="purchase-link ' + (isSeeed ? 'seeed' : '') + '">📦 Buy</a>';
+});
+purchaseLinks += '</div></div>';
+} else if (p.platforms.some(plat => plat.includes('Raspberry') || plat.includes('Jetson') || plat.includes('ESP'))) {
+// Auto-generate purchase links for common platforms
+const linkMap = {
+'Raspberry Pi': 'https://www.raspberrypi.com/products/',
+'NVIDIA Jetson': 'https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/',
+'Orin': 'https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/',
+'ESP32': 'https://www.seeedstudio.com/XIAO-ESP32C3.html'
+};
+p.platforms.forEach(plat => {
+if (linkMap[plat]) {
+const isSeeed = linkMap[plat].includes('seeed');
+purchaseLinks += '<a href="' + linkMap[plat] + '" target="_blank" class="purchase-link ' + (isSeeed ? 'seeed' : '') + '">' + plat + ' ↗</a>';
+}
+});
+if (purchaseLinks) {
+purchaseLinks = '<div class="purchase-section"><div class="purchase-title">🛒 采购链接 / Purchase</div><div class="purchase-links">' + purchaseLinks + '</div></div>';
+}
+}
+
 const seeedBadge = p.seeedstudio ? '<span class="badge badge-seeed">SeeedStudio</span>' : '';
 return '<div class="project-card">' +
 '<div class="card-header"><div class="project-name"><a href="' + p.github_url + '" target="_blank">' + p.name + '</a></div></div>' +
 '<div class="badges"><span class="badge badge-category">' + p.category + '</span>' + seeedBadge + '</div>' +
 '<div class="project-desc">' + p.description + '</div>' +
-'<div class="info-grid"><div class="info-item"><div class="info-label">BOM Cost</div><div class="info-value">' + p.bom_cost + '</div></div>' +
-'<div class="info-item"><div class="info-label">Daily Stars</div><div class="info-value">+ ' + p.daily_increment + '</div></div></div>' +
-'<div class="platform-chips">' + platformChips + '</div>' +
-'<div class="product-links">' + productLinks + '</div>' +
+
+'<div class="hardware-section"><div class="hardware-title">💻 适配硬件 / Hardware</div><div class="hardware-list">' + hardwareChips + '</div></div>' +
+
+purchaseLinks +
+
+'<div class="info-grid"><div class="info-item"><div class="info-label">BOM 成本</div><div class="info-value">' + p.bom_cost + '</div></div>' +
+'<div class="info-item"><div class="info-label">今日增长</div><div class="info-value">+ ' + p.daily_increment + ' ⭐</div></div></div>' +
 '<div class="stars-row"><span class="stars-badge ' + starsClass + '">⭐ ' + p.stars.toLocaleString() + '</span>' + dailyText + '</div></div>';
 }
 
