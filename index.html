@@ -29,20 +29,20 @@ select, input { padding: 10px 16px; border: 2px solid #e2e8f0; border-radius: 12
 .project-card { background: var(--card); border-radius: 20px; padding: 24px; transition: all 0.3s; border: 2px solid transparent; position: relative; }
 .project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); border-color: var(--primary); }
 .project-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), #8b5cf6); }
-.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
 .project-name { font-size: 1.3rem; font-weight: 700; color: var(--text); }
 .project-name a { color: inherit; text-decoration: none; }
-.badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
 .badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
 .badge-category { background: #ede9fe; color: #7c3aed; }
 .badge-seeed { background: #ffedd5; color: #ea580c; }
 .badge-core { background: #dbeafe; color: #1d4ed8; }
 
-.info-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; font-size: 14px; color: var(--text-light); }
-.info-row a { color: #3b82f6; text-decoration: none; }
-.info-row a:hover { text-decoration: underline; }
-
-.project-desc { color: var(--text-light); font-size: 15px; line-height: 1.7; margin-bottom: 16px; min-height: 50px; }
+.card-body { margin-bottom: 16px; }
+.card-body-label { font-weight: 600; color: var(--text); font-size: 14px; margin-bottom: 8px; }
+.card-body-text { color: var(--text-light); font-size: 15px; line-height: 1.7; }
+.card-body-text a { color: #3b82f6; text-decoration: none; }
+.card-body-text a:hover { text-decoration: underline; }
 
 .info-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #e2e8f0; }
 .info-bom { font-size: 14px; color: var(--text-light); }
@@ -120,16 +120,16 @@ let badge = '<span class="badge badge-category">' + p.category + '</span>';
 if (p.category === 'core') badge = '<span class="badge badge-core">⭐ Core</span>';
 if (p.seeedstudio) badge += '<span class="badge badge-seeed">SeeedStudio</span>';
 
-// Hardware (simple text)
+// Hardware (as main body)
 const hardwareText = p.platforms.join(', ');
 
-// Purchase links (simple hyperlinks)
-let purchaseLinks = '';
+// Purchase links (as main body)
+let purchaseText = '';
 if (p.product_links && p.product_links.length > 0) {
-purchaseLinks = ' | Buy: ';
+purchaseText = ' | Buy: ';
 p.product_links.forEach((link, i) => {
-if (i > 0) purchaseLinks += ', ';
-purchaseLinks += '<a href="' + link + '" target="_blank">' + (link.includes('seeed') ? 'SeeedStudio' : 'Link') + '</a>';
+if (i > 0) purchaseText += ', ';
+purchaseText += '<a href="' + link + '" target="_blank">' + (link.includes('seeed') ? 'SeeedStudio' : 'Link') + '</a>';
 });
 }
 
@@ -137,9 +137,9 @@ return '<div class="project-card">' +
 '<div class="card-header"><div class="project-name"><a href="' + p.github_url + '" target="_blank">' + p.name + '</a></div></div>' +
 '<div class="badges">' + badge + '</div>' +
 
-'<div class="info-row"><strong>Hardware:</strong> ' + hardwareText + purchaseLinks + '</div>' +
+'<div class="card-body"><div class="card-body-label">💻 适配硬件</div><div class="card-body-text">' + hardwareText + purchaseText + '</div></div>' +
 
-'<div class="project-desc">' + p.description + '</div>' +
+'<div class="card-body"><div class="card-body-label">📖 简介</div><div class="card-body-text">' + p.description + '</div></div>' +
 
 '<div class="info-bottom"><div class="info-bom">BOM: <strong>' + p.bom_cost + '</strong></div>' +
 '<div><span class="stars-badge ' + starsClass + '">⭐ ' + p.stars.toLocaleString() + '</span>' + dailyText + '</div></div></div>';
