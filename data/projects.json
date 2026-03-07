@@ -4,9 +4,20 @@
     "name": "Official OpenClaw Repository",
     "stars": 251095,
     "category": "core",
-    "platforms": ["PC","Mac","Linux","Windows","iOS","Android"],
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
     "description": "Your personal AI assistant on any device",
-    "highlights": ["5400+ skills", "Cross-platform", "Active community"],
+    "highlights": [
+      "5400+ skills",
+      "Cross-platform",
+      "Active community"
+    ],
     "github_url": "https://github.com/openclaw/openclaw",
     "seeedstudio": false,
     "product_links": [],
@@ -15,13 +26,53 @@
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
+    "id": 20,
+    "name": "chatgpt-on-wechat",
+    "stars": 41966,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "CowAgent\u662f\u57fa\u4e8e\u5927\u6a21\u578b\u7684\u8d85\u7ea7AI\u52a9\u7406\uff0c\u80fd\u4e3b\u52a8\u601d\u8003\u548c\u4efb\u52a1\u89c4\u5212\u3001\u8bbf\u95ee\u64cd\u4f5c\u7cfb\u7edf\u548c\u5916\u90e8\u8d44\u6e90\u3001\u521b\u9020\u548c\u6267\u884cSkills\u3001\u62e5\u6709\u957f\u671f\u8bb0\u5fc6\u5e76\u4e0d\u65ad\u6210\u957f\u3002\u540c\u65f6\u652f\u6301\u98de\u4e66\u3001\u9489\u9489\u3001\u4f01\u4e1a\u5fae\u4fe1\u5e94\u7528\u3001\u5fae\u4fe1\u516c\u4f17\u53f7\u3001\u7f51\u9875\u7b49\u63a5\u5165\uff0c\u53ef\u9009\u62e9OpenAI/Claude/Gemini/DeepSeek/ Qwen/GLM/Kimi/Link",
+    "github_url": "https://github.com/zhayujie/chatgpt-on-wechat",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T17:44:51.564287Z"
+  },
+  {
+    "id": 21,
+    "name": "cherry-studio",
+    "stars": 40927,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+    "github_url": "https://github.com/CherryHQ/cherry-studio",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T17:44:51.564595Z"
+  },
+  {
     "id": 2,
     "name": "Nanobot",
     "stars": 29724,
     "category": "alternative",
-    "platforms": ["Mobile","iOS","Android"],
+    "platforms": [
+      "Mobile",
+      "iOS",
+      "Android"
+    ],
     "description": "Ultra-lightweight AI assistant for mobile",
-    "highlights": ["99% smaller footprint", "Fast startup", "Low-resource optimized"],
+    "highlights": [
+      "99% smaller footprint",
+      "Fast startup",
+      "Low-resource optimized"
+    ],
     "github_url": "https://github.com/HKUDS/nanobot",
     "seeedstudio": false,
     "product_links": [],
@@ -34,9 +85,17 @@
     "name": "ZeroClaw",
     "stars": 24059,
     "category": "alternative",
-    "platforms": ["PC","Server","Cloud"],
+    "platforms": [
+      "PC",
+      "Server",
+      "Cloud"
+    ],
     "description": "Production-grade AI infrastructure",
-    "highlights": ["Rust-based", "Auto-scaling", "Enterprise features"],
+    "highlights": [
+      "Rust-based",
+      "Auto-scaling",
+      "Enterprise features"
+    ],
     "github_url": "https://github.com/zeroclaw-labs/zeroclaw",
     "seeedstudio": false,
     "product_links": [],
@@ -49,12 +108,25 @@
     "name": "Sipeed PicoClaw",
     "stars": 21800,
     "category": "alternative",
-    "platforms": ["Pico","Sipeed","RISC-V"],
+    "platforms": [
+      "Pico",
+      "Sipeed",
+      "RISC-V"
+    ],
     "description": "Tiny AI assistant for embedded hardware",
-    "highlights": ["RISC-V support", "Deploy anywhere", "Open source"],
+    "highlights": [
+      "RISC-V support",
+      "Deploy anywhere",
+      "Open source"
+    ],
     "github_url": "https://github.com/sipeed/picoclaw",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.sipeed.com/picoclaw", "price": "$15"}],
+    "product_links": [
+      {
+        "url": "https://www.sipeed.com/picoclaw",
+        "price": "$15"
+      }
+    ],
     "bom_cost": "$15-30",
     "daily_increment": 25,
     "created_at": "2026-03-07T00:00:00Z"
@@ -64,27 +136,99 @@
     "name": "MimiClaw",
     "stars": 3700,
     "category": "embedded",
-    "platforms": ["ESP32","Raspberry Pi"],
+    "platforms": [
+      "ESP32",
+      "Raspberry Pi"
+    ],
     "description": "Run AI on $5 chip",
-    "highlights": ["No OS required", "Bare-metal deployment", "Ultra-low cost"],
+    "highlights": [
+      "No OS required",
+      "Bare-metal deployment",
+      "Ultra-low cost"
+    ],
     "github_url": "https://github.com/memovai/mimiclaw",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.seeedstudio.com/XIAO-ESP32C3.html", "price": "$10"}],
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32C3.html",
+        "price": "$10"
+      }
+    ],
     "bom_cost": "$5-15",
     "daily_increment": 12,
     "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 22,
+    "name": "py-xiaozhi",
+    "stars": 3200,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A Python-based Xiaozhi AI for users who want the full Xiaozhi experience without owning specialized hardware.",
+    "github_url": "https://github.com/huangjunsen0406/py-xiaozhi",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T17:44:52.978966Z"
+  },
+  {
+    "id": 23,
+    "name": "esp32_nat_router",
+    "stars": 1817,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "An AI-enabled NAT Router/Firewall for the ESP32",
+    "github_url": "https://github.com/martin-ger/esp32_nat_router",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T17:44:52.979033Z"
+  },
+  {
+    "id": 24,
+    "name": "zclaw",
+    "stars": 1760,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Your personal AI assistant at all-in 888KiB (~35KB in app code). Running on an ESP32. GPIO, cron, custom tools, memory, and more.",
+    "github_url": "https://github.com/tnm/zclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T17:44:52.979061Z"
   },
   {
     "id": 6,
     "name": "PicoLM",
     "stars": 1297,
     "category": "ai-compute",
-    "platforms": ["Pico","Raspberry Pi"],
+    "platforms": [
+      "Pico",
+      "Raspberry Pi"
+    ],
     "description": "Run 1B parameter LLM locally",
-    "highlights": ["Works on $10 board", "256MB RAM sufficient", "Edge AI"],
+    "highlights": [
+      "Works on $10 board",
+      "256MB RAM sufficient",
+      "Edge AI"
+    ],
     "github_url": "https://github.com/RightNow-AI/picolm",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.raspberrypi.com/products/raspberry-pi-5/", "price": "$80"}],
+    "product_links": [
+      {
+        "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+        "price": "$80"
+      }
+    ],
     "bom_cost": "$10-50",
     "daily_increment": 8,
     "created_at": "2026-03-07T00:00:00Z"
@@ -94,12 +238,25 @@
     "name": "ModelAssistant",
     "stars": 424,
     "category": "ai-compute",
-    "platforms": ["NVIDIA Jetson","Edge","Seeed"],
+    "platforms": [
+      "NVIDIA Jetson",
+      "Edge",
+      "Seeed"
+    ],
     "description": "Seeed embedded AI deployment",
-    "highlights": ["Pre-trained models", "Jetson optimized", "One-click deploy"],
+    "highlights": [
+      "Pre-trained models",
+      "Jetson optimized",
+      "One-click deploy"
+    ],
     "github_url": "https://github.com/Seeed-Studio/ModelAssistant",
     "seeedstudio": true,
-    "product_links": [{"url": "https://www.seeedstudio.com/reComputer-J4012.html", "price": "$300"}],
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/reComputer-J4012.html",
+        "price": "$300"
+      }
+    ],
     "bom_cost": "$200-500",
     "daily_increment": 5,
     "created_at": "2026-03-07T00:00:00Z"
@@ -109,14 +266,54 @@
     "name": "reCamera",
     "stars": 389,
     "category": "ai-compute",
-    "platforms": ["Camera","Seeed"],
+    "platforms": [
+      "Camera",
+      "Seeed"
+    ],
     "description": "Open-source AI camera platform",
-    "highlights": ["Edge AI processing", "Vision models ready", "Modular design"],
+    "highlights": [
+      "Edge AI processing",
+      "Vision models ready",
+      "Modular design"
+    ],
     "github_url": "https://github.com/Seeed-Studio/reCamera",
     "seeedstudio": true,
-    "product_links": [{"url": "https://www.seeedstudio.com/reCamera", "price": "$99"}],
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/reCamera",
+        "price": "$99"
+      }
+    ],
     "bom_cost": "$50-150",
     "daily_increment": 4,
+    "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Xiaozhi ESP32 Server",
+    "stars": 179,
+    "category": "iot",
+    "platforms": [
+      "ESP32",
+      "Voice",
+      "XIAO"
+    ],
+    "description": "Voice interface for ESP32",
+    "highlights": [
+      "Low-cost voice",
+      "Local processing",
+      "Ready to use"
+    ],
+    "github_url": "https://github.com/liu233w/xiaozhi-esp32-server-golang",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32S3-Sense.html",
+        "price": "$15"
+      }
+    ],
+    "bom_cost": "$15-25",
+    "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -124,12 +321,25 @@
     "name": "SenseCraft AI Server",
     "stars": 60,
     "category": "ai-compute",
-    "platforms": ["Edge","NVIDIA Jetson","Seeed"],
+    "platforms": [
+      "Edge",
+      "NVIDIA Jetson",
+      "Seeed"
+    ],
     "description": "Edge AI server solution",
-    "highlights": ["Local processing", "Low latency", "Privacy-first"],
+    "highlights": [
+      "Local processing",
+      "Low latency",
+      "Privacy-first"
+    ],
     "github_url": "https://github.com/Seeed-Studio/SenseCraft-AI_Server",
     "seeedstudio": true,
-    "product_links": [{"url": "https://www.seeedstudio.com/sensecap-ai-watchers.html", "price": "$150"}],
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/sensecap-ai-watchers.html",
+        "price": "$150"
+      }
+    ],
     "bom_cost": "$100-300",
     "daily_increment": 2,
     "created_at": "2026-03-07T00:00:00Z"
@@ -139,43 +349,24 @@
     "name": "WireClaw",
     "stars": 31,
     "category": "iot",
-    "platforms": ["ESP32"],
+    "platforms": [
+      "ESP32"
+    ],
     "description": "ESP32 AI agent with memory",
-    "highlights": ["Offline rule engine", "Local config", "IoT ready"],
+    "highlights": [
+      "Offline rule engine",
+      "Local config",
+      "IoT ready"
+    ],
     "github_url": "https://github.com/M64GitHub/WireClaw",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.seeedstudio.com/XIAO-ESP32C3.html", "price": "$10"}],
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32C3.html",
+        "price": "$10"
+      }
+    ],
     "bom_cost": "$10-20",
-    "daily_increment": 1,
-    "created_at": "2026-03-07T00:00:00Z"
-  },
-  {
-    "id": 11,
-    "name": "Xiaozhi ESP32 Server",
-    "stars": 179,
-    "category": "iot",
-    "platforms": ["ESP32","Voice","XIAO"],
-    "description": "Voice interface for ESP32",
-    "highlights": ["Low-cost voice", "Local processing", "Ready to use"],
-    "github_url": "https://github.com/liu233w/xiaozhi-esp32-server-golang",
-    "seeedstudio": false,
-    "product_links": [{"url": "https://www.seeedstudio.com/XIAO-ESP32S3-Sense.html", "price": "$15"}],
-    "bom_cost": "$15-25",
-    "daily_increment": 0,
-    "created_at": "2026-03-07T00:00:00Z"
-  },
-  {
-    "id": 12,
-    "name": "OpenClaw Robotics",
-    "stars": 14,
-    "category": "robotics",
-    "platforms": ["Robot","Humanoid","Quadruped"],
-    "description": "Control stack for real robots",
-    "highlights": ["Whole-body control", "Sim-to-real transfer", "Low-latency"],
-    "github_url": "https://github.com/LooperRobotics/OpenClaw-Robotics",
-    "seeedstudio": false,
-    "product_links": [{"url": "https://www.seeedstudio.com/grove-vision-ai-module-v2.html", "price": "$30"}],
-    "bom_cost": "$2000-20000",
     "daily_increment": 1,
     "created_at": "2026-03-07T00:00:00Z"
   },
@@ -184,9 +375,16 @@
     "name": "Reachy Mini",
     "stars": 26,
     "category": "robotics",
-    "platforms": ["Robot","Reachy"],
+    "platforms": [
+      "Robot",
+      "Reachy"
+    ],
     "description": "Robot with AI brain",
-    "highlights": ["WebSocket control", "Physical embodiment", "Expressive"],
+    "highlights": [
+      "WebSocket control",
+      "Physical embodiment",
+      "Expressive"
+    ],
     "github_url": "https://github.com/ArturSkowronski/clawd-reachy-mini",
     "seeedstudio": false,
     "product_links": [],
@@ -195,47 +393,28 @@
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
-    "id": 14,
-    "name": "OpenClaw XIAO Node",
-    "stars": 4,
-    "category": "embedded",
-    "platforms": ["Seeed XIAO","ESP32"],
-    "description": "OpenClaw on Seeed XIAO",
-    "highlights": ["$13 BOM", "IoT ready", "Small footprint"],
-    "github_url": "https://github.com/chilu18/openclaw-esp32c3-xiao-node",
-    "seeedstudio": true,
-    "product_links": [{"url": "https://www.seeedstudio.com/XIAO-ESP32C3.html", "price": "$10"}],
-    "bom_cost": "$10-15",
-    "daily_increment": 0,
-    "created_at": "2026-03-07T00:00:00Z"
-  },
-  {
     "id": 15,
     "name": "OpenClaw Pi Installation",
     "stars": 21,
     "category": "embedded",
-    "platforms": ["Raspberry Pi"],
+    "platforms": [
+      "Raspberry Pi"
+    ],
     "description": "Secure Pi setup guide",
-    "highlights": ["Hardened security", "Easy setup", "Stable"],
+    "highlights": [
+      "Hardened security",
+      "Easy setup",
+      "Stable"
+    ],
     "github_url": "https://github.com/Demwunz/openclaw-pi-installation",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.raspberrypi.com/products/raspberry-pi-4/", "price": "$55"}],
+    "product_links": [
+      {
+        "url": "https://www.raspberrypi.com/products/raspberry-pi-4/",
+        "price": "$55"
+      }
+    ],
     "bom_cost": "$50-100",
-    "daily_increment": 0,
-    "created_at": "2026-03-07T00:00:00Z"
-  },
-  {
-    "id": 16,
-    "name": "Jetson OpenClaw",
-    "stars": 1,
-    "category": "ai-compute",
-    "platforms": ["NVIDIA Jetson","Orin"],
-    "description": "AI on NVIDIA edge",
-    "highlights": ["GPU acceleration", "Vision capable", "High performance"],
-    "github_url": "https://github.com/rhuanssauro/jetson-openclaw",
-    "seeedstudio": false,
-    "product_links": [{"url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/", "price": "$750"}],
-    "bom_cost": "$500-1500",
     "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   },
@@ -244,12 +423,24 @@
     "name": "OpenClawgotchi",
     "stars": 15,
     "category": "iot",
-    "platforms": ["Raspberry Pi","E-Ink"],
+    "platforms": [
+      "Raspberry Pi",
+      "E-Ink"
+    ],
     "description": "AI companion device",
-    "highlights": ["E-ink display", "Low power", "Fun project"],
+    "highlights": [
+      "E-ink display",
+      "Low power",
+      "Fun project"
+    ],
     "github_url": "https://github.com/turmyshevd/openclawgotchi",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/", "price": "$15"}],
+    "product_links": [
+      {
+        "url": "https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/",
+        "price": "$15"
+      }
+    ],
     "bom_cost": "$30-50",
     "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
@@ -259,14 +450,54 @@
     "name": "Monagotchi",
     "stars": 15,
     "category": "iot",
-    "platforms": ["ESP32","Seeed XIAO"],
+    "platforms": [
+      "ESP32",
+      "Seeed XIAO"
+    ],
     "description": "ESP32 Tamagotchi project",
-    "highlights": ["Fun experiment", "Memecoin integration", "Open source"],
+    "highlights": [
+      "Fun experiment",
+      "Memecoin integration",
+      "Open source"
+    ],
     "github_url": "https://github.com/This-Is-Captain-Code/monagotchi",
     "seeedstudio": false,
-    "product_links": [{"url": "https://www.seeedstudio.com/XIAO-ESP32C3.html", "price": "$10"}],
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32C3.html",
+        "price": "$10"
+      }
+    ],
     "bom_cost": "$15-30",
     "daily_increment": 0,
+    "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "name": "OpenClaw Robotics",
+    "stars": 14,
+    "category": "robotics",
+    "platforms": [
+      "Robot",
+      "Humanoid",
+      "Quadruped"
+    ],
+    "description": "Control stack for real robots",
+    "highlights": [
+      "Whole-body control",
+      "Sim-to-real transfer",
+      "Low-latency"
+    ],
+    "github_url": "https://github.com/LooperRobotics/OpenClaw-Robotics",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/grove-vision-ai-module-v2.html",
+        "price": "$30"
+      }
+    ],
+    "bom_cost": "$2000-20000",
+    "daily_increment": 1,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -274,13 +505,74 @@
     "name": "OpenClawX",
     "stars": 11,
     "category": "embedded",
-    "platforms": ["PC","Desktop"],
+    "platforms": [
+      "PC",
+      "Desktop"
+    ],
     "description": "Desktop GUI for OpenClaw",
-    "highlights": ["User-friendly", "No CLI needed", "Quick start"],
+    "highlights": [
+      "User-friendly",
+      "No CLI needed",
+      "Quick start"
+    ],
     "github_url": "https://github.com/next-open-ai/openclawx",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "name": "OpenClaw XIAO Node",
+    "stars": 4,
+    "category": "embedded",
+    "platforms": [
+      "Seeed XIAO",
+      "ESP32"
+    ],
+    "description": "OpenClaw on Seeed XIAO",
+    "highlights": [
+      "$13 BOM",
+      "IoT ready",
+      "Small footprint"
+    ],
+    "github_url": "https://github.com/chilu18/openclaw-esp32c3-xiao-node",
+    "seeedstudio": true,
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32C3.html",
+        "price": "$10"
+      }
+    ],
+    "bom_cost": "$10-15",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Jetson OpenClaw",
+    "stars": 1,
+    "category": "ai-compute",
+    "platforms": [
+      "NVIDIA Jetson",
+      "Orin"
+    ],
+    "description": "AI on NVIDIA edge",
+    "highlights": [
+      "GPU acceleration",
+      "Vision capable",
+      "High performance"
+    ],
+    "github_url": "https://github.com/rhuanssauro/jetson-openclaw",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+        "price": "$750"
+      }
+    ],
+    "bom_cost": "$500-1500",
     "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   }
