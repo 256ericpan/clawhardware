@@ -144,7 +144,7 @@
   {
     "id": 5,
     "name": "MimiClaw",
-    "stars": 3700,
+    "stars": 3998,
     "category": "embedded",
     "platforms": [
       "ESP32",
@@ -165,7 +165,7 @@
       }
     ],
     "bom_cost": "$5-15",
-    "daily_increment": 12,
+    "daily_increment": 298,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -213,7 +213,7 @@
   {
     "id": 24,
     "name": "zclaw",
-    "stars": 1760,
+    "stars": 1767,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -223,7 +223,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-07T17:44:52.979061Z",
     "highlights": [
       "Privacy focused",
@@ -314,6 +314,22 @@
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
+    "id": 56,
+    "name": "be-more-agent",
+    "stars": 340,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Local AI Agent running on Raspberry Pi",
+    "github_url": "https://github.com/brenpoly/be-more-agent",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:20.149119Z"
+  },
+  {
     "id": 11,
     "name": "Xiaozhi ESP32 Server",
     "stars": 179,
@@ -342,6 +358,22 @@
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
+    "id": 57,
+    "name": "bizclaw",
+    "stars": 152,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "BizClaw l\u00e0 n\u1ec1n t\u1ea3ng AI Agent ki\u1ebfn tr\u00fac trait-driven, c\u00f3 th\u1ec3 ch\u1ea1y m\u1ecdi n\u01a1i \u2014 t\u1eeb Raspberry Pi \u0111\u1ebfn cloud server. H\u1ed7 tr\u1ee3 nhi\u1ec1u LLM provider, k\u00eanh giao ti\u1ebfp",
+    "github_url": "https://github.com/nguyenduchoai/bizclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:20.149200Z"
+  },
+  {
     "id": 9,
     "name": "SenseCraft AI Server",
     "stars": 60,
@@ -368,6 +400,22 @@
     "bom_cost": "$100-300",
     "daily_increment": 2,
     "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 54,
+    "name": "M5Gemini",
+    "stars": 36,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Conversational AI assistant for the ESP32-S3 powered M5 Cardputer mini PC",
+    "github_url": "https://github.com/d4rkmen/M5Gemini",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:18.681478Z"
   },
   {
     "id": 10,
@@ -442,6 +490,22 @@
     "bom_cost": "$50-100",
     "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 55,
+    "name": "miniclaw-esp32",
+    "stars": 20,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "ESP32 AI Assistant with Telegram and Kimi LLM (z.ai)",
+    "github_url": "https://github.com/apisit31120/miniclaw-esp32",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:18.681592Z"
   },
   {
     "id": 17,
@@ -526,6 +590,22 @@
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
+    "id": 45,
+    "name": "daily-paper-skill",
+    "stars": 12,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "OpenClaw Skill: \u6bcf\u65e5\u8bba\u6587\u901f\u9012 - AI/Robotics \u9886\u57df\u81ea\u52a8\u5316\u5b66\u672f\u8c03\u7814\u5de5\u5177",
+    "github_url": "https://github.com/ychenjk-sudo/daily-paper-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188319Z"
+  },
+  {
     "id": 19,
     "name": "OpenClawX",
     "stars": 11,
@@ -548,9 +628,73 @@
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
+    "id": 25,
+    "name": "openclaw-xiaozhi",
+    "stars": 11,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "\ud83c\udf99\ufe0f Turn ESP32-S3 into a voice interface for OpenClaw AI assistant \u2014 xiaozhi as the body, OpenClaw as the soul",
+    "github_url": "https://github.com/tigerbryan/openclaw-xiaozhi",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014137Z"
+  },
+  {
+    "id": 46,
+    "name": "clawbody",
+    "stars": 10,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Give your OpenClaw AI agent a physical robot body with Reachy Mini",
+    "github_url": "https://github.com/tomrikert/clawbody",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188377Z"
+  },
+  {
+    "id": 33,
+    "name": "openclaw-raspberry-installer",
+    "stars": 9,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Automated installer for OpenClaw on the CanaKit Raspberry Pi 5 8GB Dual Cooling GenAI Kit with Hailo 10H AI accelerator",
+    "github_url": "https://github.com/sanchorelaxo/openclaw-raspberry-installer",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830341Z"
+  },
+  {
+    "id": 47,
+    "name": "openclaw-paper-digest",
+    "stars": 7,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Daily robotics/AI paper digest generated by OpenClaw",
+    "github_url": "https://github.com/xuankuzcr/openclaw-paper-digest",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188397Z"
+  },
+  {
     "id": 14,
     "name": "OpenClaw XIAO Node",
-    "stars": 4,
+    "stars": 5,
     "category": "embedded",
     "platforms": [
       "Seeed XIAO",
@@ -571,8 +715,200 @@
       }
     ],
     "bom_cost": "$10-15",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 48,
+    "name": "VectorClaw",
+    "stars": 5,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Anki Vector + OpenClaw integration via MCP. Give your AI assistant a body.  MCP server connecting Anki Vector robots to OpenClaw. Your assistant, now ",
+    "github_url": "https://github.com/danmartinez78/VectorClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188415Z"
+  },
+  {
+    "id": 26,
+    "name": "HeyClawy",
+    "stars": 4,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Voice-first ESP32 companion for OpenClaw",
+    "github_url": "https://github.com/omeriko9/HeyClawy",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014222Z"
+  },
+  {
+    "id": 27,
+    "name": "clawlink-triarch",
+    "stars": 4,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "\u5168\u7403\u9996\u4e2a\u5f00\u6e90\u8f6f\u786c\u4ef6\u96c6\u6210AI\u7cfb\u7edf  ClawLink-TriArch \u662f\u4e00\u4e2a\u5f00\u521b\u6027\u7684\u9879\u76ee\uff0c\u5b83\u5c06 **OpenClaw \u5927\u8111\u5c42\u667a\u80fd**\u3001**\u6811\u8393\u6d3e\u810a\u690e\u5c42\u8fb9\u7f18\u8ba1\u7b97**\u548c **ESP32\u672b\u68a2\u5c42\u786c\u4ef6\u63a7\u5236**\u4e09\u8005\u6709\u673a\u878d\u5408\uff0c\u5f62\u6210\u4e86\u4ece\u591a\u6a21\u6001\u4ea4\u4e92\u5230\u5168\u81ea\u52a8\u5316\u95ed\u73af\u7684\u5b8c\u6574\u94fe\u8def\u3002",
+    "github_url": "https://github.com/lorryjovens-hub/clawlink-triarch",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014301Z"
+  },
+  {
+    "id": 28,
+    "name": "arduinomaker",
+    "stars": 3,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help, troubleshooting",
+    "github_url": "https://github.com/DmitrySolana/arduinomaker",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014330Z"
+  },
+  {
+    "id": 29,
+    "name": "arduino-maker",
+    "stars": 3,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "OpenClaw skill for guiding Arduino/ESP32 projects - code generation, wiring help, troubleshooting",
+    "github_url": "https://github.com/DmitrySolana/arduino-maker",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014347Z"
+  },
+  {
+    "id": 34,
+    "name": "rpi5-openclaw-assistant",
+    "stars": 3,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A 24/7 AI personal assistant on a Raspberry Pi 5, powered by OpenClaw, Ollama, and Gemini \u2014 managed remotely via Tailscale and Telegram.",
+    "github_url": "https://github.com/aqn96/rpi5-openclaw-assistant",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830407Z"
+  },
+  {
+    "id": 35,
+    "name": "kidblocksos",
+    "stars": 3,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "AI-powered creative tablet OS for kids ages 5-10. Built on Raspberry Pi + OpenClaw. Open-source Imagination Engine skill & full architecture docs.",
+    "github_url": "https://github.com/sleepycompile/kidblocksos",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830426Z"
+  },
+  {
+    "id": 30,
+    "name": "IOnode",
+    "stars": 2,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Flash any ESP32. It speaks NATS. Sensors, Actuators. ESP32 Fleet management. OpenClaw-ready.",
+    "github_url": "https://github.com/M64GitHub/IOnode",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014365Z"
+  },
+  {
+    "id": 31,
+    "name": "openclaw-voice-server",
+    "stars": 2,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "This repository contains the standalone Node.js Voice Relay Bridge required for parsing, streaming, and transcoding raw ESP32 I2S microphone payloads ",
+    "github_url": "https://github.com/brooqs/openclaw-voice-server",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014389Z"
+  },
+  {
+    "id": 36,
+    "name": "openclaw-on-rpi",
+    "stars": 2,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "One-command setup to turn a Raspberry Pi into a 24/7 AI agent with browser control, chat integrations, and local LLMs. Powered by OpenClaw.",
+    "github_url": "https://github.com/hackur/openclaw-on-rpi",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830443Z"
+  },
+  {
+    "id": 49,
+    "name": "openclaw-neon-rooms",
+    "stars": 2,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Futuristic OpenClaw Gateway web client with 3D robot scene, room-based agent routing, and image/file attachments.",
+    "github_url": "https://github.com/mallocfeng/openclaw-neon-rooms",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188432Z"
+  },
+  {
+    "id": 50,
+    "name": "awesome-openclaw",
+    "stars": 2,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A curated list of awesome resources for the OpenClaw ecosystem. Explore self-hosted, privacy-first personal AI assistants, ClawDB knowledge graphs, an",
+    "github_url": "https://github.com/shaoxiang/awesome-openclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188450Z"
   },
   {
     "id": 16,
@@ -600,5 +936,197 @@
     "bom_cost": "$500-1500",
     "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 32,
+    "name": "XiaozhiClaw",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "XiaoZhi AI ESP32 + OpenClaw Bridge - Give your AI assistant a physical body!",
+    "github_url": "https://github.com/leohuang8688/XiaozhiClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:12.014406Z"
+  },
+  {
+    "id": 37,
+    "name": "piclaudius-setup",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Optimized OpenClaw setup for Raspberry Pi - Created by PiClawdius AI agent",
+    "github_url": "https://github.com/8bitkick/piclaudius-setup",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830467Z"
+  },
+  {
+    "id": 38,
+    "name": "ClawOS",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "ClawOS \u2014 OpenClaw Runtime for Raspberry Pi",
+    "github_url": "https://github.com/TheRealKlobow/ClawOS",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830495Z"
+  },
+  {
+    "id": 39,
+    "name": "Autonomous-AI-Agent-on-Raspberry-Pi-5",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Autonomous AI Agent on Raspberry Pi 5 (OpenClaw + Gemini / Ollama)",
+    "github_url": "https://github.com/MasteraSnackin/Autonomous-AI-Agent-on-Raspberry-Pi-5",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830513Z"
+  },
+  {
+    "id": 40,
+    "name": "otaclaw",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Visual face for OpenClaw. Animated Hal (Otacon) avatar with emotional states, WebSocket events, and kiosk mode for Raspberry Pi. Inspired by the origi",
+    "github_url": "https://github.com/U-N-B-R-A-N-D-E-D/otaclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:13.830529Z"
+  },
+  {
+    "id": 41,
+    "name": "openclaw-jetson",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Secure OpenClaw + Ollama devcontainer for NVIDIA Jetson Orin Nano Super",
+    "github_url": "https://github.com/AndroidNextdoor/openclaw-jetson",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:14.835584Z"
+  },
+  {
+    "id": 42,
+    "name": "NvidiaJetsonOpenClaw",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Notes - OpenClaw Setup on Nvidia Jetson Orin Nano Super Developer Kit",
+    "github_url": "https://github.com/eliranwong/NvidiaJetsonOpenClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:14.835647Z"
+  },
+  {
+    "id": 51,
+    "name": "Clawarm",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Robotic arm controled via OpenClaw. Natural language to motion. Where Openclaw having arm",
+    "github_url": "https://github.com/Clawland-AI/Clawarm",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188469Z"
+  },
+  {
+    "id": 52,
+    "name": "openclaw_ros2",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "OpenClaw is now controlling my robot via Ros2",
+    "github_url": "https://github.com/moe-sani/openclaw_ros2",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188487Z"
+  },
+  {
+    "id": 53,
+    "name": "RoClaw",
+    "stars": 1,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "The Physical Embodiment for OpenClaw \u2014 Dual-Brain Bytecode Robot",
+    "github_url": "https://github.com/EvolvingAgentsLabs/RoClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:17.188506Z"
+  },
+  {
+    "id": 43,
+    "name": "ProjectPBot",
+    "stars": 0,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Run OpenClaw on Jetson Orin Nano",
+    "github_url": "https://github.com/FombyAvetta/ProjectPBot",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:14.835668Z"
+  },
+  {
+    "id": 44,
+    "name": "openclaw",
+    "stars": 0,
+    "category": "alternative",
+    "platforms": [
+      "PC"
+    ],
+    "description": "OpenClaw server for Ollama DeepSeek-R1 on Jetson",
+    "github_url": "https://github.com/huaen1219/openclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Unknown",
+    "daily_increment": 0,
+    "created_at": "2026-03-08T00:00:14.835686Z"
   }
 ]
