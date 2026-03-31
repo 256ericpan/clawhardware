@@ -1,32 +1,13 @@
 {
   "date": "2026-03-31",
-  "updated": 109,
+  "updated": 84,
   "errors": 0,
+  "note": "Filtered to edge hardware only (PC-only projects excluded). Keywords: arduino, raspberry pi, jetson, esp32, xiao, e-ink, iot, robotic, home assistant",
   "top_gainers": [
     {
       "name": "Official OpenClaw Repository",
-      "increment": 4,
-      "stars": 342358
-    },
-    {
-      "name": "edict",
-      "increment": 3,
-      "stars": 13709
-    },
-    {
-      "name": "chatgpt-on-wechat",
-      "increment": 1,
-      "stars": 42675
-    },
-    {
-      "name": "cherry-studio",
-      "increment": 1,
-      "stars": 42643
-    },
-    {
-      "name": "Sipeed PicoClaw",
-      "increment": 1,
-      "stars": 26846
+      "increment": 2,
+      "stars": 342360
     }
   ]
 }
