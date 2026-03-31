@@ -1506,5 +1506,726 @@
     "bom_cost": "~$500",
     "daily_increment": 0,
     "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 76,
+    "name": "XiaohongshuSkills",
+    "stars": 2313,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "支持小红书自动发布、自动评论、自动检索的 Skill。支持 OpenClaw、Codex、CC 等",
+    "highlights": [
+      "小红书自动发布",
+      "自动评论",
+      "自动检索"
+    ],
+    "github_url": "https://github.com/white0dew/XiaohongshuSkills",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 77,
+    "name": "xiaohongshu-ops-skill",
+    "stars": 1314,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "把Openclaw 变成小红书运营助手，帮你分析、选题、创作、复盘、复刻，甚至全面托管",
+    "highlights": [
+      "小红书运营助手",
+      "选题创作",
+      "自动托管"
+    ],
+    "github_url": "https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 78,
+    "name": "xiaohongshu-auto-operation",
+    "stars": 31,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "小红书账号全自动运营系统 - OpenClaw Skill",
+    "highlights": [
+      "小红书运营",
+      "全自动"
+    ],
+    "github_url": "https://github.com/ijerryhuang/xiaohongshu-auto-operation",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 79,
+    "name": "xiaohongshu-mcp-skill",
+    "stars": 9,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "Xiaohongshu MCP skill for OpenClaw - Complete automation solution",
+    "highlights": [
+      "小红书MCP",
+      "自动化"
+    ],
+    "github_url": "https://github.com/tclawde/xiaohongshu-mcp-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 80,
+    "name": "xiaohongshu-skill",
+    "stars": 7,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "小红书Skill — 基于 Python Playwright 的搜索、帖子详情、用户主页提取工具",
+    "highlights": [
+      "小红书",
+      "Playwright"
+    ],
+    "github_url": "https://github.com/DeliciousBuding/xiaohongshu-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 81,
+    "name": "pinclaw",
+    "stars": 104,
+    "category": "iot",
+    "platforms": [
+      "Wearables"
+    ],
+    "description": "The first hardware product built for OpenClaw. A wearable AI clip ecosystem — hardware, firmware, and plugin.",
+    "highlights": [
+      "可穿戴设备",
+      "硬件产品",
+      "固件"
+    ],
+    "github_url": "https://github.com/ericshang98/pinclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$30",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 82,
+    "name": "clawstage",
+    "stars": 45,
+    "category": "robotics",
+    "platforms": [
+      "ESP32",
+      "Custom Hardware"
+    ],
+    "description": "ClawStage is an open and modular hardware platform designed to allow OpenClaw to translate local intelligence into physical behavior. Acts as a tangible shell for a single, persistent AI identity — providing display, voice, sensors, and physical presence.",
+    "highlights": [
+      "模块化硬件平台",
+      "物理交互",
+      "传感器"
+    ],
+    "github_url": "https://github.com/HooRii-OT/clawstage",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Varies",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 83,
+    "name": "DuckyClaw",
+    "stars": 113,
+    "category": "iot",
+    "platforms": [
+      "IoT",
+      "SoC",
+      "MCU"
+    ],
+    "description": "Edge-Hardware (SoC/MCU) oriented Claw🦞",
+    "highlights": [
+      "边缘硬件",
+      "SoC/MCU"
+    ],
+    "github_url": "https://github.com/tuya/DuckyClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Varies",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 84,
+    "name": "claw-spark",
+    "stars": 9,
+    "category": "ai_compute",
+    "platforms": [
+      "NVIDIA Jetson",
+      "DGX Spark",
+      "RTX"
+    ],
+    "description": "One-click AI agent setup for NVIDIA DGX Spark, Jetson, and RTX hardware. OpenClaw + Ollama, fully local.",
+    "highlights": [
+      "NVIDIA DGX Spark",
+      "Jeston",
+      "本地部署"
+    ],
+    "github_url": "https://github.com/saiyam1814/claw-spark",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Varies",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 85,
+    "name": "openclaw-voice-client-s3-box-lite",
+    "stars": 2,
+    "category": "iot",
+    "platforms": [
+      "ESP32-S3-BOX-Lite"
+    ],
+    "description": "Lightweight ESP-IDF firmware client to connect ESP32-S3-BOX-Lite to OpenClaw voice assistant bridge over Wi-Fi. Streams microphone audio and decodes MP3 responses via I2S hardware pipeline.",
+    "highlights": [
+      "ESP32-S3-BOX-Lite",
+      "语音",
+      "WiFi桥接"
+    ],
+    "github_url": "https://github.com/brooqs/openclaw-voice-client-s3-box-lite",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$25",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 86,
+    "name": "claw-cash",
+    "stars": 29,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Bitcoin wallet for AI agents. Stablecoins in, Bitcoin out. Keys in hardware enclaves. Works with OpenClaw, Claude Code, or any agent harness.",
+    "highlights": [
+      "比特币钱包",
+      "硬件安全",
+      "AI代理"
+    ],
+    "github_url": "https://github.com/tiero/claw-cash",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 87,
+    "name": "lobster",
+    "stars": 22,
+    "category": "core",
+    "platforms": [
+      "PC"
+    ],
+    "description": "The Agentic Computer - AI agent operating system",
+    "highlights": [
+      "Agentic Computer",
+      "操作系统"
+    ],
+    "github_url": "https://github.com/eternalai-org/lobster",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 88,
+    "name": "zbot",
+    "stars": 15,
+    "category": "iot",
+    "platforms": [
+      "Zephyr RTOS"
+    ],
+    "description": "zbot 🦞 - an embedded AI agent running on Zephyr RTOS across multiple hardware platforms.",
+    "highlights": [
+      "Zephyr RTOS",
+      "嵌入式AI"
+    ],
+    "github_url": "https://github.com/LingaoM/zbot",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$15",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 89,
+    "name": "openclaw-secure",
+    "stars": 11,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "Hardware-gated secret management for AI agents. Secures Clawdbot API keys with pluggable backends (Keychain, 1Password, Bitwarden, and more).",
+    "highlights": [
+      "密钥管理",
+      "硬件安全",
+      "1Password"
+    ],
+    "github_url": "https://github.com/seomikewaltman/openclaw-secure",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 90,
+    "name": "openclaw-mobile",
+    "stars": 4,
+    "category": "iot",
+    "platforms": [
+      "Mobile",
+      "Wearables"
+    ],
+    "description": "ClawPhones — Multi-platform AI assistant for Oyster Labs hardware (Universal Phone, Puffy, ClawGlasses). Tiered LLM routing (DeepSeek/Kimi/Claude), conversation persistence.",
+    "highlights": [
+      "移动端",
+      "多平台",
+      "LLM路由"
+    ],
+    "github_url": "https://github.com/howardleegeek/openclaw-mobile",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Varies",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 91,
+    "name": "rustclaw",
+    "stars": 7,
+    "category": "core",
+    "platforms": [
+      "Embedded",
+      "Rust"
+    ],
+    "description": "Project to run some like openclaw in small hardwares. A 100% Rust remade alternative to OpenClaw that runs smoothly on low-cost hardware under $10.",
+    "highlights": [
+      "Rust重制",
+      "低成本硬件",
+      "$10以下"
+    ],
+    "github_url": "https://github.com/lucas-moraes/rustclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$10",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 92,
+    "name": "AirClaw",
+    "stars": 3,
+    "category": "core",
+    "platforms": [
+      "PC",
+      "GPU",
+      "CPU"
+    ],
+    "description": "Run OpenClaw locally on any GPU or CPU without API costs, supporting large models on low-memory hardware for free and offline use.",
+    "highlights": [
+      "本地运行",
+      "无API成本",
+      "低显存"
+    ],
+    "github_url": "https://github.com/miga1999/AirClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 93,
+    "name": "awesome-openclaw-hardware-projects",
+    "stars": 13,
+    "category": "maker",
+    "platforms": [
+      "Seeed Studio",
+      "ESP32",
+      "XIAO"
+    ],
+    "description": "Collection of awesome openclaw hardware projects",
+    "highlights": [
+      "Seeed硬件项目集合"
+    ],
+    "github_url": "https://github.com/Seeed-Projects/awesome-openclaw-hardware-projects",
+    "seeedstudio": true,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 94,
+    "name": "nanoclaw",
+    "stars": 26038,
+    "category": "core",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux",
+      "Docker"
+    ],
+    "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK.",
+    "highlights": [
+      "轻量级替代",
+      "容器化",
+      "多平台集成"
+    ],
+    "github_url": "https://github.com/qwibitai/nanoclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 95,
+    "name": "OpenViking",
+    "stars": 20166,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "Open-source context database designed specifically for AI Agents(such as openclaw). Unifies management of context (memory, resources, and skills) through a file system paradigm, enabling hierarchical context delivery and self-evolving.",
+    "highlights": [
+      "上下文数据库",
+      "记忆管理",
+      "自进化"
+    ],
+    "github_url": "https://github.com/volcengine/OpenViking",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 96,
+    "name": "edict",
+    "stars": 13690,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
+    "highlights": [
+      "多智能体编排",
+      "实时仪表板",
+      "审计追踪"
+    ],
+    "github_url": "https://github.com/cft0808/edict",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 97,
+    "name": "memU",
+    "stars": 13248,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "Memory for 24/7 proactive agents like openclaw (moltbot, clawdbot).",
+    "highlights": [
+      "长期记忆",
+      "24/7代理"
+    ],
+    "github_url": "https://github.com/NevaMind-AI/memU",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 98,
+    "name": "MemOS",
+    "stars": 7994,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "AI memory OS for LLM and Agent systems(moltbot,clawdbot,openclaw), enabling persistent Skill memory for cross-task skill reuse and evolution.",
+    "highlights": [
+      "记忆操作系统",
+      "跨任务技能复用"
+    ],
+    "github_url": "https://github.com/MemTensor/MemOS",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 99,
+    "name": "ClawRouter",
+    "stars": 6530,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "The agent-native LLM router for OpenClaw. 41+ models, <1ms routing, USDC payments on Base & Solana via x402.",
+    "highlights": [
+      "LLM路由",
+      "41+模型",
+      "USDC支付"
+    ],
+    "github_url": "https://github.com/BlockRunAI/ClawRouter",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 100,
+    "name": "Star-Office-UI",
+    "stars": 6362,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A pixel office for your OpenClaw: turn invisible work states into a cozy little space with characters, daily notes, and guest agents. Code under MIT; art assets for non-commercial learning only.",
+    "highlights": [
+      "像素办公室",
+      "多智能体协作"
+    ],
+    "github_url": "https://github.com/ringhyacinth/Star-Office-UI",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 101,
+    "name": "FlyEnv",
+    "stars": 2648,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "Lightweight Native Local Dev Toolbox for Windows, macOS & Linux. Run OpenClaw/n8n/Apache/Nginx/Caddy/Tomcat/PHP/Node.js/Bun/Deno/Python/Java/Go/Ruby/Perl/Rust/Erlang/MySQL/PostgreSQL/MariaDB/MongoDB/Redis/RabbitMQ without Docker.",
+    "highlights": [
+      "本地开发环境",
+      "无Docker"
+    ],
+    "github_url": "https://github.com/xpf0000/FlyEnv",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 102,
+    "name": "openclaw-memory-openviking",
+    "stars": 4,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "OpenViking context database as memory backend for OpenClaw",
+    "highlights": [
+      "OpenViking集成",
+      "记忆后端"
+    ],
+    "github_url": "https://github.com/clawd20130/openclaw-memory-openviking",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 103,
+    "name": "openclaw-notion-sync",
+    "stars": 4,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Sync OpenClaw agent configuration to Notion databases",
+    "highlights": [
+      "Notion同步"
+    ],
+    "github_url": "https://github.com/321559841/openclaw-notion-sync",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 104,
+    "name": "openclaw-dashboard",
+    "stars": 2,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A lightweight, single-file OpenClaw dashboard for real-time agent fleet monitoring — no build step, no database, no Docker.",
+    "highlights": [
+      "轻量级仪表板",
+      "舰队监控"
+    ],
+    "github_url": "https://github.com/anis-marrouchi/openclaw-dashboard",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 105,
+    "name": "xiaohongshu",
+    "stars": 11,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "AI-powered Xiaohongshu (小红书/RED) automation — publish, search, engage, analyze. MCP + CDP.",
+    "highlights": [
+      "小红书自动化",
+      "MCP+CDP"
+    ],
+    "github_url": "https://github.com/Youhai020616/xiaohongshu",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 106,
+    "name": "openclaw-xiaohongshu",
+    "stars": 10,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "openclaw小红书插件",
+    "highlights": [
+      "小红书插件"
+    ],
+    "github_url": "https://github.com/jiangguishan/openclaw-xiaohongshu",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 107,
+    "name": "xiaohongshu-skill",
+    "stars": 2,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "OpenClaw 小红书自动发布技能 - 完整自动化流程：内容生成 → 新闻收集 → 文案编写 → 自动发布",
+    "highlights": [
+      "小红书自动发布"
+    ],
+    "github_url": "https://github.com/aaa17001/xiaohongshu-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 108,
+    "name": "xiaohongshu-publish-skill",
+    "stars": 5,
+    "category": "tool",
+    "platforms": [
+      "OpenClaw"
+    ],
+    "description": "RedNote publish skill for openclaw. User Chrome to publish RedNote post.",
+    "highlights": [
+      "RedNote发布"
+    ],
+    "github_url": "https://github.com/zangqilong198812/xiaohongshu-publish-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 109,
+    "name": "neuralbridge",
+    "stars": 1,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux"
+    ],
+    "description": "Open-source middleware that lets any AI agent (OpenClaw, LangChain, AutoGPT) securely connect to any API, database, or enterprise system via YAML config. Features 22+ adapters, zero-trust security, EU CRA compliance engine, MCP gateway, React dashboard, and OpenClaw plugin support.",
+    "highlights": [
+      "API中间件",
+      "企业系统集成",
+      "MCP网关"
+    ],
+    "github_url": "https://github.com/iceccarelli/neuralbridge",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
   }
 ]
