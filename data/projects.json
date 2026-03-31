@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Official OpenClaw Repository",
-    "stars": 251095,
+    "stars": 342311,
     "category": "core",
     "platforms": [
       "PC",
@@ -22,13 +22,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 87,
+    "daily_increment": 91216,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 20,
     "name": "chatgpt-on-wechat",
-    "stars": 41966,
+    "stars": 42673,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -38,7 +38,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 707,
     "created_at": "2026-03-07T17:44:51.564287Z",
     "highlights": [
       "WeChat integration",
@@ -49,7 +49,7 @@
   {
     "id": 21,
     "name": "cherry-studio",
-    "stars": 40927,
+    "stars": 42642,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -59,7 +59,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 1715,
     "created_at": "2026-03-07T17:44:51.564595Z",
     "highlights": [
       "Beautiful UI",
@@ -70,7 +70,7 @@
   {
     "id": 2,
     "name": "Nanobot",
-    "stars": 29724,
+    "stars": 37209,
     "category": "alternative",
     "platforms": [
       "Mobile",
@@ -87,7 +87,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 45,
+    "daily_increment": 7485,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -116,7 +116,7 @@
   {
     "id": 4,
     "name": "Sipeed PicoClaw",
-    "stars": 21800,
+    "stars": 26843,
     "category": "alternative",
     "platforms": [
       "Pico",
@@ -138,13 +138,13 @@
       }
     ],
     "bom_cost": "$15-30",
-    "daily_increment": 25,
+    "daily_increment": 5043,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 5,
     "name": "MimiClaw",
-    "stars": 3998,
+    "stars": 4956,
     "category": "embedded",
     "platforms": [
       "ESP32",
@@ -165,13 +165,13 @@
       }
     ],
     "bom_cost": "$5-15",
-    "daily_increment": 298,
+    "daily_increment": 958,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 22,
     "name": "py-xiaozhi",
-    "stars": 3200,
+    "stars": 3250,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -181,7 +181,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 50,
     "created_at": "2026-03-07T17:44:52.978966Z",
     "highlights": [
       "Chinese voice control",
@@ -192,7 +192,7 @@
   {
     "id": 23,
     "name": "esp32_nat_router",
-    "stars": 1817,
+    "stars": 1863,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -202,7 +202,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 46,
     "created_at": "2026-03-07T17:44:52.979033Z",
     "highlights": [
       "NAT routing",
@@ -213,7 +213,7 @@
   {
     "id": 24,
     "name": "zclaw",
-    "stars": 1767,
+    "stars": 2028,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -223,7 +223,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 7,
+    "daily_increment": 261,
     "created_at": "2026-03-07T17:44:52.979061Z",
     "highlights": [
       "Privacy focused",
@@ -234,7 +234,7 @@
   {
     "id": 6,
     "name": "PicoLM",
-    "stars": 1297,
+    "stars": 1459,
     "category": "ai-compute",
     "platforms": [
       "Pico",
@@ -255,13 +255,13 @@
       }
     ],
     "bom_cost": "$10-50",
-    "daily_increment": 8,
+    "daily_increment": 162,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 7,
     "name": "ModelAssistant",
-    "stars": 424,
+    "stars": 426,
     "category": "ai-compute",
     "platforms": [
       "NVIDIA Jetson",
@@ -283,13 +283,13 @@
       }
     ],
     "bom_cost": "$200-500",
-    "daily_increment": 5,
+    "daily_increment": 2,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 8,
     "name": "reCamera",
-    "stars": 389,
+    "stars": 61,
     "category": "ai-compute",
     "platforms": [
       "Camera",
@@ -310,13 +310,13 @@
       }
     ],
     "bom_cost": "$50-150",
-    "daily_increment": 4,
+    "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 56,
     "name": "be-more-agent",
-    "stars": 340,
+    "stars": 514,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -326,7 +326,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 174,
     "created_at": "2026-03-08T00:00:20.149119Z"
   },
   {
@@ -360,23 +360,23 @@
   {
     "id": 57,
     "name": "bizclaw",
-    "stars": 152,
+    "stars": 173,
     "category": "alternative",
     "platforms": [
       "PC"
     ],
-    "description": "BizClaw l\u00e0 n\u1ec1n t\u1ea3ng AI Agent ki\u1ebfn tr\u00fac trait-driven, c\u00f3 th\u1ec3 ch\u1ea1y m\u1ecdi n\u01a1i \u2014 t\u1eeb Raspberry Pi \u0111\u1ebfn cloud server. H\u1ed7 tr\u1ee3 nhi\u1ec1u LLM provider, k\u00eanh giao ti\u1ebfp",
+    "description": "BizClaw là nền tảng AI Agent kiến trúc trait-driven, có thể chạy mọi nơi — từ Raspberry Pi đến cloud server. Hỗ trợ nhiều LLM provider, kênh giao tiếp",
     "github_url": "https://github.com/nguyenduchoai/bizclaw",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 21,
     "created_at": "2026-03-08T00:00:20.149200Z"
   },
   {
     "id": 9,
     "name": "SenseCraft AI Server",
-    "stars": 60,
+    "stars": 14,
     "category": "ai-compute",
     "platforms": [
       "Edge",
@@ -398,7 +398,7 @@
       }
     ],
     "bom_cost": "$100-300",
-    "daily_increment": 2,
+    "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -420,7 +420,7 @@
   {
     "id": 10,
     "name": "WireClaw",
-    "stars": 31,
+    "stars": 45,
     "category": "iot",
     "platforms": [
       "ESP32"
@@ -440,13 +440,13 @@
       }
     ],
     "bom_cost": "$10-20",
-    "daily_increment": 1,
+    "daily_increment": 14,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 13,
     "name": "Reachy Mini",
-    "stars": 26,
+    "stars": 28,
     "category": "robotics",
     "platforms": [
       "Robot",
@@ -462,13 +462,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "$2000-5000",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 15,
     "name": "OpenClaw Pi Installation",
-    "stars": 21,
+    "stars": 23,
     "category": "embedded",
     "platforms": [
       "Raspberry Pi"
@@ -488,13 +488,13 @@
       }
     ],
     "bom_cost": "$50-100",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 55,
     "name": "miniclaw-esp32",
-    "stars": 20,
+    "stars": 52,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -504,13 +504,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 32,
     "created_at": "2026-03-08T00:00:18.681592Z"
   },
   {
     "id": 17,
     "name": "OpenClawgotchi",
-    "stars": 15,
+    "stars": 18,
     "category": "iot",
     "platforms": [
       "Raspberry Pi",
@@ -531,13 +531,13 @@
       }
     ],
     "bom_cost": "$30-50",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 18,
     "name": "Monagotchi",
-    "stars": 15,
+    "stars": 14,
     "category": "iot",
     "platforms": [
       "ESP32",
@@ -564,7 +564,7 @@
   {
     "id": 12,
     "name": "OpenClaw Robotics",
-    "stars": 14,
+    "stars": 28,
     "category": "robotics",
     "platforms": [
       "Robot",
@@ -586,29 +586,29 @@
       }
     ],
     "bom_cost": "$2000-20000",
-    "daily_increment": 1,
+    "daily_increment": 14,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 45,
     "name": "daily-paper-skill",
-    "stars": 12,
+    "stars": 19,
     "category": "alternative",
     "platforms": [
       "PC"
     ],
-    "description": "OpenClaw Skill: \u6bcf\u65e5\u8bba\u6587\u901f\u9012 - AI/Robotics \u9886\u57df\u81ea\u52a8\u5316\u5b66\u672f\u8c03\u7814\u5de5\u5177",
+    "description": "OpenClaw Skill: 每日论文速递 - AI/Robotics 领域自动化学术调研工具",
     "github_url": "https://github.com/ychenjk-sudo/daily-paper-skill",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-08T00:00:17.188319Z"
   },
   {
     "id": 19,
     "name": "OpenClawX",
-    "stars": 11,
+    "stars": 48,
     "category": "embedded",
     "platforms": [
       "PC",
@@ -624,29 +624,29 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 37,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 25,
     "name": "openclaw-xiaozhi",
-    "stars": 11,
+    "stars": 18,
     "category": "alternative",
     "platforms": [
       "PC"
     ],
-    "description": "\ud83c\udf99\ufe0f Turn ESP32-S3 into a voice interface for OpenClaw AI assistant \u2014 xiaozhi as the body, OpenClaw as the soul",
+    "description": "🎙️ Turn ESP32-S3 into a voice interface for OpenClaw AI assistant — xiaozhi as the body, OpenClaw as the soul",
     "github_url": "https://github.com/tigerbryan/openclaw-xiaozhi",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-08T00:00:12.014137Z"
   },
   {
     "id": 46,
     "name": "clawbody",
-    "stars": 10,
+    "stars": 16,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -656,13 +656,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 6,
     "created_at": "2026-03-08T00:00:17.188377Z"
   },
   {
     "id": 33,
     "name": "openclaw-raspberry-installer",
-    "stars": 9,
+    "stars": 10,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -672,13 +672,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-08T00:00:13.830341Z"
   },
   {
     "id": 47,
     "name": "openclaw-paper-digest",
-    "stars": 7,
+    "stars": 16,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -688,13 +688,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 9,
     "created_at": "2026-03-08T00:00:17.188397Z"
   },
   {
     "id": 14,
     "name": "OpenClaw XIAO Node",
-    "stars": 5,
+    "stars": 7,
     "category": "embedded",
     "platforms": [
       "Seeed XIAO",
@@ -715,13 +715,13 @@
       }
     ],
     "bom_cost": "$10-15",
-    "daily_increment": 1,
+    "daily_increment": 2,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 48,
     "name": "VectorClaw",
-    "stars": 5,
+    "stars": 11,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -731,13 +731,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 6,
     "created_at": "2026-03-08T00:00:17.188415Z"
   },
   {
     "id": 26,
     "name": "HeyClawy",
-    "stars": 4,
+    "stars": 10,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -747,23 +747,23 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 6,
     "created_at": "2026-03-08T00:00:12.014222Z"
   },
   {
     "id": 27,
     "name": "clawlink-triarch",
-    "stars": 4,
+    "stars": 7,
     "category": "alternative",
     "platforms": [
       "PC"
     ],
-    "description": "\u5168\u7403\u9996\u4e2a\u5f00\u6e90\u8f6f\u786c\u4ef6\u96c6\u6210AI\u7cfb\u7edf  ClawLink-TriArch \u662f\u4e00\u4e2a\u5f00\u521b\u6027\u7684\u9879\u76ee\uff0c\u5b83\u5c06 **OpenClaw \u5927\u8111\u5c42\u667a\u80fd**\u3001**\u6811\u8393\u6d3e\u810a\u690e\u5c42\u8fb9\u7f18\u8ba1\u7b97**\u548c **ESP32\u672b\u68a2\u5c42\u786c\u4ef6\u63a7\u5236**\u4e09\u8005\u6709\u673a\u878d\u5408\uff0c\u5f62\u6210\u4e86\u4ece\u591a\u6a21\u6001\u4ea4\u4e92\u5230\u5168\u81ea\u52a8\u5316\u95ed\u73af\u7684\u5b8c\u6574\u94fe\u8def\u3002",
+    "description": "全球首个开源软硬件集成AI系统  ClawLink-TriArch 是一个开创性的项目，它将 **OpenClaw 大脑层智能**、**树莓派脊椎层边缘计算**和 **ESP32末梢层硬件控制**三者有机融合，形成了从多模态交互到全自动化闭环的完整链路。",
     "github_url": "https://github.com/lorryjovens-hub/clawlink-triarch",
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:12.014301Z"
   },
   {
@@ -806,7 +806,7 @@
     "platforms": [
       "PC"
     ],
-    "description": "A 24/7 AI personal assistant on a Raspberry Pi 5, powered by OpenClaw, Ollama, and Gemini \u2014 managed remotely via Tailscale and Telegram.",
+    "description": "A 24/7 AI personal assistant on a Raspberry Pi 5, powered by OpenClaw, Ollama, and Gemini — managed remotely via Tailscale and Telegram.",
     "github_url": "https://github.com/aqn96/rpi5-openclaw-assistant",
     "seeedstudio": false,
     "product_links": [],
@@ -940,7 +940,7 @@
   {
     "id": 32,
     "name": "XiaozhiClaw",
-    "stars": 1,
+    "stars": 4,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -950,7 +950,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:12.014406Z"
   },
   {
@@ -977,7 +977,7 @@
     "platforms": [
       "PC"
     ],
-    "description": "ClawOS \u2014 OpenClaw Runtime for Raspberry Pi",
+    "description": "ClawOS — OpenClaw Runtime for Raspberry Pi",
     "github_url": "https://github.com/TheRealKlobow/ClawOS",
     "seeedstudio": false,
     "product_links": [],
@@ -1089,7 +1089,7 @@
     "platforms": [
       "PC"
     ],
-    "description": "The Physical Embodiment for OpenClaw \u2014 Dual-Brain Bytecode Robot",
+    "description": "The Physical Embodiment for OpenClaw — Dual-Brain Bytecode Robot",
     "github_url": "https://github.com/EvolvingAgentsLabs/RoClaw",
     "seeedstudio": false,
     "product_links": [],
@@ -1128,5 +1128,383 @@
     "bom_cost": "Unknown",
     "daily_increment": 0,
     "created_at": "2026-03-08T00:00:14.835686Z"
+  },
+  {
+    "id": 58,
+    "name": "xiaozhi-esp32-server-golang",
+    "stars": 235,
+    "category": "iot",
+    "platforms": [
+      "ESP32"
+    ],
+    "description": "golang版本的小智后端服务，支持websocket和mqtt+udp协议，支持声纹识别/声音克隆/知识库/mcp远程调用/openclaw等功能",
+    "highlights": [
+      "Go后端",
+      "WebSocket/MQTT/UDP",
+      "声纹识别"
+    ],
+    "github_url": "https://github.com/hackers365/xiaozhi-esp32-server-golang",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$15",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 59,
+    "name": "ClawPuter",
+    "stars": 78,
+    "category": "iot",
+    "platforms": [
+      "ESP32",
+      "M5Stack"
+    ],
+    "description": "ClawPuter — pixel desktop companion for M5Stack Cardputer (ESP32-S3). AI chat, voice input, real-time weather, synced macOS desktop pet.",
+    "highlights": [
+      "M5Stack Cardputer",
+      "AI chat",
+      "桌面宠物"
+    ],
+    "github_url": "https://github.com/bryant24hao/ClawPuter",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$30",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 60,
+    "name": "openclaw-control-center",
+    "stars": 3144,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Turn OpenClaw from a black box into a local control center you can see, trust, and control.",
+    "highlights": [
+      "本地控制中心",
+      "可视化仪表板"
+    ],
+    "github_url": "https://github.com/TianyiDataScience/openclaw-control-center",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 61,
+    "name": "agent-sessions",
+    "stars": 418,
+    "category": "tool",
+    "platforms": [
+      "Mac"
+    ],
+    "description": "Session browser + Agent Cockpit + Analytics + Limits tracker for Codex CLI, Claude Code, OpenCode, Gemini CLI, Factory Droid, GitHub Copilot CLI & OpenClaw.",
+    "highlights": [
+      "macOS原生",
+      "会话管理",
+      "限流追踪"
+    ],
+    "github_url": "https://github.com/jazzyalex/agent-sessions",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 62,
+    "name": "opik-openclaw",
+    "stars": 395,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux",
+      "Windows"
+    ],
+    "description": "Official plugin for OpenClaw that exports agent traces to Opik. See and monitor agent behaviour, cost, tokens, errors and more.",
+    "highlights": [
+      "Agent监控",
+      "成本追踪",
+      "错误日志"
+    ],
+    "github_url": "https://github.com/comet-ml/opik-openclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 63,
+    "name": "clawmetry",
+    "stars": 213,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Mac",
+      "Linux",
+      "Windows"
+    ],
+    "description": "See your agent think. Real-time observability dashboard for OpenClaw AI agents.",
+    "highlights": [
+      "实时观测",
+      "思维可视化"
+    ],
+    "github_url": "https://github.com/vivekchand/clawmetry",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 64,
+    "name": "Kongnitive-EdgeMCP",
+    "stars": 9,
+    "category": "iot",
+    "platforms": [
+      "ESP32"
+    ],
+    "description": "An MCP base layer running on ESP32 that exposes hardware capabilities to AI. AI reads logs, pushes scripts, swaps drivers, and iterates device logic directly through MCP tools.",
+    "highlights": [
+      "ESP32 MCP",
+      "硬件抽象层"
+    ],
+    "github_url": "https://github.com/Kongnitive/Kongnitive-EdgeMCP",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$10",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 65,
+    "name": "RealWorldClaw",
+    "stars": 7,
+    "category": "robotics",
+    "platforms": [
+      "3D Printing"
+    ],
+    "description": "The open platform where any AI gains any physical capability — through 3D printing and open hardware.",
+    "highlights": [
+      "3D打印",
+      "开源硬件",
+      "AI物理能力"
+    ],
+    "github_url": "https://github.com/brianzhibo-design/RealWorldClaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Varies",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 66,
+    "name": "openclaw-setup",
+    "stars": 38,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Linux"
+    ],
+    "description": "OpenClaw + Ollama + Telegram Quick Setup Guide | 快速安裝教學",
+    "highlights": [
+      "Ollama集成",
+      "Telegram",
+      "快速部署"
+    ],
+    "github_url": "https://github.com/anomixer/openclaw-setup",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 67,
+    "name": "GUI-Agent-Harness",
+    "stars": 21,
+    "category": "tool",
+    "platforms": [
+      "Mac"
+    ],
+    "description": "Vision-based desktop automation skills for OpenClaw agents on macOS. See, learn, click — any app.",
+    "highlights": [
+      "macOS视觉自动化",
+      "桌面UI交互"
+    ],
+    "github_url": "https://github.com/Fzkuji/GUI-Agent-Harness",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 68,
+    "name": "Star-Office-UI-Node",
+    "stars": 8,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A pixelated office dashboard for multi-agent collaboration: visualizes the real-time work status of the AI assistant (OpenClaw/Lobster).",
+    "highlights": [
+      "多智能体协作",
+      "办公室仪表板"
+    ],
+    "github_url": "https://github.com/wangmiaozero/Star-Office-UI-Node",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 69,
+    "name": "claw-stream-bot",
+    "stars": 6,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Enable OpenClaw agents to see and participate in Twitch streams for Claw Con.",
+    "highlights": [
+      "Twitch集成",
+      "直播互动"
+    ],
+    "github_url": "https://github.com/averyjennings/claw-stream-bot",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 70,
+    "name": "openclaw-security",
+    "stars": 4,
+    "category": "tool",
+    "platforms": [
+      "PC",
+      "Linux"
+    ],
+    "description": "Harden your OpenClaw and NemoClaw AI agent installations -- security audit tools.",
+    "highlights": [
+      "安全加固",
+      "安全审计"
+    ],
+    "github_url": "https://github.com/X-Scale-AI/openclaw-security",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 71,
+    "name": "agenthq",
+    "stars": 3,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Lightweight ops dashboard for OpenClaw agent teams. See who's online, what they're working on.",
+    "highlights": [
+      "团队仪表板",
+      "任务管理"
+    ],
+    "github_url": "https://github.com/98kiran/agenthq",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 72,
+    "name": "ClawDeck",
+    "stars": 2,
+    "category": "tool",
+    "platforms": [
+      "PC"
+    ],
+    "description": "A clear and focused interface for interacting with OpenClaw tasks — see agent states, understand progress.",
+    "highlights": [
+      "任务界面",
+      "进度追踪"
+    ],
+    "github_url": "https://github.com/KtKID/ClawDeck",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 73,
+    "name": "hardware-wiki-generator",
+    "stars": 1,
+    "category": "maker",
+    "platforms": [
+      "Seeed Studio"
+    ],
+    "description": "OpenClaw skill for generating bilingual (Chinese/English) hardware product wiki documentation for Docusaurus/Seeed Studio/Adafruit platforms.",
+    "highlights": [
+      "Seeed Studio",
+      "文档生成",
+      "中英双语"
+    ],
+    "github_url": "https://github.com/lsw031105guge-bit/hardware-wiki-generator",
+    "seeedstudio": true,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 74,
+    "name": "reachy-claw",
+    "stars": 7,
+    "category": "robotics",
+    "platforms": [
+      "Reachy Mini"
+    ],
+    "description": "Sub-200ms voice assistant for Reachy Mini — powered by sherpa-onnx and OpenClaw.",
+    "highlights": [
+      "Reachy Mini",
+      "低延迟语音",
+      "200ms响应"
+    ],
+    "github_url": "https://github.com/suharvest/reachy-claw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$500",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 75,
+    "name": "reachyclaw",
+    "stars": 2,
+    "category": "robotics",
+    "platforms": [
+      "Reachy Mini"
+    ],
+    "description": "ReachyClaw - Your OpenClaw AI agent embodied in a Reachy Mini robot. OpenClaw is the brain; OpenAI Realtime API handles voice I/O.",
+    "highlights": [
+      "Reachy Mini",
+      "语音交互",
+      "AI具身"
+    ],
+    "github_url": "https://github.com/EdLuxAI/reachyclaw",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "~$500",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
   }
 ]
