@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Official OpenClaw Repository",
-    "stars": 342311,
+    "stars": 342354,
     "category": "core",
     "platforms": [
       "PC",
@@ -22,13 +22,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 91216,
+    "daily_increment": 342354,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 20,
     "name": "chatgpt-on-wechat",
-    "stars": 42673,
+    "stars": 42674,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -38,7 +38,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 707,
+    "daily_increment": 42674,
     "created_at": "2026-03-07T17:44:51.564287Z",
     "highlights": [
       "WeChat integration",
@@ -59,7 +59,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 1715,
+    "daily_increment": 42642,
     "created_at": "2026-03-07T17:44:51.564595Z",
     "highlights": [
       "Beautiful UI",
@@ -70,7 +70,7 @@
   {
     "id": 2,
     "name": "Nanobot",
-    "stars": 37209,
+    "stars": 37216,
     "category": "alternative",
     "platforms": [
       "Mobile",
@@ -87,13 +87,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 7485,
+    "daily_increment": 37216,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 3,
     "name": "ZeroClaw",
-    "stars": 24059,
+    "stars": 0,
     "category": "alternative",
     "platforms": [
       "PC",
@@ -110,13 +110,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "$5-20/mo",
-    "daily_increment": 32,
+    "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 4,
     "name": "Sipeed PicoClaw",
-    "stars": 26843,
+    "stars": 26845,
     "category": "alternative",
     "platforms": [
       "Pico",
@@ -138,7 +138,7 @@
       }
     ],
     "bom_cost": "$15-30",
-    "daily_increment": 5043,
+    "daily_increment": 26845,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -165,7 +165,7 @@
       }
     ],
     "bom_cost": "$5-15",
-    "daily_increment": 958,
+    "daily_increment": 4956,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -181,7 +181,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 50,
+    "daily_increment": 3250,
     "created_at": "2026-03-07T17:44:52.978966Z",
     "highlights": [
       "Chinese voice control",
@@ -202,7 +202,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 46,
+    "daily_increment": 1863,
     "created_at": "2026-03-07T17:44:52.979033Z",
     "highlights": [
       "NAT routing",
@@ -223,7 +223,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 261,
+    "daily_increment": 2028,
     "created_at": "2026-03-07T17:44:52.979061Z",
     "highlights": [
       "Privacy focused",
@@ -255,7 +255,7 @@
       }
     ],
     "bom_cost": "$10-50",
-    "daily_increment": 162,
+    "daily_increment": 1459,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -283,7 +283,7 @@
       }
     ],
     "bom_cost": "$200-500",
-    "daily_increment": 2,
+    "daily_increment": 426,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -310,7 +310,7 @@
       }
     ],
     "bom_cost": "$50-150",
-    "daily_increment": 0,
+    "daily_increment": 61,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -326,13 +326,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 174,
+    "daily_increment": 514,
     "created_at": "2026-03-08T00:00:20.149119Z"
   },
   {
     "id": 11,
     "name": "Xiaozhi ESP32 Server",
-    "stars": 179,
+    "stars": 0,
     "category": "iot",
     "platforms": [
       "ESP32",
@@ -370,7 +370,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 21,
+    "daily_increment": 173,
     "created_at": "2026-03-08T00:00:20.149200Z"
   },
   {
@@ -398,7 +398,7 @@
       }
     ],
     "bom_cost": "$100-300",
-    "daily_increment": 0,
+    "daily_increment": 14,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -414,7 +414,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 36,
     "created_at": "2026-03-08T00:00:18.681478Z"
   },
   {
@@ -440,7 +440,7 @@
       }
     ],
     "bom_cost": "$10-20",
-    "daily_increment": 14,
+    "daily_increment": 45,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -462,7 +462,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "$2000-5000",
-    "daily_increment": 2,
+    "daily_increment": 28,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -488,7 +488,7 @@
       }
     ],
     "bom_cost": "$50-100",
-    "daily_increment": 2,
+    "daily_increment": 23,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -504,7 +504,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 32,
+    "daily_increment": 52,
     "created_at": "2026-03-08T00:00:18.681592Z"
   },
   {
@@ -531,7 +531,7 @@
       }
     ],
     "bom_cost": "$30-50",
-    "daily_increment": 3,
+    "daily_increment": 18,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -558,7 +558,7 @@
       }
     ],
     "bom_cost": "$15-30",
-    "daily_increment": 0,
+    "daily_increment": 14,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -586,7 +586,7 @@
       }
     ],
     "bom_cost": "$2000-20000",
-    "daily_increment": 14,
+    "daily_increment": 28,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -602,7 +602,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 7,
+    "daily_increment": 19,
     "created_at": "2026-03-08T00:00:17.188319Z"
   },
   {
@@ -624,7 +624,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 37,
+    "daily_increment": 48,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -640,7 +640,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 7,
+    "daily_increment": 18,
     "created_at": "2026-03-08T00:00:12.014137Z"
   },
   {
@@ -656,7 +656,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 6,
+    "daily_increment": 16,
     "created_at": "2026-03-08T00:00:17.188377Z"
   },
   {
@@ -672,7 +672,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 1,
+    "daily_increment": 10,
     "created_at": "2026-03-08T00:00:13.830341Z"
   },
   {
@@ -688,7 +688,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 9,
+    "daily_increment": 16,
     "created_at": "2026-03-08T00:00:17.188397Z"
   },
   {
@@ -715,7 +715,7 @@
       }
     ],
     "bom_cost": "$10-15",
-    "daily_increment": 2,
+    "daily_increment": 7,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -731,7 +731,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 6,
+    "daily_increment": 11,
     "created_at": "2026-03-08T00:00:17.188415Z"
   },
   {
@@ -747,7 +747,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 6,
+    "daily_increment": 10,
     "created_at": "2026-03-08T00:00:12.014222Z"
   },
   {
@@ -763,7 +763,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 3,
+    "daily_increment": 7,
     "created_at": "2026-03-08T00:00:12.014301Z"
   },
   {
@@ -779,7 +779,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:12.014330Z"
   },
   {
@@ -795,7 +795,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:12.014347Z"
   },
   {
@@ -811,13 +811,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:13.830407Z"
   },
   {
     "id": 35,
     "name": "kidblocksos",
-    "stars": 3,
+    "stars": 7,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -827,13 +827,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-08T00:00:13.830426Z"
   },
   {
     "id": 30,
     "name": "IOnode",
-    "stars": 2,
+    "stars": 3,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -843,7 +843,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:12.014365Z"
   },
   {
@@ -859,13 +859,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-08T00:00:12.014389Z"
   },
   {
     "id": 36,
     "name": "openclaw-on-rpi",
-    "stars": 2,
+    "stars": 3,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -875,13 +875,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:13.830443Z"
   },
   {
     "id": 49,
     "name": "openclaw-neon-rooms",
-    "stars": 2,
+    "stars": 3,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -891,7 +891,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:17.188432Z"
   },
   {
@@ -907,13 +907,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-08T00:00:17.188450Z"
   },
   {
     "id": 16,
     "name": "Jetson OpenClaw",
-    "stars": 1,
+    "stars": 0,
     "category": "ai-compute",
     "platforms": [
       "NVIDIA Jetson",
@@ -950,7 +950,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 3,
+    "daily_increment": 4,
     "created_at": "2026-03-08T00:00:12.014406Z"
   },
   {
@@ -966,7 +966,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-08T00:00:13.830467Z"
   },
   {
@@ -982,7 +982,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-08T00:00:13.830495Z"
   },
   {
@@ -998,7 +998,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-08T00:00:13.830513Z"
   },
   {
@@ -1014,13 +1014,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-08T00:00:13.830529Z"
   },
   {
     "id": 41,
     "name": "openclaw-jetson",
-    "stars": 1,
+    "stars": 4,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -1030,13 +1030,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 4,
     "created_at": "2026-03-08T00:00:14.835584Z"
   },
   {
     "id": 42,
     "name": "NvidiaJetsonOpenClaw",
-    "stars": 1,
+    "stars": 4,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -1046,13 +1046,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 4,
     "created_at": "2026-03-08T00:00:14.835647Z"
   },
   {
     "id": 51,
     "name": "Clawarm",
-    "stars": 1,
+    "stars": 8,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -1062,13 +1062,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 8,
     "created_at": "2026-03-08T00:00:17.188469Z"
   },
   {
     "id": 52,
     "name": "openclaw_ros2",
-    "stars": 1,
+    "stars": 3,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -1078,13 +1078,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:17.188487Z"
   },
   {
     "id": 53,
     "name": "RoClaw",
-    "stars": 1,
+    "stars": 10,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -1094,7 +1094,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 0,
+    "daily_increment": 10,
     "created_at": "2026-03-08T00:00:17.188506Z"
   },
   {
@@ -1147,7 +1147,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$15",
-    "daily_increment": 0,
+    "daily_increment": 235,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1169,13 +1169,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$30",
-    "daily_increment": 0,
+    "daily_increment": 78,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 60,
     "name": "openclaw-control-center",
-    "stars": 3144,
+    "stars": 3145,
     "category": "tool",
     "platforms": [
       "PC"
@@ -1189,7 +1189,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 3145,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1210,7 +1210,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 418,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1234,7 +1234,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 395,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1257,7 +1257,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 213,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1277,7 +1277,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$10",
-    "daily_increment": 0,
+    "daily_increment": 9,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1298,7 +1298,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1320,7 +1320,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 38,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1340,7 +1340,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 21,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1360,7 +1360,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 8,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1380,7 +1380,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 6,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1401,7 +1401,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 4,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1421,7 +1421,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1441,7 +1441,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1462,7 +1462,7 @@
     "seeedstudio": true,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1483,7 +1483,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$500",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1504,13 +1504,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$500",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 76,
     "name": "XiaohongshuSkills",
-    "stars": 2313,
+    "stars": 2315,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -1525,13 +1525,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 2315,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 77,
     "name": "xiaohongshu-ops-skill",
-    "stars": 1314,
+    "stars": 1315,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -1546,13 +1546,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 1315,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 78,
     "name": "xiaohongshu-auto-operation",
-    "stars": 31,
+    "stars": 34,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -1566,7 +1566,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 34,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1586,7 +1586,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 9,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1606,7 +1606,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1627,7 +1627,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$30",
-    "daily_increment": 0,
+    "daily_increment": 104,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1649,7 +1649,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 0,
+    "daily_increment": 45,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1671,7 +1671,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 0,
+    "daily_increment": 113,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1694,7 +1694,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 0,
+    "daily_increment": 9,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1715,7 +1715,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$25",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1736,7 +1736,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 29,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1756,7 +1756,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 22,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1776,7 +1776,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$15",
-    "daily_increment": 0,
+    "daily_increment": 15,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1799,7 +1799,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 11,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1821,7 +1821,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 0,
+    "daily_increment": 4,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1843,7 +1843,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$10",
-    "daily_increment": 0,
+    "daily_increment": 7,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1866,7 +1866,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 3,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1887,13 +1887,13 @@
     "seeedstudio": true,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 13,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 94,
     "name": "nanoclaw",
-    "stars": 26038,
+    "stars": 26042,
     "category": "core",
     "platforms": [
       "PC",
@@ -1911,13 +1911,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 26042,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 95,
     "name": "OpenViking",
-    "stars": 20166,
+    "stars": 20172,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1934,13 +1934,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 20172,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 96,
     "name": "edict",
-    "stars": 13690,
+    "stars": 13706,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1957,13 +1957,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 13706,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 97,
     "name": "memU",
-    "stars": 13248,
+    "stars": 13250,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1979,13 +1979,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 13250,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 98,
     "name": "MemOS",
-    "stars": 7994,
+    "stars": 7997,
     "category": "tool",
     "platforms": [
       "PC",
@@ -2001,13 +2001,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 7997,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 99,
     "name": "ClawRouter",
-    "stars": 6530,
+    "stars": 6529,
     "category": "tool",
     "platforms": [
       "PC",
@@ -2024,13 +2024,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 6529,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 100,
     "name": "Star-Office-UI",
-    "stars": 6362,
+    "stars": 6365,
     "category": "tool",
     "platforms": [
       "PC"
@@ -2044,7 +2044,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 6365,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -2066,7 +2066,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 2648,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -2086,7 +2086,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 4,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -2105,7 +2105,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 4,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -2125,7 +2125,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 2,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -2145,7 +2145,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 11,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -2164,13 +2164,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 10,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 107,
     "name": "xiaohongshu-skill",
-    "stars": 2,
+    "stars": 0,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -2189,7 +2189,7 @@
   {
     "id": 108,
     "name": "xiaohongshu-publish-skill",
-    "stars": 5,
+    "stars": 0,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -2225,7 +2225,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-31T00:00:00Z"
   }
 ]

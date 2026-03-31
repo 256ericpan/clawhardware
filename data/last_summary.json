@@ -1,0 +1,32 @@
+{
+  "date": "2026-03-31",
+  "updated": 109,
+  "errors": 0,
+  "top_gainers": [
+    {
+      "name": "Official OpenClaw Repository",
+      "increment": 342354,
+      "stars": 342354
+    },
+    {
+      "name": "chatgpt-on-wechat",
+      "increment": 42674,
+      "stars": 42674
+    },
+    {
+      "name": "cherry-studio",
+      "increment": 42642,
+      "stars": 42642
+    },
+    {
+      "name": "Nanobot",
+      "increment": 37216,
+      "stars": 37216
+    },
+    {
+      "name": "Sipeed PicoClaw",
+      "increment": 26845,
+      "stars": 26845
+    }
+  ]
+}

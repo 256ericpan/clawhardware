@@ -71,6 +71,10 @@ select, input { padding: 8px 12px; border: 1px solid #d1d5db; border-radius: 8px
 <select id="categoryFilter">
 <option value="">All Categories</option>
 </select>
+<select id="sortOrder">
+<option value="stars">⭐ Stars (High → Low)</option>
+<option value="increment">📈 Daily Increment</option>
+</select>
 <input type="text" id="searchInput" placeholder="Search...">
 </div>
 <div class="platform-tags" id="platformTags">
@@ -137,6 +141,7 @@ renderProjects();
 });
 });
 document.getElementById("categoryFilter").addEventListener("change", renderProjects);
+document.getElementById("sortOrder").addEventListener("change", renderProjects);
 document.getElementById("searchInput").addEventListener("input", renderProjects);
 }
 
@@ -180,7 +185,13 @@ ${highlights}
 }
 
 function renderProjects() {
-const filtered = filterProjects();
+let filtered = filterProjects();
+const sortBy = document.getElementById("sortOrder").value;
+if (sortBy === "increment") {
+filtered.sort((a, b) => (b.daily_increment || 0) - (a.daily_increment || 0));
+} else {
+filtered.sort((a, b) => (b.stars || 0) - (a.stars || 0));
+}
 document.getElementById("projectCount").textContent = filtered.length;
 document.getElementById("projectsContainer").innerHTML = filtered.map(createProjectCard).join("");
 }
