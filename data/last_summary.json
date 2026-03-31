@@ -5,28 +5,28 @@
   "top_gainers": [
     {
       "name": "Official OpenClaw Repository",
-      "increment": 342354,
-      "stars": 342354
+      "increment": 4,
+      "stars": 342358
+    },
+    {
+      "name": "edict",
+      "increment": 3,
+      "stars": 13709
     },
     {
       "name": "chatgpt-on-wechat",
-      "increment": 42674,
-      "stars": 42674
+      "increment": 1,
+      "stars": 42675
     },
     {
       "name": "cherry-studio",
-      "increment": 42642,
-      "stars": 42642
-    },
-    {
-      "name": "Nanobot",
-      "increment": 37216,
-      "stars": 37216
+      "increment": 1,
+      "stars": 42643
     },
     {
       "name": "Sipeed PicoClaw",
-      "increment": 26845,
-      "stars": 26845
+      "increment": 1,
+      "stars": 26846
     }
   ]
 }
