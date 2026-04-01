@@ -1,7 +1,8 @@
 {
   "openclaw/openclaw": {
-    "last_stars": 342360,
-    "2026-03-31": 342360
+    "last_stars": 343174,
+    "2026-03-31": 342360,
+    "2026-04-01": 343174
   },
   "zhayujie/chatgpt-on-wechat": {
     "last_stars": 42675,
@@ -20,96 +21,117 @@
     "2026-03-31": 0
   },
   "sipeed/picoclaw": {
-    "last_stars": 26846,
-    "2026-03-31": 26846
+    "last_stars": 26921,
+    "2026-03-31": 26846,
+    "2026-04-01": 26921
   },
   "memovai/mimiclaw": {
-    "last_stars": 4956,
-    "2026-03-31": 4956
+    "last_stars": 4962,
+    "2026-03-31": 4956,
+    "2026-04-01": 4962
   },
   "huangjunsen0406/py-xiaozhi": {
     "last_stars": 3250,
-    "2026-03-31": 3250
+    "2026-03-31": 3250,
+    "2026-04-01": 3250
   },
   "martin-ger/esp32_nat_router": {
-    "last_stars": 1863,
-    "2026-03-31": 1863
+    "last_stars": 1867,
+    "2026-03-31": 1863,
+    "2026-04-01": 1867
   },
   "tnm/zclaw": {
     "last_stars": 2028,
     "2026-03-31": 2028
   },
   "RightNow-AI/picolm": {
-    "last_stars": 1459,
-    "2026-03-31": 1459
+    "last_stars": 1461,
+    "2026-03-31": 1459,
+    "2026-04-01": 1461
   },
   "Seeed-Studio/ModelAssistant": {
     "last_stars": 426,
-    "2026-03-31": 426
+    "2026-03-31": 426,
+    "2026-04-01": 426
   },
   "Seeed-Studio/reCamera": {
     "last_stars": 61,
-    "2026-03-31": 61
+    "2026-03-31": 61,
+    "2026-04-01": 61
   },
   "brenpoly/be-more-agent": {
-    "last_stars": 514,
-    "2026-03-31": 514
+    "last_stars": 516,
+    "2026-03-31": 514,
+    "2026-04-01": 516
   },
   "liu233w/xiaozhi-esp32-server-golang": {
     "last_stars": 0,
-    "2026-03-31": 0
+    "2026-03-31": 0,
+    "2026-04-01": 0
   },
   "nguyenduchoai/bizclaw": {
     "last_stars": 173,
-    "2026-03-31": 173
+    "2026-03-31": 173,
+    "2026-04-01": 173
   },
   "Seeed-Studio/SenseCraft-AI_Server": {
     "last_stars": 14,
-    "2026-03-31": 14
+    "2026-03-31": 14,
+    "2026-04-01": 14
   },
   "d4rkmen/M5Gemini": {
     "last_stars": 36,
-    "2026-03-31": 36
+    "2026-03-31": 36,
+    "2026-04-01": 36
   },
   "M64GitHub/WireClaw": {
     "last_stars": 45,
-    "2026-03-31": 45
+    "2026-03-31": 45,
+    "2026-04-01": 45
   },
   "ArturSkowronski/clawd-reachy-mini": {
     "last_stars": 28,
-    "2026-03-31": 28
+    "2026-03-31": 28,
+    "2026-04-01": 28
   },
   "Demwunz/openclaw-pi-installation": {
     "last_stars": 23,
-    "2026-03-31": 23
+    "2026-03-31": 23,
+    "2026-04-01": 23
   },
   "apisit31120/miniclaw-esp32": {
     "last_stars": 52,
-    "2026-03-31": 52
+    "2026-03-31": 52,
+    "2026-04-01": 52
   },
   "turmyshevd/openclawgotchi": {
     "last_stars": 18,
-    "2026-03-31": 18
+    "2026-03-31": 18,
+    "2026-04-01": 18
   },
   "This-Is-Captain-Code/monagotchi": {
     "last_stars": 14,
-    "2026-03-31": 14
+    "2026-03-31": 14,
+    "2026-04-01": 14
   },
   "LooperRobotics/OpenClaw-Robotics": {
     "last_stars": 28,
-    "2026-03-31": 28
+    "2026-03-31": 28,
+    "2026-04-01": 28
   },
   "ychenjk-sudo/daily-paper-skill": {
     "last_stars": 19,
-    "2026-03-31": 19
+    "2026-03-31": 19,
+    "2026-04-01": 19
   },
   "next-open-ai/openclawx": {
     "last_stars": 48,
     "2026-03-31": 48
   },
   "tigerbryan/openclaw-xiaozhi": {
-    "last_stars": 18,
-    "2026-03-31": 18
+    "last_stars": 19,
+    "2026-03-31": 18,
+    "2026-04-01": 19
   },
   "tomrikert/clawbody": {
     "last_stars": 16,
@@ -117,15 +139,18 @@
   },
   "sanchorelaxo/openclaw-raspberry-installer": {
     "last_stars": 10,
-    "2026-03-31": 10
+    "2026-03-31": 10,
+    "2026-04-01": 10
   },
   "xuankuzcr/openclaw-paper-digest": {
     "last_stars": 16,
-    "2026-03-31": 16
+    "2026-03-31": 16,
+    "2026-04-01": 16
   },
   "chilu18/openclaw-esp32c3-xiao-node": {
     "last_stars": 7,
-    "2026-03-31": 7
+    "2026-03-31": 7,
+    "2026-04-01": 7
   },
   "danmartinez78/VectorClaw": {
     "last_stars": 11,
@@ -133,39 +158,48 @@
   },
   "omeriko9/HeyClawy": {
     "last_stars": 10,
-    "2026-03-31": 10
+    "2026-03-31": 10,
+    "2026-04-01": 10
   },
   "lorryjovens-hub/clawlink-triarch": {
     "last_stars": 7,
-    "2026-03-31": 7
+    "2026-03-31": 7,
+    "2026-04-01": 7
   },
   "DmitrySolana/arduinomaker": {
     "last_stars": 3,
-    "2026-03-31": 3
+    "2026-03-31": 3,
+    "2026-04-01": 3
   },
   "DmitrySolana/arduino-maker": {
     "last_stars": 3,
-    "2026-03-31": 3
+    "2026-03-31": 3,
+    "2026-04-01": 3
   },
   "aqn96/rpi5-openclaw-assistant": {
     "last_stars": 3,
-    "2026-03-31": 3
+    "2026-03-31": 3,
+    "2026-04-01": 3
   },
   "sleepycompile/kidblocksos": {
-    "last_stars": 7,
-    "2026-03-31": 7
+    "last_stars": 0,
+    "2026-03-31": 7,
+    "2026-04-01": 0
   },
   "M64GitHub/IOnode": {
-    "last_stars": 3,
-    "2026-03-31": 3
+    "last_stars": 4,
+    "2026-03-31": 3,
+    "2026-04-01": 4
   },
   "brooqs/openclaw-voice-server": {
     "last_stars": 2,
-    "2026-03-31": 2
+    "2026-03-31": 2,
+    "2026-04-01": 2
   },
   "hackur/openclaw-on-rpi": {
     "last_stars": 3,
-    "2026-03-31": 3
+    "2026-03-31": 3,
+    "2026-04-01": 3
   },
   "mallocfeng/openclaw-neon-rooms": {
     "last_stars": 3,
@@ -177,39 +211,48 @@
   },
   "rhuanssauro/jetson-openclaw": {
     "last_stars": 0,
-    "2026-03-31": 0
+    "2026-03-31": 0,
+    "2026-04-01": 0
   },
   "leohuang8688/XiaozhiClaw": {
     "last_stars": 4,
-    "2026-03-31": 4
+    "2026-03-31": 4,
+    "2026-04-01": 4
   },
   "8bitkick/piclaudius-setup": {
     "last_stars": 1,
-    "2026-03-31": 1
+    "2026-03-31": 1,
+    "2026-04-01": 1
   },
   "TheRealKlobow/ClawOS": {
-    "last_stars": 1,
-    "2026-03-31": 1
+    "last_stars": 0,
+    "2026-03-31": 1,
+    "2026-04-01": 0
   },
   "MasteraSnackin/Autonomous-AI-Agent-on-Raspberry-Pi-5": {
     "last_stars": 1,
-    "2026-03-31": 1
+    "2026-03-31": 1,
+    "2026-04-01": 1
   },
   "U-N-B-R-A-N-D-E-D/otaclaw": {
     "last_stars": 1,
-    "2026-03-31": 1
+    "2026-03-31": 1,
+    "2026-04-01": 1
   },
   "AndroidNextdoor/openclaw-jetson": {
     "last_stars": 4,
-    "2026-03-31": 4
+    "2026-03-31": 4,
+    "2026-04-01": 4
   },
   "eliranwong/NvidiaJetsonOpenClaw": {
-    "last_stars": 4,
-    "2026-03-31": 4
+    "last_stars": 5,
+    "2026-03-31": 4,
+    "2026-04-01": 5
   },
   "Clawland-AI/Clawarm": {
     "last_stars": 8,
-    "2026-03-31": 8
+    "2026-03-31": 8,
+    "2026-04-01": 8
   },
   "moe-sani/openclaw_ros2": {
     "last_stars": 3,
@@ -221,19 +264,23 @@
   },
   "FombyAvetta/ProjectPBot": {
     "last_stars": 0,
-    "2026-03-31": 0
+    "2026-03-31": 0,
+    "2026-04-01": 0
   },
   "huaen1219/openclaw": {
     "last_stars": 0,
-    "2026-03-31": 0
+    "2026-03-31": 0,
+    "2026-04-01": 0
   },
   "hackers365/xiaozhi-esp32-server-golang": {
-    "last_stars": 235,
-    "2026-03-31": 235
+    "last_stars": 236,
+    "2026-03-31": 235,
+    "2026-04-01": 236
   },
   "bryant24hao/ClawPuter": {
     "last_stars": 78,
-    "2026-03-31": 78
+    "2026-03-31": 78,
+    "2026-04-01": 78
   },
   "TianyiDataScience/openclaw-control-center": {
     "last_stars": 3145,
@@ -244,24 +291,29 @@
     "2026-03-31": 418
   },
   "comet-ml/opik-openclaw": {
-    "last_stars": 395,
-    "2026-03-31": 395
+    "last_stars": 401,
+    "2026-03-31": 395,
+    "2026-04-01": 401
   },
   "vivekchand/clawmetry": {
     "last_stars": 213,
-    "2026-03-31": 213
+    "2026-03-31": 213,
+    "2026-04-01": 213
   },
   "Kongnitive/Kongnitive-EdgeMCP": {
     "last_stars": 9,
-    "2026-03-31": 9
+    "2026-03-31": 9,
+    "2026-04-01": 9
   },
   "brianzhibo-design/RealWorldClaw": {
     "last_stars": 7,
-    "2026-03-31": 7
+    "2026-03-31": 7,
+    "2026-04-01": 7
   },
   "anomixer/openclaw-setup": {
     "last_stars": 38,
-    "2026-03-31": 38
+    "2026-03-31": 38,
+    "2026-04-01": 38
   },
   "Fzkuji/GUI-Agent-Harness": {
     "last_stars": 21,
@@ -277,7 +329,8 @@
   },
   "X-Scale-AI/openclaw-security": {
     "last_stars": 4,
-    "2026-03-31": 4
+    "2026-03-31": 4,
+    "2026-04-01": 4
   },
   "98kiran/agenthq": {
     "last_stars": 3,
@@ -289,55 +342,68 @@
   },
   "lsw031105guge-bit/hardware-wiki-generator": {
     "last_stars": 1,
-    "2026-03-31": 1
+    "2026-03-31": 1,
+    "2026-04-01": 1
   },
   "suharvest/reachy-claw": {
-    "last_stars": 7,
-    "2026-03-31": 7
+    "last_stars": 8,
+    "2026-03-31": 7,
+    "2026-04-01": 8
   },
   "EdLuxAI/reachyclaw": {
     "last_stars": 2,
-    "2026-03-31": 2
+    "2026-03-31": 2,
+    "2026-04-01": 2
   },
   "white0dew/XiaohongshuSkills": {
-    "last_stars": 2315,
-    "2026-03-31": 2315
+    "last_stars": 2326,
+    "2026-03-31": 2315,
+    "2026-04-01": 2326
   },
   "Xiangyu-CAS/xiaohongshu-ops-skill": {
-    "last_stars": 1316,
-    "2026-03-31": 1316
+    "last_stars": 1324,
+    "2026-03-31": 1316,
+    "2026-04-01": 1324
   },
   "ijerryhuang/xiaohongshu-auto-operation": {
-    "last_stars": 34,
-    "2026-03-31": 34
+    "last_stars": 48,
+    "2026-03-31": 34,
+    "2026-04-01": 48
   },
   "tclawde/xiaohongshu-mcp-skill": {
     "last_stars": 9,
-    "2026-03-31": 9
+    "2026-03-31": 9,
+    "2026-04-01": 9
   },
   "DeliciousBuding/xiaohongshu-skill": {
     "last_stars": 7,
-    "2026-03-31": 7
+    "2026-03-31": 7,
+    "2026-04-01": 7
   },
   "ericshang98/pinclaw": {
-    "last_stars": 104,
-    "2026-03-31": 104
+    "last_stars": 101,
+    "2026-03-31": 104,
+    "2026-04-01": 101
   },
   "HooRii-OT/clawstage": {
     "last_stars": 45,
-    "2026-03-31": 45
+    "2026-03-31": 45,
+    "2026-04-01": 45
   },
   "tuya/DuckyClaw": {
     "last_stars": 113,
-    "2026-03-31": 113
+    "2026-03-31": 113,
+    "2026-04-01": 113
   },
   "saiyam1814/claw-spark": {
-    "last_stars": 9,
-    "2026-03-31": 9
+    "last_stars": 12,
+    "2026-03-31": 9,
+    "2026-04-01": 12
   },
   "brooqs/openclaw-voice-client-s3-box-lite": {
     "last_stars": 2,
-    "2026-03-31": 2
+    "2026-03-31": 2,
+    "2026-04-01": 2
   },
   "tiero/claw-cash": {
     "last_stars": 29,
@@ -349,59 +415,72 @@
   },
   "LingaoM/zbot": {
     "last_stars": 15,
-    "2026-03-31": 15
+    "2026-03-31": 15,
+    "2026-04-01": 15
   },
   "seomikewaltman/openclaw-secure": {
     "last_stars": 11,
-    "2026-03-31": 11
+    "2026-03-31": 11,
+    "2026-04-01": 11
   },
   "howardleegeek/openclaw-mobile": {
     "last_stars": 4,
-    "2026-03-31": 4
+    "2026-03-31": 4,
+    "2026-04-01": 4
   },
   "lucas-moraes/rustclaw": {
     "last_stars": 7,
-    "2026-03-31": 7
+    "2026-03-31": 7,
+    "2026-04-01": 7
   },
   "miga1999/AirClaw": {
     "last_stars": 3,
-    "2026-03-31": 3
+    "2026-03-31": 3,
+    "2026-04-01": 3
   },
   "Seeed-Projects/awesome-openclaw-hardware-projects": {
-    "last_stars": 13,
-    "2026-03-31": 13
+    "last_stars": 15,
+    "2026-03-31": 13,
+    "2026-04-01": 15
   },
   "qwibitai/nanoclaw": {
-    "last_stars": 26042,
-    "2026-03-31": 26042
+    "last_stars": 26102,
+    "2026-03-31": 26042,
+    "2026-04-01": 26102
   },
   "volcengine/OpenViking": {
-    "last_stars": 20172,
-    "2026-03-31": 20172
+    "last_stars": 20273,
+    "2026-03-31": 20172,
+    "2026-04-01": 20273
   },
   "cft0808/edict": {
-    "last_stars": 13709,
-    "2026-03-31": 13709
+    "last_stars": 13777,
+    "2026-03-31": 13709,
+    "2026-04-01": 13777
   },
   "NevaMind-AI/memU": {
-    "last_stars": 13250,
-    "2026-03-31": 13250
+    "last_stars": 13257,
+    "2026-03-31": 13250,
+    "2026-04-01": 13257
   },
   "MemTensor/MemOS": {
-    "last_stars": 7997,
-    "2026-03-31": 7997
+    "last_stars": 8021,
+    "2026-03-31": 7997,
+    "2026-04-01": 8021
   },
   "BlockRunAI/ClawRouter": {
-    "last_stars": 6529,
-    "2026-03-31": 6529
+    "last_stars": 6491,
+    "2026-03-31": 6529,
+    "2026-04-01": 6491
   },
   "ringhyacinth/Star-Office-UI": {
     "last_stars": 6365,
     "2026-03-31": 6365
   },
   "xpf0000/FlyEnv": {
-    "last_stars": 2648,
-    "2026-03-31": 2648
+    "last_stars": 2653,
+    "2026-03-31": 2648,
+    "2026-04-01": 2653
   },
   "clawd20130/openclaw-memory-openviking": {
     "last_stars": 4,
@@ -417,22 +496,27 @@
   },
   "Youhai020616/xiaohongshu": {
     "last_stars": 11,
-    "2026-03-31": 11
+    "2026-03-31": 11,
+    "2026-04-01": 11
   },
   "jiangguishan/openclaw-xiaohongshu": {
     "last_stars": 10,
-    "2026-03-31": 10
+    "2026-03-31": 10,
+    "2026-04-01": 10
   },
   "aaa17001/xiaohongshu-skill": {
     "last_stars": 0,
-    "2026-03-31": 0
+    "2026-03-31": 0,
+    "2026-04-01": 0
   },
   "zangqilong198812/xiaohongshu-publish-skill": {
     "last_stars": 0,
-    "2026-03-31": 0
+    "2026-03-31": 0,
+    "2026-04-01": 0
   },
   "iceccarelli/neuralbridge": {
     "last_stars": 1,
-    "2026-03-31": 1
+    "2026-03-31": 1,
+    "2026-04-01": 1
   }
 }
