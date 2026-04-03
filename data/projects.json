@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Official OpenClaw Repository",
-    "stars": 344593,
+    "stars": 346021,
     "category": "core",
     "platforms": [
       "PC",
@@ -22,13 +22,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 1419,
+    "daily_increment": 1428,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 2,
     "name": "Sipeed PicoClaw",
-    "stars": 27008,
+    "stars": 27125,
     "category": "alternative",
     "platforms": [
       "Pico",
@@ -50,13 +50,13 @@
       }
     ],
     "bom_cost": "$15-30",
-    "daily_increment": 87,
+    "daily_increment": 117,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 3,
     "name": "MimiClaw",
-    "stars": 4973,
+    "stars": 4994,
     "category": "embedded",
     "platforms": [
       "ESP32",
@@ -77,13 +77,13 @@
       }
     ],
     "bom_cost": "$5-15",
-    "daily_increment": 11,
+    "daily_increment": 21,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
     "id": 4,
     "name": "py-xiaozhi",
-    "stars": 3252,
+    "stars": 3256,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -93,7 +93,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 2,
+    "daily_increment": 4,
     "created_at": "2026-03-07T17:44:52.978966Z",
     "highlights": [
       "Chinese voice control",
@@ -104,7 +104,7 @@
   {
     "id": 5,
     "name": "esp32_nat_router",
-    "stars": 1874,
+    "stars": 1876,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -114,7 +114,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 7,
+    "daily_increment": 2,
     "created_at": "2026-03-07T17:44:52.979033Z",
     "highlights": [
       "NAT routing",
@@ -125,7 +125,7 @@
   {
     "id": 6,
     "name": "PicoLM",
-    "stars": 1464,
+    "stars": 1468,
     "category": "ai-compute",
     "platforms": [
       "Pico",
@@ -146,7 +146,7 @@
       }
     ],
     "bom_cost": "$10-50",
-    "daily_increment": 3,
+    "daily_increment": 4,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -174,7 +174,7 @@
       }
     ],
     "bom_cost": "$200-500",
-    "daily_increment": -2,
+    "daily_increment": 0,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -207,7 +207,7 @@
   {
     "id": 9,
     "name": "be-more-agent",
-    "stars": 523,
+    "stars": 526,
     "category": "alternative",
     "platforms": [
       "PC"
@@ -217,7 +217,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 7,
+    "daily_increment": 3,
     "created_at": "2026-03-08T00:00:20.149119Z"
   },
   {
@@ -337,7 +337,7 @@
   {
     "id": 15,
     "name": "Reachy Mini",
-    "stars": 28,
+    "stars": 27,
     "category": "robotics",
     "platforms": [
       "Robot",
@@ -353,7 +353,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "$2000-5000",
-    "daily_increment": 0,
+    "daily_increment": -1,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -401,7 +401,7 @@
   {
     "id": 18,
     "name": "OpenClawgotchi",
-    "stars": 18,
+    "stars": 19,
     "category": "iot",
     "platforms": [
       "Raspberry Pi",
@@ -422,7 +422,7 @@
       }
     ],
     "bom_cost": "$30-50",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-07T00:00:00Z"
   },
   {
@@ -509,7 +509,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Unknown",
-    "daily_increment": 1,
+    "daily_increment": 0,
     "created_at": "2026-03-08T00:00:12.014137Z"
   },
   {
@@ -920,7 +920,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$15",
-    "daily_increment": 5,
+    "daily_increment": 0,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -942,13 +942,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$30",
-    "daily_increment": 2,
+    "daily_increment": 0,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 48,
     "name": "opik-openclaw",
-    "stars": 415,
+    "stars": 422,
     "category": "tool",
     "platforms": [
       "PC",
@@ -966,13 +966,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 14,
+    "daily_increment": 7,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 49,
     "name": "clawmetry",
-    "stars": 219,
+    "stars": 227,
     "category": "tool",
     "platforms": [
       "PC",
@@ -989,7 +989,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 6,
+    "daily_increment": 8,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1058,7 +1058,7 @@
   {
     "id": 53,
     "name": "openclaw-security",
-    "stars": 4,
+    "stars": 5,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1073,7 +1073,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1100,7 +1100,7 @@
   {
     "id": 55,
     "name": "reachy-claw",
-    "stars": 8,
+    "stars": 9,
     "category": "robotics",
     "platforms": [
       "Reachy Mini"
@@ -1115,7 +1115,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$500",
-    "daily_increment": 0,
+    "daily_increment": 1,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1142,7 +1142,7 @@
   {
     "id": 57,
     "name": "XiaohongshuSkills",
-    "stars": 2348,
+    "stars": 2361,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -1157,13 +1157,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 22,
+    "daily_increment": 13,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 58,
     "name": "xiaohongshu-ops-skill",
-    "stars": 1346,
+    "stars": 1366,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -1178,13 +1178,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 22,
+    "daily_increment": 20,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 59,
     "name": "xiaohongshu-auto-operation",
-    "stars": 50,
+    "stars": 53,
     "category": "tool",
     "platforms": [
       "OpenClaw"
@@ -1198,7 +1198,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 2,
+    "daily_increment": 3,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1238,13 +1238,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 1,
+    "daily_increment": 0,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 62,
     "name": "pinclaw",
-    "stars": 101,
+    "stars": 100,
     "category": "iot",
     "platforms": [
       "Wearables"
@@ -1259,13 +1259,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "~$30",
-    "daily_increment": 0,
+    "daily_increment": -1,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 63,
     "name": "clawstage",
-    "stars": 48,
+    "stars": 49,
     "category": "robotics",
     "platforms": [
       "ESP32",
@@ -1281,13 +1281,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 3,
+    "daily_increment": 1,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 64,
     "name": "DuckyClaw",
-    "stars": 115,
+    "stars": 116,
     "category": "iot",
     "platforms": [
       "IoT",
@@ -1303,13 +1303,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 2,
+    "daily_increment": 1,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 65,
     "name": "claw-spark",
-    "stars": 14,
+    "stars": 17,
     "category": "ai_compute",
     "platforms": [
       "NVIDIA Jetson",
@@ -1326,7 +1326,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Varies",
-    "daily_increment": 2,
+    "daily_increment": 3,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
@@ -1478,13 +1478,13 @@
     "seeedstudio": true,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 1,
+    "daily_increment": 0,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 73,
     "name": "nanoclaw",
-    "stars": 26191,
+    "stars": 26304,
     "category": "core",
     "platforms": [
       "PC",
@@ -1502,13 +1502,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 89,
+    "daily_increment": 113,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 74,
     "name": "OpenViking",
-    "stars": 20418,
+    "stars": 20605,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1525,13 +1525,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 145,
+    "daily_increment": 187,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 75,
     "name": "edict",
-    "stars": 13897,
+    "stars": 14049,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1548,13 +1548,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 120,
+    "daily_increment": 152,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 76,
     "name": "memU",
-    "stars": 13266,
+    "stars": 13285,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1570,13 +1570,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 9,
+    "daily_increment": 19,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 77,
     "name": "MemOS",
-    "stars": 8047,
+    "stars": 8081,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1592,13 +1592,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 26,
+    "daily_increment": 34,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 78,
     "name": "ClawRouter",
-    "stars": 6463,
+    "stars": 6285,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1615,13 +1615,13 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": -28,
+    "daily_increment": -178,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
     "id": 79,
     "name": "FlyEnv",
-    "stars": 2655,
+    "stars": 2658,
     "category": "tool",
     "platforms": [
       "PC",
@@ -1637,7 +1637,7 @@
     "seeedstudio": false,
     "product_links": [],
     "bom_cost": "Free",
-    "daily_increment": 2,
+    "daily_increment": 3,
     "created_at": "2026-03-31T00:00:00Z"
   },
   {
