@@ -1739,5 +1739,446 @@
     "bom_cost": "Free",
     "daily_increment": 0,
     "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 85,
+    "name": "openclaw-robotics",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "ESP32",
+      "Raspberry Pi",
+      "Jetson",
+      "Unitree"
+    ],
+    "description": "Control mobile robots (quadruped, bipedal, wheeled, aerial) via IM platforms. Supports Unitree robots and Insight9 AI stereo camera. 直接通过飞书/Telegram等IM平台控制移动机器人。",
+    "highlights": [
+      "Unitree四足/双足机器人",
+      "Insight9 AI双目相机",
+      "IM平台控制"
+    ],
+    "github_url": "https://clawhub.ai/openclaw-robotics",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-02-16T00:00:00Z"
+  },
+  {
+    "id": 86,
+    "name": "reachy-mini (ClawHub Skill)",
+    "stars": 1,
+    "category": "robotics",
+    "platforms": [
+      "Reachy Mini",
+      "Raspberry Pi"
+    ],
+    "description": "Control Reachy Mini robot (Pollen Robotics / Hugging Face) via REST API and SSH. 6-DoF head, 360° body rotation, animated antennas, wide-angle camera, 4-mic array, speaker. 通过自然语言控制机器人头部、身体、天线、表情、舞蹈、拍照等。",
+    "highlights": [
+      "Pollen Robotics / Hugging Face",
+      "1890+ downloads",
+      "支持情绪/舞蹈/拍照/巡逻"
+    ],
+    "github_url": "https://clawhub.ai/reachy-mini",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://shop.pollen-robotics.com/en/20-reachy-mini",
+        "price": "~€20,000"
+      }
+    ],
+    "bom_cost": "~€20,000",
+    "daily_increment": 0,
+    "created_at": "2026-01-28T00:00:00Z"
+  },
+  {
+    "id": 87,
+    "name": "embodied-os",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "ROS2",
+      "Robot OS"
+    ],
+    "description": "AI Agent 控制物理机器人的统一操作系统 bridging AI agents and physical world. 支持多种机器人平台的统一控制。",
+    "highlights": [
+      "AI Agent机器人统一OS",
+      "embodied AI",
+      "最新更新2026-04-06"
+    ],
+    "github_url": "https://clawhub.ai/embodied-os",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "id": 88,
+    "name": "multi-robot-skill",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "ESP32",
+      "Arduino",
+      "Raspberry Pi",
+      "Robot Arm",
+      "Quadruped"
+    ],
+    "description": "多机器人协同控制 Skill。让 AI Agent 具备感知反馈、动态适配、并行调度多种机器人的能力。支持机械臂、四足机器人等任意 HTTP API 机器人。",
+    "highlights": [
+      "多机器人协同",
+      "并行调度",
+      "任意HTTP API机器人"
+    ],
+    "github_url": "https://clawhub.ai/multi-robot-skill",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-25T00:00:00Z"
+  },
+  {
+    "id": 89,
+    "name": "soarm-control",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "Robot Arm",
+      "SOARM"
+    ],
+    "description": "通过 SOARM API 控制机械臂。读取当前关节状态、按关节角度移动、按XYZ坐标移动、操作夹爪等。",
+    "highlights": [
+      "机械臂控制",
+      "关节角度/XYZ坐标",
+      "SOARM API"
+    ],
+    "github_url": "https://clawhub.ai/soarm-control",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-05T00:00:00Z"
+  },
+  {
+    "id": 90,
+    "name": "jaka-robotics-control",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "JAKA",
+      "Industrial Robot Arm"
+    ],
+    "description": "通过 gRPC/TCP 控制 Zu20/Zu12/Zu7 协作机器人，支持关节、线性、圆弧运动，实时状态监控，仿真支持。",
+    "highlights": [
+      "JAKA协作机器人",
+      "gRPC/TCP控制",
+      "关节/线性/圆弧运动"
+    ],
+    "github_url": "https://clawhub.ai/jaka-robotics-control",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.jaka.com/",
+        "price": "TBD"
+      }
+    ],
+    "bom_cost": "TBD",
+    "daily_increment": 0,
+    "created_at": "2026-03-23T00:00:00Z"
+  },
+  {
+    "id": 91,
+    "name": "openclaw-robot-skills (Industrial Robot Arms)",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "OMRON TM",
+      "JAKA",
+      "Dobot",
+      "ABB",
+      "KUKA",
+      "Fanuc"
+    ],
+    "description": "协作机器人统一 API，支持 OMRON TM 和 JAKA，通过统一接口实现连接、状态监控、关节及路径运动、安全控制和 IO 操作。",
+    "highlights": [
+      "多品牌协作机器人统一API",
+      "OMRON TM + JAKA",
+      "Python接口"
+    ],
+    "github_url": "https://clawhub.ai/openclaw-robot-skills",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-31T00:00:00Z"
+  },
+  {
+    "id": 92,
+    "name": "zsquadbot (Quadruped Robot)",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "Unitree",
+      "Quadruped Robot"
+    ],
+    "description": "四足机器人电机控制、传感器融合、步态生成、诊断和通信协议。支持 Unitree 平台。",
+    "highlights": [
+      "Unitree四足",
+      "步态生成",
+      "传感器融合"
+    ],
+    "github_url": "https://clawhub.ai/zsquadbot",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.unitree.com/",
+        "price": "TBD"
+      }
+    ],
+    "bom_cost": "TBD",
+    "daily_increment": 0,
+    "created_at": "2026-03-09T00:00:00Z"
+  },
+  {
+    "id": 93,
+    "name": "joyin-robot-control",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "JoyIn AI Robot"
+    ],
+    "description": "控制 JoyIn AI 机器人 W-1 Walle / M-1 Mini — 移动、跟随、拍照、视频、直播、TTS、设备状态通过 OpenAPI 控制。",
+    "highlights": [
+      "W-1 Walle / M-1 Mini",
+      "移动跟随",
+      "直播/TTS"
+    ],
+    "github_url": "https://clawhub.ai/joyin-robot-control",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "TBD",
+    "daily_increment": 0,
+    "created_at": "2026-03-14T00:00:00Z"
+  },
+  {
+    "id": 94,
+    "name": "esp32-cam-eyes",
+    "stars": 0,
+    "category": "iot",
+    "platforms": [
+      "ESP32-S3",
+      "ESP32-CAM"
+    ],
+    "description": "将 ESP32-S3-CAM 模块设置为 OpenClaw Agent 的视觉传感器。涵盖硬件识别、固件烧录、WiFi 配置、HTTP摄像头流。",
+    "highlights": [
+      "ESP32-S3-CAM视觉",
+      "固件烧录",
+      "HTTP摄像头"
+    ],
+    "github_url": "https://clawhub.ai/esp32-cam-eyes",
+    "seeedstudio": true,
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/ESP32-CAM",
+        "price": "$7.9"
+      }
+    ],
+    "bom_cost": "$7.9+",
+    "daily_increment": 0,
+    "created_at": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": 95,
+    "name": "arduino-cli",
+    "stars": 0,
+    "category": "embedded",
+    "platforms": [
+      "Arduino"
+    ],
+    "description": "Arduino CLI 集成。创建、编译、上传 Arduino sketches，管理板子，安装库。OpenClaw 直接生成和上传 Arduino 代码。",
+    "highlights": [
+      "Arduino CLI",
+      "代码生成",
+      "固件上传"
+    ],
+    "github_url": "https://clawhub.ai/arduino-cli",
+    "seeedstudio": true,
+    "product_links": [
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32C3.html",
+        "price": "$10"
+      },
+      {
+        "url": "https://www.seeedstudio.com/XIAO-ESP32S3.html",
+        "price": "$13.99"
+      }
+    ],
+    "bom_cost": "$10+",
+    "daily_increment": 0,
+    "created_at": "2026-03-25T00:00:00Z"
+  },
+  {
+    "id": 96,
+    "name": "motor-foc-control",
+    "stars": 0,
+    "category": "embedded",
+    "platforms": [
+      "ESP32",
+      "RISC-V",
+      "Motor"
+    ],
+    "description": "FOC 磁场定向控制深度指南。讲解 FOC 原理、SVPWM、MTPA、弱磁控制、龙贝格观测器，配合实测案例、C代码和 PI 整定脚本。",
+    "highlights": [
+      "FOC控制",
+      "SVPWM/M TPA",
+      "电机控制"
+    ],
+    "github_url": "https://clawhub.ai/motor-foc-control",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-24T00:00:00Z"
+  },
+  {
+    "id": 97,
+    "name": "ros2-introspection",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "ROS2"
+    ],
+    "description": "执行核心 ROS 2 introspection 命令查询 ROS graph（topics, nodes, services, actions, parameters）。完全只读。",
+    "highlights": [
+      "ROS2 introspection",
+      "只读查询",
+      "机器人操作系统"
+    ],
+    "github_url": "https://clawhub.ai/ros2-introspection",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-04-03T00:00:00Z"
+  },
+  {
+    "id": 98,
+    "name": "ros2-execution",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "ROS2"
+    ],
+    "description": "在沙箱环境中执行 ROS 2 命令（run, launch, call）。安全的只读+执行环境。",
+    "highlights": [
+      "ROS2命令执行",
+      "沙箱安全",
+      "launch文件"
+    ],
+    "github_url": "https://clawhub.ai/ros2-execution",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-04-03T00:00:00Z"
+  },
+  {
+    "id": 99,
+    "name": "robotx",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "RobotX"
+    ],
+    "description": "使用 robotx CLI 部署、管理版本、检查 RobotX 应用状态。",
+    "highlights": [
+      "RobotX CLI",
+      "应用部署",
+      "版本管理"
+    ],
+    "github_url": "https://clawhub.ai/robotx",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-03-06T00:00:00Z"
+  },
+  {
+    "id": 100,
+    "name": "raspberry-pi-gpio",
+    "stars": 0,
+    "category": "embedded",
+    "platforms": [
+      "Raspberry Pi",
+      "GPIO"
+    ],
+    "description": "在树莓派中配置和使用 GPIO。控制 LED、按钮、Servo、电机等简单外设。",
+    "highlights": [
+      "树莓派GPIO",
+      "LED/按钮/电机",
+      "硬件控制"
+    ],
+    "github_url": "https://clawhub.ai/raspberry-pi-gpio",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.raspberrypi.com/",
+        "price": "$35+"
+      }
+    ],
+    "bom_cost": "$35+",
+    "daily_increment": 0,
+    "created_at": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": 101,
+    "name": "raspberry-pi-servo",
+    "stars": 0,
+    "category": "embedded",
+    "platforms": [
+      "Raspberry Pi",
+      "Servo"
+    ],
+    "description": "树莓派 Servo 控制。精确控制舵机角度和速度。",
+    "highlights": [
+      "舵机控制",
+      "角度精确控制",
+      "树莓派"
+    ],
+    "github_url": "https://clawhub.ai/raspberry-pi-servo",
+    "seeedstudio": false,
+    "product_links": [
+      {
+        "url": "https://www.raspberrypi.com/",
+        "price": "$35+"
+      }
+    ],
+    "bom_cost": "$35+",
+    "daily_increment": 0,
+    "created_at": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": 102,
+    "name": "peaq-robotics",
+    "stars": 0,
+    "category": "robotics",
+    "platforms": [
+      "ROS2",
+      "Blockchain",
+      "peaq"
+    ],
+    "description": "peaq-robotics-ros2 运行时。启动/停止 ROS 2 节点，调用 DID、存储和访问控制服务。",
+    "highlights": [
+      "peaq网络",
+      "ROS2节点",
+      "DID/Storage服务"
+    ],
+    "github_url": "https://clawhub.ai/peaq-robotics",
+    "seeedstudio": false,
+    "product_links": [],
+    "bom_cost": "Free",
+    "daily_increment": 0,
+    "created_at": "2026-02-02T00:00:00Z"
   }
 ]
